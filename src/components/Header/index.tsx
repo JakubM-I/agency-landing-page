@@ -1,5 +1,6 @@
 import headerDesktopBg from "../../assets/desktop/image-header.jpg";
 import headerMobileBg from "../../assets/mobile/image-header.jpg"
+import Hero from "../Hero";
 import MenuBar from "../MenuBar";
 
 const Header: React.FC = () => {
@@ -11,6 +12,7 @@ const Header: React.FC = () => {
                 <img src={headerDesktopBg} alt="header background" />
             </picture>
             <MenuBar />
+            <Hero />
         </header>
     )
 

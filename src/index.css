@@ -47,7 +47,11 @@
 }
 
 @layer components{
+    .page-width{
+        width: min(1440px, 100%);
+        margin-inline: auto;
+    }
     .transitions-menu{
-        transition: all 0.3s ease-in-out;
+        transition: all 599ms ease-in-out;
     }
 }
