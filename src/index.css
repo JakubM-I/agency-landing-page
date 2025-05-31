@@ -45,3 +45,9 @@
         letter-spacing: 0px;
     }
 }
+
+@layer components{
+    .transitions-menu{
+        transition: all 0.3s ease-in-out;
+    }
+}
