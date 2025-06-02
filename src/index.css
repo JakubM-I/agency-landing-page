@@ -17,6 +17,8 @@
     --color-blues-800: #19536C;
     --color-red-400: #FE7766;
     --color-yellow-500: #FAD400;
+
+    --breakpoint-sx: 24rem;
 }
 
 @layer utilities {
@@ -24,7 +26,28 @@
         font-family: "Fraunces", serif;
         font-size: 56px;
         line-height: 125%;
-        letter-spacing: 9px
+        letter-spacing: 9px;
+    }
+
+     .text-preset-2{
+        font-family: "Fraunces", serif;
+        font-size: 42px;
+        line-height: 125%;
+        letter-spacing: 6px;
+    }
+
+    .text-hero-responsive {
+        font-family: "Fraunces", serif;
+        font-size: 42px;
+        line-height: 125%;
+        letter-spacing: 6px;
+    }
+
+    @media (min-width: 640px) {
+        .text-hero-responsive {
+            font-size: 56px;
+            letter-spacing: 9px;
+        }
     }
 
     .text-preset-8{
@@ -39,6 +62,16 @@
         font-size: 18px;
         line-height: 165%;
         letter-spacing: 0px;
+    }
+
+    .hero-top-position{
+        top: 184px;
+    }
+
+    @media (width < 1400px){
+        .hero-top-position{
+            top: clamp(9.5625rem, 7.1321rem + 5.0633vw, 11.5625rem);
+        }
     }
 }
 
