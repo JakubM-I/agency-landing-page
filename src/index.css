@@ -43,7 +43,7 @@
         letter-spacing: 6px;
     }
 
-    @media (min-width: 640px) {
+    @media (min-width: 375px) {
         .text-hero-responsive {
             font-size: 56px;
             letter-spacing: 9px;
