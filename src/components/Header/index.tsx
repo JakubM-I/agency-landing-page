@@ -9,7 +9,7 @@ const Header: React.FC = () => {
             <picture>
                 <source srcSet={headerDesktopBg} type="image/jpg" media="(min-width: 769px)" />
                 <source srcSet={headerMobileBg} type="image/jpg" media="(max-width: 768px)" />
-                <img src={headerDesktopBg} className="max-h-[800px] h-full w-full object-cover" alt="header background" />
+                <img src={headerDesktopBg} className="max-h-[800px] h-full w-full object-cover object-bottom" alt="header background" />
             </picture>
             <MenuBar />
             <Hero />

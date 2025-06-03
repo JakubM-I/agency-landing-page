@@ -50,6 +50,12 @@
         }
     }
 
+    @media (768px < width <  1400px){
+        .text-hero-responsive {
+            font-size: clamp(2.625rem, 1.5586rem + 2.2187vw, 3.5rem);
+        }
+    }
+
     .text-preset-8{
         font-family: "Fraunces", serif;
         font-size: 15px;
@@ -68,11 +74,19 @@
         top: 184px;
     }
 
-    @media (width < 1400px){
+    @media (768px < width <  1400px){
         .hero-top-position{
-            top: clamp(9.5625rem, 7.1321rem + 5.0633vw, 11.5625rem);
+            top: clamp(6.25rem, -0.1482rem + 13.3122vw, 11.5rem);
+            gap: clamp(0.625rem, -5.9255rem + 13.6292vw, 6rem);
         }
     }
+
+    @media (768px < width <  1400px){
+        .hero-arrow-height{
+            height: clamp(5.9375rem, 4.4903rem + 3.0111vw, 7.125rem);
+        }
+    }
+
 }
 
 @layer components{
