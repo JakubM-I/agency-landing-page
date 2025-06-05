@@ -121,6 +121,10 @@
         }
     } */
 
+    .footer-link{
+        @apply hover:text-white transition ease-in-out duration-400;
+    }
+
 }
 
 @layer components{
