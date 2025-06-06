@@ -18,7 +18,7 @@
     --color-red-400: #FE7766;
     --color-yellow-500: #FAD400;
 
-    --breakpoint-sx: 23.438rem;
+    --breakpoint-sx: 23.5rem;
 }
 
 @layer utilities {
