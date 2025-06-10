@@ -66,6 +66,12 @@
     } */
 
 
+    .text-preset-6{
+        font-family: "Fraunces", serif;
+        font-size: 20px;
+        line-height: 125%;
+        letter-spacing: 4px;
+    }
 
     .text-preset-8{
         font-family: "Fraunces", serif;
