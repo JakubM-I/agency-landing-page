@@ -153,7 +153,13 @@
         width: min(1440px, 100%);
         margin-inline: auto;
     }
+
     .transitions-menu{
         transition: all 599ms ease-in-out;
+    }
+
+    .testimonials-width{
+        width: min(1114px, 100%);
+        margin-inline: auto;
     }
 }
