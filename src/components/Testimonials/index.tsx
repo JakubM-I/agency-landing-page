@@ -8,22 +8,22 @@ const Testimonials: React.FC = () => {
             <p className="text-center uppercase text-preset-6 text-grey-400">Client testimonials</p>
             <div className="flex justify-center items-start gap-32">
                 <div className="w-[350px] flex flex-col justify-start items-center">
-                    <img src={emilly} alt="Emily R. - Marketing Director" />
-                    <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-                    <p>Emily R.</p>
-                    <p>Marketing Director</p>
+                    <img src={emilly} alt="Emily R. - Marketing Director" className="w-[72px] h-[72px] rounded-full" />
+                    <p className="text-preset-10 text-center">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <p className="text-preset-7">Emily R.</p>
+                    <p className="text-preset-12 text-gray-400">Marketing Director</p>
                 </div>
                 <div className="w-[350px] flex flex-col justify-start items-center">
-                    <img src={thomas} alt="Thomas S. - Chief Operating Officer" />
-                    <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-                    <p>Thomas S.</p>
-                    <p>Chief Operating Officer</p>
+                    <img src={thomas} alt="Thomas S. - Chief Operating Officer" className="w-[72px] h-[72px] rounded-full"  />
+                    <p className="text-preset-10 text-center">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                    <p className="text-preset-7">Thomas S.</p>
+                    <p className="text-preset-12 text-gray-400">Chief Operating Officer</p>
                 </div>
                 <div className="w-[350px] flex flex-col justify-start items-center">
-                    <img src={jennie} alt="" />
-                    <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!.</p>
-                    <p>Jennie F.</p>
-                    <p>Business Owner</p>
+                    <img src={jennie} alt="Jennie F. - Business Owner" className="w-[72px] h-[72px] rounded-full"  />
+                    <p className="text-preset-10 text-center">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!.</p>
+                    <p className="text-preset-7">Jennie F.</p>
+                    <p className="text-preset-12 text-gray-400">Business Owner</p>
                 </div>
             </div>
         </div>
