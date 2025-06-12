@@ -7,7 +7,7 @@ const Testimonials: React.FC = () => {
         <div className="w-full bg-white py-[162px]">
             <div className="testimonials-width">
                 <p className="text-center uppercase text-preset-6 text-grey-400 mb-20">Client testimonials</p>
-                <div className="flex justify-center items-start gap-8">
+                <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8">
                     <div className="w-[350px] flex flex-col justify-start items-center gap-[72px]">
                         <div className="flex flex-col justify-start items-center gap-14">
                             <img src={emilly} alt="Emily R. - Marketing Director" className="w-[72px] h-[72px] rounded-full" />
