@@ -31,11 +31,19 @@ const GridSection: React.FC = () => {
                 </div>
             </div>
             <div className="flex flex-nowrap justify-center items-center">
-                <div className="w-1/2">
-                    <img src={graphicImg} alt="" />
+                <div className="w-1/2 grid">
+                    <img src={graphicImg} alt="" className="col-[1_/_-1] row-[1_/_-1] z-[1]"/>
+                    <div className="text-green-600 py-14 col-[1_/_-1] row-[1_/_-1] z-[2] content-end justify-self-center max-w-[339px] w-full">
+                        <h2 className="text-preset-5 text-center mb-[32px]">Graphic Design</h2>
+                        <p className="text-preset-11 text-center">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                    </div>
                 </div>
-                <div className="w-1/2">
-                    <img src={photographyImg} alt="" />
+                <div className="w-1/2 grid">
+                    <img src={photographyImg} alt="" className="col-[1_/_-1] row-[1_/_-1] z-[1]" />
+                    <div className="text-green-600 py-14 col-[1_/_-1] row-[1_/_-1] z-[2] content-end justify-self-center max-w-[339px] w-full">
+                        <h2 className="text-preset-5 text-center mb-[32px]">Photography</h2>
+                        <p className="text-preset-11 text-center">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                    </div>
                 </div>
             </div>
         </div>
