@@ -9,7 +9,7 @@ const GridSection: React.FC = () => {
             <div className="flex flex-wrap-reverse md:flex-nowrap justify-center items-center">
                 <div className="w-full md:w-1/2 flex justify-center items-center bg-white px-6 py-16 sx:py-[67px]">
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
-                        <h2 className="text-preset-3 text-center text-grey-950">Transform your brand</h2>
+                        <h2 className="grid-title text-center text-grey-950">Transform your brand</h2>
                         <p className="text-preset-10 text-left text-grey-550">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
                         <a href="#" className="text-preset-8 uppercase text-grey-950 text-left">Learn more</a>
                     </div>
@@ -24,7 +24,7 @@ const GridSection: React.FC = () => {
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center items-center bg-white px-6 py-16 sx:py-[67px]">
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
-                        <h2 className="text-preset-3 text-center text-grey-950">Stand out to the right audience</h2>
+                        <h2 className="grid-title text-center text-grey-950">Stand out to the right audience</h2>
                         <p className="text-preset-10 text-left text-grey-550">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
                         <a href="#" className="text-preset-8 uppercase text-grey-950 text-left">Learn more</a>
                     </div>

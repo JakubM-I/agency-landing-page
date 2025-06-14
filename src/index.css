@@ -21,64 +21,63 @@
     --breakpoint-sx: 23.5rem;
 }
 
-@layer utilities {
-    .text-preset-1{
+    @utility text-preset-1{
         font-family: "Fraunces", serif;
         font-size: 56px;
         line-height: 125%;
         letter-spacing: 9px;
     }
 
-     .text-preset-2{
+    @utility text-preset-2{
         font-family: "Fraunces", serif;
         font-size: 42px;
         line-height: 125%;
         letter-spacing: 6px;
     }
 
-    .text-preset-3{
+    @utility text-preset-3{
         font-family: "Fraunces", serif;
         font-size: 40px;
         line-height: 125%;
         letter-spacing: 0px;
     }
 
-    .text-preset-4{
+    @utility text-preset-4{
         font-family: "Fraunces", serif;
         font-size: 32px;
         line-height: 125%;
         letter-spacing: 0px;
     }
 
-    .text-preset-5{
+    @utility text-preset-5{
         font-family: "Fraunces", serif;
         font-size: 28px;
         line-height: 125%;
         letter-spacing: 0px;
     }
 
-    .text-preset-6{
+    @utility text-preset-6{
         font-family: "Fraunces", serif;
         font-size: 20px;
         line-height: 125%;
         letter-spacing: 4px;
     }
 
-    .text-preset-7{
+    @utility text-preset-7{
         font-family: "Fraunces", serif;
         font-size: 18px;
         line-height: 125%;
         letter-spacing: 0px;
     }
 
-    .text-preset-8{
+    @utility text-preset-8{
         font-family: "Fraunces", serif;
         font-size: 15px;
         line-height: 165%;
         letter-spacing: 1px;
     }
 
-    .text-preset-9{
+    @utility text-preset-9{
         font-family: "Barlow", sans-serif;
         font-size: 20px;
         font-weight: 600;
@@ -86,7 +85,7 @@
         letter-spacing: 0px;
     }
 
-    .text-preset-10{
+   @utility text-preset-10{
         font-family: "Barlow", sans-serif;
         font-size: 18px;
         font-weight: 600;
@@ -94,7 +93,7 @@
         letter-spacing: 0px;
     }
 
-    .text-preset-11{
+  @utility text-preset-11{
         font-family: "Barlow", sans-serif;
         font-size: 16px;
         font-weight: 600;
@@ -102,7 +101,7 @@
         letter-spacing: 0px;
     }
 
-    .text-preset-12{
+   @utility text-preset-12{
         font-family: "Barlow", sans-serif;
         font-size: 14px;
         font-weight: 600;
@@ -110,6 +109,7 @@
         letter-spacing: 0px;
     }
 
+@layer utilities{
     .text-hero-responsive {
         font-family: "Fraunces", serif;
         font-size: 42px;
@@ -148,34 +148,9 @@
         }
     }
 
-    /* @media (320px < width <= 768px){
-        .hero-top-position{
-            top: clamp(4.75rem, -0.0714rem + 24.1071vw, 11.5rem); 
-            gap: clamp(3.3125rem, 1.3929rem + 9.5982vw, 6rem);
-            width: 95%;
-            margin-inline: auto;
-        }
-    } */
-
-    /* @media (768px < width <  1400px){
-        .hero-top-position{
-            top: clamp(6.25rem, -0.1482rem + 13.3122vw, 11.5rem);
-            gap: clamp(0.625rem, -5.9255rem + 13.6292vw, 6rem);
-        }
-    } */
-
- 
-/* 
-    @media (768px < width <  1400px){
-        .hero-arrow-height{
-            height: clamp(5.9375rem, 4.4903rem + 3.0111vw, 7.125rem);
-        }
-    } */
-
     .footer-link{
         @apply hover:text-white transition ease-in-out duration-400;
     }
-
 }
 
 @layer components{
@@ -191,5 +166,15 @@
     .testimonials-width{
         width: min(1114px, 100%);
         margin-inline: auto;
+    }
+
+    .grid-title{
+        @apply text-preset-4
+    }
+
+    @media (375px < width){
+        .grid-title{
+            @apply text-preset-3;
+        }
     }
 }
