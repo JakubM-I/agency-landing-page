@@ -111,18 +111,20 @@
 
 @layer utilities{
     .text-hero-responsive {
-        font-family: "Fraunces", serif;
-        font-size: 42px;
-        line-height: 125%;
-        letter-spacing: 6px;
+        @apply text-preset-2;
         width: 100%;
     }
 
     @media (375px < width) {
         .text-hero-responsive {
-            font-size: 56px;
-            letter-spacing: 9px;
+            @apply text-preset-1;
             width: 95%;
+        }
+    }
+
+    @media (375px < width < 490px){
+        .text-hero-responsive {
+            font-size: clamp(2.625rem, -0.2283rem + 12.1739vw, 3.5rem);
         }
     }
 
