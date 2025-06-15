@@ -1,7 +1,11 @@
 import transformImg from "../../assets/desktop/image-transform.jpg"
+import transformImgMobile from "../../assets/mobile/image-transform.jpg"
 import audienceImg from "../../assets/desktop/image-stand-out.jpg"
-import graphicImg from "../../assets/desktop/image-graphic-design.jpg"
+import audienceImgMobile from "../../assets/mobile/image-stand-out.jpg"
+import graphicImg from "../../assets/desktop/image-graphic-design.jpg"      
+import graphicImgMobile from "../../assets/mobile/image-graphic-design.jpg"
 import photographyImg from "../../assets/desktop/image-photography.jpg"
+import photographyImgMobile from "../../assets/mobile/image-photography.jpg"
 
 const GridSection: React.FC = () => {
     return (
@@ -15,12 +19,20 @@ const GridSection: React.FC = () => {
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 sx:h-[600px]">
-                    <img src={transformImg} alt="" className="w-full h-full object-cover" />
+                    <picture>
+                        <source srcSet={transformImg} type="image/jpg" media="(375px < width)" />
+                        <source srcSet={transformImgMobile} type="image/jpg" media="(width <= 375px)" />
+                        <img src={transformImg} alt="" className="w-full h-full object-cover" />
+                    </picture>
                 </div>
             </div>
             <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
                 <div className="w-full md:w-1/2 sx:h-[600px]">
-                    <img src={audienceImg} alt="" className="w-full h-full object-cover"/>
+                    <picture>
+                        <source srcSet={audienceImg} type="image/jpg" media="(375px < width)" />
+                        <source srcSet={audienceImgMobile} type="image/jpg" media="(width <= 375px)" />
+                        <img src={audienceImg} alt="" className="w-full h-full object-cover" />
+                    </picture>
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center items-center bg-white px-6 py-16 sx:py-[67px]">
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
@@ -32,14 +44,22 @@ const GridSection: React.FC = () => {
             </div>
             <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
                 <div className="w-full md:w-1/2 sx:h-[600px] grid">
-                    <img src={graphicImg} alt="" className="col-[1_/_-1] row-[1_/_-1] z-[1] w-full h-full object-cover"/>
+                <picture className="col-[1_/_-1] row-[1_/_-1] z-[1]">
+                    <source srcSet={graphicImg} type="image/jpg" media="(375px < width)" />
+                    <source srcSet={graphicImgMobile} type="image/jpg" media="(width <= 375px)" />
+                    <img src={graphicImg} alt="" className="w-full h-full object-cover"/>
+                </picture>
                     <div className="text-green-600 py-14 col-[1_/_-1] row-[1_/_-1] z-[2] content-end justify-self-center max-w-[339px] w-full">
                         <h2 className="text-preset-5 text-center mb-[32px]">Graphic Design</h2>
                         <p className="text-preset-11 text-center">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 sx:h-[600px] grid">
-                    <img src={photographyImg} alt="" className="col-[1_/_-1] row-[1_/_-1] z-[1] w-full h-full object-cover" />
+                <picture className="col-[1_/_-1] row-[1_/_-1] z-[1]">
+                    <source srcSet={photographyImg} type="image/jpg" media="(375px < width)" />
+                    <source srcSet={photographyImgMobile} type="image/jpg" media="(width <= 375px)" />
+                    <img src={photographyImg} alt="" className="w-full h-full object-cover" />
+                </picture>
                     <div className="text-green-600 py-14 col-[1_/_-1] row-[1_/_-1] z-[2] content-end justify-self-center max-w-[339px] w-full">
                         <h2 className="text-preset-5 text-center mb-[32px]">Photography</h2>
                         <p className="text-preset-11 text-center">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
