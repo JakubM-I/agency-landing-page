@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import mobileMenu from "../../assets/icons/icon-hamburger.svg"
 
 const Menu: React.FC = () => {
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
 
     useEffect(() => {
         const handleResize = () => {
@@ -16,6 +16,10 @@ const Menu: React.FC = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
+    if (isMobile === undefined) {
+        return <div className="h-6 w-6"></div>;
+    }
 
     return (
         <div>
