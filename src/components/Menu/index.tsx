@@ -9,6 +9,7 @@ const Menu: React.FC = () => {
             setIsMobile(window.innerWidth <= 768);
         };
 
+        handleResize();
         window.addEventListener("resize", handleResize);
 
         return () => {
