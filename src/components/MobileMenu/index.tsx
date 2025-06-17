@@ -1,6 +1,6 @@
 const MobileMenu: React.FC  = () => {
     return (
-        <div>
+        <div className="w-[calc(100%-48px)] sx:w-[calc(100%-80px)] mx-auto pt-9 pb-10">
             <ul className="flex flex-col gap-8 bg-white list-none text-grey-550 text-preset-9 items-center justify-center">
                     <li><a href="#" className="">About</a></li>
                     <li><a href="#" className="">Services</a></li>
