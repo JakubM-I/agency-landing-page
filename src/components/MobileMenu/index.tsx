@@ -1,7 +1,7 @@
 const MobileMenu: React.FC  = () => {
     return (
-        <div className="w-[calc(100%-48px)] sx:w-[calc(100%-80px)] mx-auto pt-9 pb-10">
-            <ul className="flex flex-col gap-8 bg-white list-none text-grey-550 text-preset-9 items-center justify-center">
+        <div className="absolute left-0 right-0 w-[calc(100%-48px)] sx:w-[calc(100%-80px)] mx-auto z-5">
+            <ul className="flex flex-col gap-8 bg-white pt-9 pb-10 list-none text-grey-550 text-preset-9 items-center justify-center">
                     <li><a href="#" className="">About</a></li>
                     <li><a href="#" className="">Services</a></li>
                     <li><a href="#" className="">Projects</a></li>

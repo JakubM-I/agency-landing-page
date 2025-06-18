@@ -12,7 +12,6 @@ const Header: React.FC = () => {
                 <source srcSet={headerMobileBg} type="image/jpg" media="(width <= 375px)" />
                 <img src={headerDesktopBg} className=" h-[calc(100%-56px)] sx:h-[calc(100%-72px)] md:h-[calc(100%-93px)] w-full object-cover object-bottom" alt="header background" />
             </picture>
-           
             <Hero />
         </header>
     )
