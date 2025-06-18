@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import mobileMenu from "../../assets/icons/icon-hamburger.svg"
 
-const Menu: React.FC = () => {
+interface MenuProps {
+    toggleMenu: () => void;
+}
+
+const Menu: React.FC<MenuProps> = ({toggleMenu}) => {
     const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
 
     useEffect(() => {
@@ -25,7 +29,7 @@ const Menu: React.FC = () => {
         <div>
             {isMobile ? 
                 (<div>
-                    <button className="cursor-pointer">
+                    <button className="cursor-pointer" onClick={toggleMenu}>
                         <img src={mobileMenu} alt="" />
                     </button>
                 </div>) : 
