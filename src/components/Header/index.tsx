@@ -8,7 +8,7 @@ interface HeaderProps{
     isSticky?: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({isSticky}) => {
+const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
     // const [isSticky, setIsSticky] = useState<boolean>(true);
 
     return (
