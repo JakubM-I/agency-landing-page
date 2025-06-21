@@ -12,9 +12,9 @@ function App() {
 
   useEffect(() => {
     const scrollHandler = () => {
-      if (window.scrollY > 15) {
+      if (window.scrollY > 56) {
         setIsSticky(true);
-      } else {
+      } else if( window.scrollY <= 45) {
         setIsSticky(false);
       }
     };
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="page-width">
       {isSticky&& 
-            (<div className="sticky top-4 z-5">
+            (<div className="sticky top-1 z-5 bg-[#3ebfffce] backdrop-blur-md">
                 <MenuBar isSticky={isSticky}  /> 
             </div>) }
       <Header isSticky={isSticky} />
