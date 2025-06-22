@@ -6,6 +6,7 @@ import GridSection from './components/GridSection'
 import Header from './components/Header'
 import Testimonials from './components/Testimonials'
 import MenuBar from './components/MenuBar'
+import HeroSection from './components/HeroSection'
 
 function App() {
   const [isSticky, setIsSticky] = useState<boolean>(false);
@@ -28,11 +29,12 @@ function App() {
 
   return (
     <div className="page-width">
-      {isSticky&& 
+      {/* {isSticky&& 
             (<div className="sticky top-1 z-5 bg-[#3ebfffce] backdrop-blur-md">
                 <MenuBar isSticky={isSticky}  /> 
-            </div>) }
+            </div>) } */}
       <Header isSticky={isSticky} />
+      <HeroSection isSticky={isSticky} />
       <GridSection />
       <Testimonials />
       <BottomGrid />
