@@ -135,18 +135,18 @@
     }
 
     .hero-top-position{
-        top: 136px;
+        top: 79px;
     }
 
     @media (375px < width) {
         .hero-top-position{
-            top: 153px;
+            top: 97px;
         }
     }
 
     @media (768px < width){
         .hero-top-position{
-            top: 184px;
+            top: 110px;
         }
     }
 
