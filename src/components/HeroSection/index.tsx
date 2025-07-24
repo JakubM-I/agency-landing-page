@@ -2,11 +2,7 @@ import headerDesktopBg from "../../assets/desktop/image-header.jpg";
 import headerMobileBg from "../../assets/mobile/image-header.jpg"
 import Hero from "../Hero";
 
-interface HeroSEctionProps {
-    isSticky?: boolean;
-}
-
-const HeroSection: React.FC<HeroSEctionProps> = ({isSticky=false}) => {
+const HeroSection: React.FC = () => {
     return (
         <div className="relative w-full h-[482px] sx:h-[706px] bg-[#3ebfff]">
             <picture>
