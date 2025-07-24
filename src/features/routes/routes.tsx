@@ -1,5 +1,6 @@
 
-import HomePage from "../HomePage";
+import AboutPage from "../about";
+import HomePage from "../homepage";
 import RootElement from "../Root/root";
 
 export const routes = [
@@ -10,7 +11,13 @@ export const routes = [
             {
                 path: "/",
                 element: <HomePage />
+            },
+            {
+                path: "about",
+                element: <AboutPage />
             }
         ]
     }
 ]
+
+//  element: React.lazy(() => import("../about/index.tsx"))
