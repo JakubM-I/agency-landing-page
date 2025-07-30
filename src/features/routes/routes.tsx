@@ -1,7 +1,9 @@
 
 import AboutPage from "../about";
 import HomePage from "../homepage";
+import ProjectsPage from "../projects";
 import RootElement from "../Root/root";
+import ServicesPage from "../services";
 
 export const routes = [
     {
@@ -15,6 +17,14 @@ export const routes = [
             {
                 path: "about",
                 element: <AboutPage />
+            },
+            {
+                path: "services",
+                element: <ServicesPage />
+            },
+            {
+                path: "projects",
+                element: <ProjectsPage />
             }
         ]
     }
