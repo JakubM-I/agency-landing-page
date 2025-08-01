@@ -7,10 +7,46 @@ import orange_mobile from "../../assets/mobile/image-gallery-orange.jpg";
 import sugarcubes from "../../assets/desktop/image-gallery-sugarcubes.jpg";
 import sugarcubes_mobile from "../../assets/mobile/image-gallery-sugar-cubes.jpg";
 
+interface BottomPicturesProps {
+    id: number;
+    desktop: string;
+    mobile: string;
+}
+
 const BottomGrid: React.FC = () => {
+const bootomPictures: BottomPicturesProps[] = [
+    {
+        id: 1,
+        desktop: milkbottles,
+        mobile: milkbottles_mobile
+    },
+    {
+        id: 2,
+        desktop: orange,
+        mobile: orange_mobile
+    },
+    {
+        id: 3,
+        desktop: cane,
+        mobile: cane_mobile
+    },
+    {
+        id: 4,
+        desktop: sugarcubes,
+        mobile: sugarcubes_mobile
+    }
+]
+
     return (
         <div className="flex items-center justify-center flex-wrap md:flex-nowrap">
-            <picture className="w-full h-full object-cover flex-[0_1_50%] md:flex-auto" >
+            {bootomPictures.map((picture) => (
+                <picture key={picture.id} className="w-full h-full object-cover flex-[0_1_50%] md:flex-auto" >
+                    <source srcSet={picture.desktop} type="image/jpg" media="(375px < width)" />
+                    <source srcSet={picture.mobile} type="image/jpg" media="(width <= 375px)" />
+                    <img src={picture.desktop} alt="" />
+                </picture>
+            ))}
+            {/* <picture className="w-full h-full object-cover flex-[0_1_50%] md:flex-auto" >
                 <source srcSet={milkbottles} type="image/jpg" media="(375px < width)" />
                 <source srcSet={milkbottles_mobile} type="image/jpg" media="(width <= 375px)" />
                 <img src={milkbottles} alt="" />
@@ -29,7 +65,7 @@ const BottomGrid: React.FC = () => {
                 <source srcSet={sugarcubes}  type="image/jpg" media="(375px < width)"/>
                 <source srcSet={sugarcubes_mobile} type="image/jpg" media="(width <= 375px)" />
                 <img src={sugarcubes} alt="" />
-            </picture>
+            </picture> */}
         </div>
     )
 };
