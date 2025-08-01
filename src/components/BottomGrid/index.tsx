@@ -46,26 +46,6 @@ const bootomPictures: BottomPicturesProps[] = [
                     <img src={picture.desktop} alt="" />
                 </picture>
             ))}
-            {/* <picture className="w-full h-full object-cover flex-[0_1_50%] md:flex-auto" >
-                <source srcSet={milkbottles} type="image/jpg" media="(375px < width)" />
-                <source srcSet={milkbottles_mobile} type="image/jpg" media="(width <= 375px)" />
-                <img src={milkbottles} alt="" />
-            </picture>
-            <picture className="w-full h-full object-cover flex-[0_1_50%] md:flex-auto" >
-                <source srcSet={orange}  type="image/jpg" media="(375px < width)"/>
-                <source srcSet={orange_mobile} type="image/jpg" media="(width <= 375px)" />
-                <img src={orange} alt=""  />
-            </picture>
-            <picture className="w-full h-full object-cover flex-[0_1_50%] md:flex-auto" >
-                <source srcSet={cane}  type="image/jpg" media="(375px < width)"/>
-                <source srcSet={cane_mobile} type="image/jpg" media="(width <= 375px)" />
-                <img src={cane} alt="" />
-            </picture>
-            <picture className="w-full h-full object-cover flex-[0_1_50%] md:flex-auto" >
-                <source srcSet={sugarcubes}  type="image/jpg" media="(375px < width)"/>
-                <source srcSet={sugarcubes_mobile} type="image/jpg" media="(width <= 375px)" />
-                <img src={sugarcubes} alt="" />
-            </picture> */}
         </div>
     )
 };
