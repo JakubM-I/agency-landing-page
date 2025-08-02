@@ -6,8 +6,46 @@ interface MenuProps {
     toggleMenu: () => void;
 }
 
+interface NavItemsProps {
+    id: string;
+    to: string;
+    label: string;
+    type: "link" | "button";
+    classname?: string;
+    itemClassName?: string;
+}
+
 const Menu: React.FC<MenuProps> = ({toggleMenu}) => {
     const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
+
+    const navItems: NavItemsProps[] = [
+        {
+            id: "about",
+            to: "about",
+            label: "About",
+            type: "link"
+        },
+                {
+            id: "services",
+            to: "services",
+            label: "Services",
+            type: "link"
+        },
+                {
+            id: "projects",
+            to: "projects",
+            label: "Projects",
+            type: "link"
+        },
+                {
+            id: "contact",
+            to: "contact",
+            label: "Contact",
+            type: "button",
+            classname: "bg-white border-none rounded-[28px] px-7 py-4 transitions-menu hover:bg-[#f7f7f740] text-preset-8 uppercase text-grey-950 hover:text-white",
+            itemClassName: "rounded-[28px] py-4"
+        }
+    ]
 
     useEffect(() => {
         const handleResize = () => {
