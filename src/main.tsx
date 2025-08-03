@@ -5,7 +5,9 @@ import { createBrowserRouter } from 'react-router'
 import { routes } from './features/routes/routes.tsx'
 import { RouterProvider } from 'react-router/dom'
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, {
+  basename: "/sunnyside/",
+});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

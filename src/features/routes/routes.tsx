@@ -9,6 +9,9 @@ export const routes = [
     {
         path: "/",
         element: <RootElement />,
+        loader: () => {
+            return fetch("/sunnyside/navItems.json")
+        },
         children: [
             {
                 path: "/",
