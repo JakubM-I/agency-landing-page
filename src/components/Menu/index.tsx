@@ -12,6 +12,7 @@ interface NavItemsProps {
     label: string;
     type: "link" | "button";
     className?: string;
+    classNameMobile?: string;
     itemClassName?: string;
 }
 

@@ -23,6 +23,7 @@
             "label": "Contact",
             "type": "button",
             "className": "bg-white border-none rounded-[28px] px-7 py-4 transitions-menu hover:bg-[#f7f7f740] text-preset-8 uppercase text-grey-950 hover:text-white",
+            "classNameMobile": "bg-yellow-500 border-none rounded-[28px] px-7 py-4 transitions-menu hover:bg-[#f7f7f740] text-preset-8 uppercase text-grey-950",
             "itemClassName": "rounded-[28px] py-4"
         }
     ]
