@@ -1,8 +1,15 @@
-import headerDesktopBg from "../../assets/desktop/image-header.jpg";
-import headerMobileBg from "../../assets/mobile/image-header.jpg"
+
 import Hero from "../Hero";
 
-const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+headerDesktopBg: string; 
+headerMobileBg: string;
+headerTitle: string; 
+headerSubtitle?: string | undefined; 
+headerArrow?: string | undefined;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({headerDesktopBg, headerMobileBg, headerTitle, headerSubtitle, headerArrow }) => {
     return (
         <div className="relative w-full h-[482px] sx:h-[706px] bg-[#3ebfff]">
             <picture>
@@ -10,7 +17,7 @@ const HeroSection: React.FC = () => {
                 <source srcSet={headerMobileBg} type="image/jpg" media="(width <= 375px)" />
                 <img src={headerDesktopBg} className={`h-full w-full object-cover object-bottom`} alt="header background" />
             </picture>
-            <Hero />
+            <Hero  headerTitle={headerTitle} headerSubtitle={headerSubtitle} headerArrow={headerArrow} />
         </div>
     )
 }
