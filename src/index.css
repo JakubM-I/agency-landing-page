@@ -153,6 +153,24 @@
     .footer-link{
         @apply hover:text-white transition ease-in-out duration-400;
     }
+
+    .text-subTitle-responsive {
+        @apply text-preset-10;
+        font-size: clamp(1rem, 0.6421rem + 1.7897vw, 1.5rem);
+        width: 100%;
+    }
+
+    @media (425px < width){
+        .text-subTitle-responsive{
+            width: calc(100% - 30px);
+        }
+    }
+
+    @media (768px < width){
+        .text-subTitle-responsive{
+            @apply w-4/6
+        }
+    }
 }
 
 @layer components{
