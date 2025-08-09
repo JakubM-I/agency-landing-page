@@ -1,5 +1,3 @@
-
-
 interface HeroProps {
     headerTitle: string; 
     headerSubtitle?: string | undefined ;
@@ -15,5 +13,5 @@ const Hero: React.FC<HeroProps> = ({headerTitle, headerSubtitle, headerArrow}) =
         </div>
     )
 }
-//We are creatives
+
 export default Hero;
