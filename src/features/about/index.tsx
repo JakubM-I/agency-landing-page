@@ -1,6 +1,8 @@
 import HeroSection from "../../components/HeroSection";
 import headerDesktopBg from "../../assets/desktop/aboutus-header.jpg";
 import headerMobileBg from "../../assets/mobile/aboutus-header.jpg"
+import Values from "./Values";
+import History from "./History";
 
 const AboutPage: React.FC = () => {
     const headerTitle = "About us";
@@ -9,6 +11,8 @@ const AboutPage: React.FC = () => {
     return (
         <>
             <HeroSection headerDesktopBg={headerDesktopBg} headerMobileBg={headerMobileBg} headerTitle={headerTitle} headerSubtitle={headerSubtitle} />
+            <History />
+            <Values />
         </>
 
     )

@@ -188,12 +188,14 @@
         margin-inline: auto;
     }
 
-    .grid-title{
+    .grid-title,
+    .section-title{
         @apply text-preset-4
     }
 
     @media (375px < width){
-        .grid-title{
+        .grid-title,
+        .section-title{
             @apply text-preset-3;
         }
     }
