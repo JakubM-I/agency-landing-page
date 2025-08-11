@@ -29,10 +29,10 @@ const values = [
    return (
       <div className="py-8">
          <SectionTitle title="What Drives Us" />
-         <div className="flex gap-3 flex-nowrap justify-center items-center">
+         <div className="flex gap-9 flex-nowrap justify-center items-center">
             {values.map((value) => (
-            <div key={value.id}>
-               <picture>
+            <div key={value.id} className="flex flex-col items-center justify-start gap-3.5 flex-[0_1_350px]">
+               <picture className="w-30"> 
                   <source srcSet={value.graphic} />
                   <img src={value.graphic} alt="" />
                </picture>
