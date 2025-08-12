@@ -9,7 +9,6 @@ interface ClientsProps {
     photo: string;
 }
 
-
 const Testimonials: React.FC = () => {
 
 const clients: ClientsProps[] = [

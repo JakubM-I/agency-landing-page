@@ -29,15 +29,15 @@ const values = [
    return (
       <div className="py-8">
          <SectionTitle title="What Drives Us" />
-         <div className="flex gap-9 flex-nowrap justify-center items-center">
+         <div className="flex flex-col md:flex-row gap-9 flex-nowrap justify-center items-start">
             {values.map((value) => (
-            <div key={value.id} className="flex flex-col items-center justify-start gap-3.5 flex-[0_1_350px]">
+            <div key={value.id} className="flex flex-col items-center justify-start gap-3.5 md:flex-[0_1_350px] p-3">
                <picture className="w-30"> 
                   <source srcSet={value.graphic} />
                   <img src={value.graphic} alt="" />
                </picture>
-               <h3>{value.title} </h3>
-               <p>{value.description}</p>
+               <h3 className="text-preset-7 text-grey-950">{value.title} </h3>
+               <p className="text-preset-10 text-grey-600">{value.description}</p>
             </div>
             ))}
          </div>
