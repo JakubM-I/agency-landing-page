@@ -27,11 +27,11 @@ const values = [
 
 
    return (
-      <div className="py-8">
+      <div className="py-8 bg-[#F7F7F7]">
          <SectionTitle title="What Drives Us" />
-         <div className="flex flex-col md:flex-row gap-9 flex-nowrap justify-center items-start">
+         <div className="flex flex-col md:flex-row gap-9 flex-nowrap justify-center items-stretch">
             {values.map((value) => (
-            <div key={value.id} className="flex flex-col items-center justify-start gap-3.5 md:flex-[0_1_350px] p-3">
+            <div key={value.id} className="flex flex-col items-center justify-start gap-3.5 md:flex-[0_1_350px] p-6 bg-white h-auto rounded-2xl shadow-xl">
                <picture className="w-30"> 
                   <source srcSet={value.graphic} />
                   <img src={value.graphic} alt="" />
