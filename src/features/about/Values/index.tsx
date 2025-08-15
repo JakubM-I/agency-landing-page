@@ -27,7 +27,7 @@ const values = [
 
 
    return (
-      <div className="py-8 bg-[#F7F7F7]">
+      <div className="py-8 md:py-14 bg-[#F7F7F7]">
          <SectionTitle title="What Drives Us" />
          <div className="flex flex-col md:flex-row gap-9 flex-nowrap justify-center items-stretch px-6 md-px-0">
             {values.map((value) => (
@@ -37,7 +37,7 @@ const values = [
                   <img src={value.graphic} alt={value.title} />
                </picture>
                <h3 className="text-preset-7 text-grey-950">{value.title} </h3>
-               <p className="text-preset-10 text-grey-600">{value.description}</p>
+               <p className="text-preset-10 text-grey-600 text-center text-balance">{value.description}</p>
             </div>
             ))}
          </div>
