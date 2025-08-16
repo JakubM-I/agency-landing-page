@@ -27,7 +27,7 @@ const values = [
 
 
    return (
-      <div className="py-8 md:py-14 bg-[#F7F7F7]">
+      <div className="py-16 sx:py-[67px] bg-[#F7F7F7]">
          <SectionTitle title="What Drives Us" />
          <div className="flex flex-col md:flex-row gap-9 flex-nowrap justify-center items-stretch px-6 md-px-0">
             {values.map((value) => (
