@@ -1,11 +1,11 @@
-import cane from "../../assets/desktop/image-gallery-cone.jpg";
-import cane_mobile from "../../assets/mobile/image-gallery-cone.jpg"
-import milkbottles from "../../assets/desktop/image-gallery-milkbottles.jpg";
-import milkbottles_mobile from "../../assets/mobile/image-gallery-milkbottles.jpg";
-import orange from "../../assets/desktop/image-gallery-orange.jpg";
-import orange_mobile from "../../assets/mobile/image-gallery-orange.jpg";
-import sugarcubes from "../../assets/desktop/image-gallery-sugarcubes.jpg";
-import sugarcubes_mobile from "../../assets/mobile/image-gallery-sugar-cubes.jpg";
+import cane from "../../../assets/desktop/image-gallery-cone.jpg";
+import cane_mobile from "../../../assets/mobile/image-gallery-cone.jpg"
+import milkbottles from "../../../assets/desktop/image-gallery-milkbottles.jpg";
+import milkbottles_mobile from "../../../assets/mobile/image-gallery-milkbottles.jpg";
+import orange from "../../../assets/desktop/image-gallery-orange.jpg";
+import orange_mobile from "../../../assets/mobile/image-gallery-orange.jpg";
+import sugarcubes from "../../../assets/desktop/image-gallery-sugarcubes.jpg";
+import sugarcubes_mobile from "../../../assets/mobile/image-gallery-sugar-cubes.jpg";
 
 interface BottomPicturesProps {
     id: number;

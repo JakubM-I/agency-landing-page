@@ -1,6 +1,6 @@
-import emilly from "../../assets/clients/image-emily.jpg";
-import thomas from "../../assets/clients/image-thomas.jpg";
-import jennie from "../../assets/clients/image-jennie.jpg";
+import emilly from "../../../assets/clients/image-emily.jpg";
+import thomas from "../../../assets/clients/image-thomas.jpg";
+import jennie from "../../../assets/clients/image-jennie.jpg";
 
 interface ClientsProps {
     name: string;
