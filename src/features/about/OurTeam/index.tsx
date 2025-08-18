@@ -2,10 +2,10 @@ import SectionTitle from "../../../components/SectionTitle";
 import team from "../../../assets/team/our-team.png";
 import GridPicture from "../../../components/GridPicture";
 import GridTextCell from "../../../components/GridTextCell";
-import emilyImg from "../../../assets/team/emily.jpg";
-import marcusImg from "../../../assets/team/marcus.jpg";
-import sofiaImg from "../../../assets/team/sofia.jpg";
-import davidImg from "../../../assets/team/david.jpg";
+import emilyImg from "../../../assets/team/emily-johnson.png";
+import marcusImg from "../../../assets/team/marcus-chen.png";
+import sofiaImg from "../../../assets/team/sofia-rodriguez.png";
+import davidImg from "../../../assets/team/david-kim.png";
 
 const OurTeam: React.FC = () => {
 const teamMembers = [
@@ -51,7 +51,17 @@ const teamMembers = [
                 <GridPicture desktopImg={team} mobileImg={team} />
             </div>
             <div className="py-16 sx:py-[67px]">
-
+                <div className="flex justify-center items-center gap-6">
+                {teamMembers.map((member, index) => (
+                    <div key={index} className="flex flex-col justify-start items-center gap-4">
+                        <img src={member.image} alt={member.name} className="w-full md:w-1/3 h-auto object-cover rounded-lg" />
+                        <div className="flex flex-col justify-start items-cemter">
+                            <h3 className="text-lg font-bold text-grey-950 text-center">{member.name}</h3>
+                            <p className="text-preset-10 text-grey-550 text-center">{member.position}</p>
+                            <p className="text-preset-10 text-grey-550 mt-2">{member.description}</p>
+                        </div>
+                    </div>))}
+                </div>
             </div>
         </>
     )
