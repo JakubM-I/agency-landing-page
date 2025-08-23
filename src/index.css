@@ -18,6 +18,9 @@
     --color-red-400: #FE7766;
     --color-yellow-500: #FAD400;
 
+    --color-gradient-blue-start: #1db3ee;
+    --color-gradient-blue-end: #01a5e9;
+
     --breakpoint-sx: 23.5rem;
 }
 

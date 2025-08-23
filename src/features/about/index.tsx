@@ -21,3 +21,5 @@ const AboutPage: React.FC = () => {
 }
 
 export default AboutPage;
+
+// background: linear-gradient(90deg, rgba(29, 179, 238, 1) 34%, rgba(1, 165, 233, 1) 96%);
