@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
         },
         "/about": {
             relative: "bg-linear-to-r from-gradient-blue-start from-34% to-gradient-blue-end to-96%",
-            sticky: "bg-[#3ebfffce]"
+            sticky: "bg-[#05aaeb94]"
         }
     }
 
@@ -38,19 +38,11 @@ const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
         return isSticky ? styles.sticky : styles.relative;
     }
 
-
-
-
     let location = useLocation();
     const [headerBg, setHeaderBg] = useState("");
 
     useEffect( () => {
         setHeaderBg(getHeaderBg({pathname: location.pathname, isSticky}));
-        // if(location.pathname === "/"){
-        //     setHeaderBg("bg-[#3ebfff]");
-        // } else if(location.pathname === "/about"){
-        //     setHeaderBg("bg-linear-to-r from-gradient-blue-start from-34% to-gradient-blue-end to-96%");
-        // }
     }, [location, isSticky]);
 
     return (

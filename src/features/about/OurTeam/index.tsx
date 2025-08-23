@@ -54,7 +54,7 @@ const teamMembers = [
                 <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap md:flex-nowrap justify-center items-start gap-10 sm:gap-8 px-6">
                 {teamMembers.map((member, index) => (
                     <div key={index} className="flex flex-col justify-start items-center gap-4 sm:flex-[0_1_45%] md:flex-[0_1_22%]">
-                        <img src={member.image} alt={member.name} className="w-[min(300px, 100%)] h-auto aspect-square object-cover rounded-lg" />
+                        <img src={member.image} alt={member.name} className="w-[min(200px,100%)] h-auto aspect-square object-cover rounded-lg" />
                         <div className="flex flex-col justify-start items-cemter">
                             <h3 className="text-lg font-bold text-grey-950 text-center">{member.name}</h3>
                             <p className="text-preset-10 text-grey-600 text-center">{member.position}</p>
