@@ -11,7 +11,7 @@ const MenuBar: React.FC<MenuBarProps> = ({isSticky=false}) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <div className={`relative px-6 sx:px-10 md:px-10 ${isSticky ? "py-1" : "pt-8 sx:pt-12 md:pt-8"}` }>
+        <div className={`relative px-6 sx:px-10 md:px-10 ${isSticky ? "py-2" : "pt-8 sx:pt-12 md:pt-8"}` }>
             <div className="flex items-center justify-between">
                 {/* <div> */}
                 <NavLink to="/">

@@ -67,13 +67,13 @@ const Menu: React.FC<MenuProps> = ({toggleMenu}) => {
     }
 
     return (
-        <div>
+        <>
             {isMobile ? 
-                (<div>
+                (<>
                     <button className="cursor-pointer" onClick={toggleMenu}>
                         <img src={mobileMenu} alt="" />
                     </button>
-                </div>) : 
+                </>) : 
                 ( <ul className="flex gap-12 list-none text-white items-center text-preset-10">
                     {navItems.map((item) => (
                         <li key={item.id} className={item.type === "button" ? `${item.itemClassName}` : "" }>
@@ -91,7 +91,7 @@ const Menu: React.FC<MenuProps> = ({toggleMenu}) => {
                 </ul>) 
             }
 
-        </div>
+        </>
     )
 }
 
