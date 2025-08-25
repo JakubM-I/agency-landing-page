@@ -1,8 +1,4 @@
-interface HeroProps {
-    headerTitle: string; 
-    headerSubtitle?: string | undefined ;
-    headerArrow?: string | undefined; 
-}
+import type { HeroProps } from "../types/interfaces";
 
 const Hero: React.FC<HeroProps> = ({headerTitle, headerSubtitle, headerArrow}) => {
     return (

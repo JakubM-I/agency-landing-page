@@ -2,10 +2,11 @@ import { useState } from "react";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
 import { NavLink } from "react-router";
+import type { MenuBarProps } from "../types/interfaces";
 
-interface MenuBarProps{
-    isSticky?: boolean;
-}
+// interface MenuBarProps{
+//     isSticky?: boolean;
+// }
 
 const MenuBar: React.FC<MenuBarProps> = ({isSticky=false}) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);

@@ -1,13 +1,14 @@
 import emilly from "../../../assets/clients/image-emily.jpg";
 import thomas from "../../../assets/clients/image-thomas.jpg";
 import jennie from "../../../assets/clients/image-jennie.jpg";
+import type { ClientsProps } from "../../../components/types/interfaces";
 
-interface ClientsProps {
-    name: string;
-    role: string;
-    testimonial: string;
-    photo: string;
-}
+// interface ClientsProps {
+//     name: string;
+//     role: string;
+//     testimonial: string;
+//     photo: string;
+// }
 
 const Testimonials: React.FC = () => {
 

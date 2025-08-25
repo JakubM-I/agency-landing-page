@@ -1,24 +1,7 @@
 import { useEffect, useState } from "react";
 import MenuBar from "../MenuBar";
 import { useLocation } from "react-router";
-
-interface HeaderProps{
-    isSticky?: boolean;
-}
-
-interface HeaderBgProps {
-    relative: string;
-    sticky: string;
-}
-
-interface HeaderStylesProps{
-    [key: string]: HeaderBgProps;
-}
-
-interface getHeaderBgProps {
-    pathname: string;
-    isSticky: boolean;
-}
+import type{ HeaderProps, HeaderBgProps, HeaderStylesProps, getHeaderBgProps } from "../types/interfaces";
 
 const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
     const headerStyles: HeaderStylesProps = {

@@ -1,7 +1,9 @@
-interface GridPictureProps {
-    desktopImg: string;
-    mobileImg: string
-}
+import type { GridPictureProps } from "../types/interfaces";
+
+// interface GridPictureProps {
+//     desktopImg: string;
+//     mobileImg: string
+// }
 
 const GridPicture: React.FC<GridPictureProps> = ({desktopImg, mobileImg}) => {
     return (

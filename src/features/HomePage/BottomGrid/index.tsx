@@ -6,12 +6,13 @@ import orange from "../../../assets/desktop/image-gallery-orange.jpg";
 import orange_mobile from "../../../assets/mobile/image-gallery-orange.jpg";
 import sugarcubes from "../../../assets/desktop/image-gallery-sugarcubes.jpg";
 import sugarcubes_mobile from "../../../assets/mobile/image-gallery-sugar-cubes.jpg";
+import type { BottomPicturesProps } from "../../../components/types/interfaces";
 
-interface BottomPicturesProps {
-    id: number;
-    desktop: string;
-    mobile: string;
-}
+// interface BottomPicturesProps {
+//     id: number;
+//     desktop: string;
+//     mobile: string;
+// }
 
 const BottomGrid: React.FC = () => {
 const bootomPictures: BottomPicturesProps[] = [

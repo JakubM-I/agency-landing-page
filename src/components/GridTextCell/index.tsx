@@ -1,7 +1,4 @@
-interface GridTextCellProps {
-    children: React.ReactNode;
-    styling?: string;
-}
+import type { GridTextCellProps } from "../types/interfaces";
 
 const GridTextCell: React.FC<GridTextCellProps> = ({ children, styling }) => {
     return (

@@ -1,13 +1,13 @@
-
 import Hero from "../Hero";
+import type { HeroSectionProps } from "../types/interfaces";
 
-interface HeroSectionProps {
-headerDesktopBg: string; 
-headerMobileBg: string;
-headerTitle: string; 
-headerSubtitle?: string | undefined; 
-headerArrow?: string | undefined;
-}
+// interface HeroSectionProps {
+// headerDesktopBg: string; 
+// headerMobileBg: string;
+// headerTitle: string; 
+// headerSubtitle?: string | undefined; 
+// headerArrow?: string | undefined;
+// }
 
 const HeroSection: React.FC<HeroSectionProps> = ({headerDesktopBg, headerMobileBg, headerTitle, headerSubtitle, headerArrow }) => {
     return (

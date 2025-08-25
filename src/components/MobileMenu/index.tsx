@@ -1,14 +1,15 @@
 import { NavLink, useLoaderData } from "react-router";
+import type { NavItemsProps } from "../types/interfaces";
 
-interface NavItemsProps {
-    id: string;
-    to: string;
-    label: string;
-    type: "link" | "button";
-    className?: string;
-    classNameMobile?: string;
-    itemClassName?: string;
-}
+// interface NavItemsProps {
+//     id: string;
+//     to: string;
+//     label: string;
+//     type: "link" | "button";
+//     className?: string;
+//     classNameMobile?: string;
+//     itemClassName?: string;
+// }
 
 const MobileMenu: React.FC  = () => {
     const navItems: NavItemsProps[] = useLoaderData();

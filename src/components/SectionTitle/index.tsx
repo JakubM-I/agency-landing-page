@@ -1,7 +1,9 @@
-interface SectionTitleProps {
-    title: string;
-    styling?: string;
-}
+import type { SectionTitleProps } from "../types/interfaces";
+
+// interface SectionTitleProps {
+//     title: string;
+//     styling?: string;
+// }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({title, styling}) => (
     <h2 className={`section-title w-full text-center text-grey-950 ${styling && styling}`}>{title}</h2>
