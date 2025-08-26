@@ -12,6 +12,10 @@ const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
         "/about": {
             relative: "bg-linear-to-r from-gradient-blue-start from-34% to-gradient-blue-end to-96%",
             sticky: "bg-[#05aaeb94]"
+        },
+        "/services": {
+            relative: "bg-[#ffa922]",
+            sticky: "bg-[#ffa922]"
         }
     }
 
