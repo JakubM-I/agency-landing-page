@@ -50,12 +50,14 @@ export interface HeroSectionProps {
     headerTitle: string; 
     headerSubtitle?: string | undefined; 
     headerArrow?: string | undefined;
+    heroTextColor?: string;
 }
 
 export interface HeroProps {
     headerTitle: string; 
     headerSubtitle?: string | undefined ;
     headerArrow?: string | undefined; 
+    heroTextColor?: string;
 }
 
 export interface SectionTitleProps {

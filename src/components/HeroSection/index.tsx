@@ -9,7 +9,7 @@ import type { HeroSectionProps } from "../types/interfaces";
 // headerArrow?: string | undefined;
 // }
 
-const HeroSection: React.FC<HeroSectionProps> = ({headerDesktopBg, headerMobileBg, headerTitle, headerSubtitle, headerArrow }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({headerDesktopBg, headerMobileBg, headerTitle, headerSubtitle, headerArrow, heroTextColor }) => {
     return (
         <div className="relative w-full h-[482px] sx:h-[706px] bg-[#3ebfff]">
             <picture>
@@ -17,7 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({headerDesktopBg, headerMobileB
                 <source srcSet={headerMobileBg} type="image/jpg" media="(width <= 375px)" />
                 <img src={headerDesktopBg} className={`h-full w-full object-cover object-bottom`} alt="header background" />
             </picture>
-            <Hero  headerTitle={headerTitle} headerSubtitle={headerSubtitle} headerArrow={headerArrow} />
+            <Hero  headerTitle={headerTitle} headerSubtitle={headerSubtitle} headerArrow={headerArrow} heroTextColor={heroTextColor} />
         </div>
     )
 }
