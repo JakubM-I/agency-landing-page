@@ -90,3 +90,10 @@ export interface ClientsProps {
     testimonial: string;
     photo: string;
 }
+
+export interface TextSectionProps {
+    title: string;
+    txtLine1: string;
+    txtLine2?: string;
+    txtLine3?: string;
+}
