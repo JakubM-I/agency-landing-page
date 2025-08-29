@@ -91,7 +91,7 @@ export interface ClientsProps {
     photo: string;
 }
 
-export interface TextSectionProps {
+export interface SectionIntroProps {
     title: string;
     txtLine1: string;
     txtLine2?: string;

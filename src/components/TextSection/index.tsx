@@ -1,7 +1,7 @@
 import SectionTitle from "../SectionTitle";
-import type { TextSectionProps } from "../types/interfaces";
+import type { SectionIntroProps } from "../types/interfaces";
 
-const TextSection: React.FC<TextSectionProps> = ({title, txtLine1, txtLine2, txtLine3}) => {
+const SectionIntro: React.FC<SectionIntroProps> = ({title, txtLine1, txtLine2, txtLine3}) => {
     return (
         <div className="py-16 sx:py-[87px]">
             <SectionTitle title={title} styling="mb-8" />
@@ -13,4 +13,4 @@ const TextSection: React.FC<TextSectionProps> = ({title, txtLine1, txtLine2, txt
         </div>
     )};
 
-    export default TextSection;
+    export default SectionIntro;
