@@ -1,6 +1,7 @@
 import HeroSection from "../../components/HeroSection";
 import headerDesktopBg from "../../assets/desktop/services-header.jpg";
 import SectionIntro from "../../components/TextSection";
+import ServicesGrid from "./ServicesGrid";
 
 
 const ServicesPage: React.FC = () => {
@@ -15,6 +16,7 @@ const ServicesPage: React.FC = () => {
         <>
             <HeroSection headerDesktopBg={headerDesktopBg} headerMobileBg={headerDesktopBg} headerTitle={headerTitle} headerSubtitle={headerSubtitle} heroTextColor={heroTextColor} />
             <SectionIntro title={sectionIntroTitle} txtLine1={txtLine1} />
+            <ServicesGrid />
         </>
     )
 };
