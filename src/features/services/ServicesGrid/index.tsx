@@ -1,6 +1,9 @@
 import GridPicture from "../../../components/GridPicture";
 import GridTextCell from "../../../components/GridTextCell";
-import identityImg from "../../../assets/desktop/brand-identity.jpg"
+import identityImg from "../../../assets/desktop/brand-identity.jpg";
+import marketingImg from "../../../assets/desktop/marketing.jpg";
+import designImg from "../../../assets/desktop/graphic-design.jpg";
+import photographyImg from "../../../assets/desktop/photography.jpg";
 
 const ServicesGrid: React.FC = () => {
     return (
@@ -22,8 +25,58 @@ const ServicesGrid: React.FC = () => {
                 </GridTextCell>
                 <GridPicture desktopImg={identityImg} mobileImg={identityImg} />
             </div>
+            <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
+                <GridPicture desktopImg={marketingImg} mobileImg={marketingImg} />
+                <GridTextCell styling="bg-white">
+                    <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
+                        <h2 className="grid-title text-center text-grey-950">Digital Marketing"</h2>
+                        <p className="text-preset-10 text-left text-grey-550">Stand out to the right audience with strategic digital marketing campaigns that amplify your brand message and drive meaningful engagement. We combine creative storytelling with data-driven insights to deliver results that matter.</p>
+                        <ul>
+                            <li>Social media strategy and content creation</li>
+                            <li>SEO and search engine marketing</li>
+                            <li>Email marketing campaigns</li>
+                            <li>Content marketing and copywriting</li>
+                            <li>Analytics and performance tracking</li>
+                        </ul>
+                        <a href="#" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--red">Learn more</a>
+                    </div>
+                </GridTextCell>
+            </div>
+            <div className="flex flex-wrap-reverse md:flex-nowrap justify-center items-center">
+                <GridTextCell styling="bg-white">
+                    <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
+                        <h2 className="grid-title text-center text-grey-950">Graphic Design</h2>
+                        <p className="text-preset-10 text-left text-grey-550">Bring your ideas to life with stunning visual communications that capture attention and deliver your message effectively. Our design solutions are both beautiful and functional, ensuring maximum impact across all mediums.</p>
+                        <ul>
+                            <li>Print design and layout</li>
+                            <li>Digital graphics and social media</li>
+                            <li>Packaging and product design</li>
+                            <li>Infographics and data visualization</li>
+                            <li>Exhibition and trade show materials</li>
+                        </ul>
+                        <a href="#" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--yellow">Learn more</a>
+                    </div>
+                </GridTextCell>
+                <GridPicture desktopImg={designImg} mobileImg={designImg} />
+            </div>
+            <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
+                <GridPicture desktopImg={photographyImg} mobileImg={photographyImg} />
+                <GridTextCell styling="bg-white">
+                    <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
+                        <h2 className="grid-title text-center text-grey-950">Photography & Visual Content"</h2>
+                        <p className="text-preset-10 text-left text-grey-550">Elevate your brand with professional photography that tells your story. From product shots to lifestyle imagery, we create visual content that engages your audience and showcases your brand in the best light.</p>
+                        <ul>
+                            <li>Product and commercial photography</li>
+                            <li>Corporate and team photography</li>
+                            <li>Lifestyle and brand photography</li>
+                            <li>Photo editing and retouching</li>
+                            <li>Creative direction and styling</li>
+                        </ul>
+                        <a href="#" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--red">Learn more</a>
+                    </div>
+                </GridTextCell>
+            </div>
         </>
-
     )
 }
 
