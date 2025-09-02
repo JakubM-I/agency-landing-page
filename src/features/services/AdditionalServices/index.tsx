@@ -38,8 +38,8 @@ const AdditionalServices: React.FC = () => {
                                 <p className="text-preset-10 text-grey-600 text-center text-pretty mt-2">{service.description}</p>
                                 <p className="text-preset-10 text-grey-600 text-center">{service.price}</p>
                             </div>
-                        </div>))
-                    }
+                        </div>
+                    ))}
                 </div>
             </div>
         </>

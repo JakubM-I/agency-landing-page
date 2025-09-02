@@ -16,8 +16,17 @@ const ServicesPage: React.FC = () => {
 
     return (
         <>
-            <HeroSection headerDesktopBg={headerDesktopBg} headerMobileBg={headerDesktopBg} headerTitle={headerTitle} headerSubtitle={headerSubtitle} heroTextColor={heroTextColor} />
-            <SectionIntro title={sectionIntroTitle} txtLine1={txtLine1} />
+            <HeroSection 
+                headerDesktopBg={headerDesktopBg} 
+                headerMobileBg={headerDesktopBg} 
+                headerTitle={headerTitle} 
+                headerSubtitle={headerSubtitle} 
+                heroTextColor={heroTextColor} 
+            />
+            <SectionIntro 
+                title={sectionIntroTitle} 
+                txtLine1={txtLine1} 
+            />
             <ServicesGrid />
             <AdditionalServices />
             <CreativeProcess />
