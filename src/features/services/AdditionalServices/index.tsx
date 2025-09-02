@@ -27,12 +27,8 @@ const AdditionalServices: React.FC = () => {
     ]
     return (
         <>
-            <GridTextCell>
-                <div className="flex flex-col flex-nowrap justify-center items-start w-[min(445px,100%)]" >
-                    <SectionTitle title="Additional Services" styling="mb-8" />
-                </div>
-            </GridTextCell>
             <div className="py-16 sx:py-[67px]">
+                <SectionTitle title="Additional Services" styling="mb-8" />
                 <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap md:flex-nowrap justify-center items-start gap-10 sm:gap-8 px-6">
                     {services.map((service, index) => (
                         <div key={index} className="flex flex-col justify-start items-center gap-4 sm:flex-[0_1_45%] md:flex-[0_1_22%]">

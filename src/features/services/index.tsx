@@ -3,6 +3,7 @@ import headerDesktopBg from "../../assets/desktop/services-header.jpg";
 import SectionIntro from "../../components/TextSection";
 import ServicesGrid from "./ServicesGrid";
 import AdditionalServices from "./AdditionalServices";
+import CreativeProcess from "./Process";
 
 
 const ServicesPage: React.FC = () => {
@@ -19,6 +20,7 @@ const ServicesPage: React.FC = () => {
             <SectionIntro title={sectionIntroTitle} txtLine1={txtLine1} />
             <ServicesGrid />
             <AdditionalServices />
+            <CreativeProcess />
         </>
     )
 };
