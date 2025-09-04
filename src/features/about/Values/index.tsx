@@ -31,7 +31,7 @@ const values = [
          <SectionTitle title="What Drives Us" styling="mb-8" />
          <div className="flex flex-col md:flex-row gap-9 flex-nowrap justify-center items-stretch px-6 md:px-0">
             {values.map((value) => (
-            <div key={value.id} className="flex flex-col items-center justify-start gap-3.5 md:flex-[0_1_350px] p-6 bg-white h-auto rounded-2xl shadow-xl">
+            <div key={value.id} className="flex flex-col items-center justify-start gap-3.5 md:flex-[0_1_25%] p-6 bg-white h-auto rounded-2xl shadow-xl">
                <picture className="w-30"> 
                   <source srcSet={value.graphic} />
                   <img src={value.graphic} alt={value.title} />
