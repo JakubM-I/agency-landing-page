@@ -31,7 +31,7 @@ const AdditionalServices: React.FC = () => {
                 <SectionTitle title="Additional Services" styling="mb-8" />
                 <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap md:flex-nowrap justify-center items-stretch gap-10 sm:gap-8 px-6">
                     {services.map((service, index) => (
-                        <div key={index} className="flex flex-col justify-start items-center gap-4 sm:flex-[0_1_45%] md:flex-[0_1_22%] p-6 bg-white h-auto rounded-2xl shadow-xl">
+                        <div key={index} className="flex flex-col justify-start items-center gap-4 sm:flex-[0_1_45%] md:flex-[0_1_26%] p-6 bg-white h-auto rounded-2xl shadow-xl">
                             <img src={service.iconImg} alt={service.title} className="w-[min(170px,100%)] h-auto aspect-square object-cover rounded-lg" />
                             <div className="flex flex-col justify-start items-cemter h-full">
                                 <h3 className="text-lg font-bold text-grey-950 text-center mb-2">{service.title}</h3>
