@@ -97,3 +97,9 @@ export interface SectionIntroProps {
     txtLine2?: string;
     txtLine3?: string;
 }
+
+export interface CtaSectionProps {
+    title: string;
+    txtLine: string;
+    btnText: string;
+}
