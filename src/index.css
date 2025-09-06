@@ -22,6 +22,7 @@
     --color-gradient-blue-end: #01a5e9;
 
     --breakpoint-sx: 23.5rem;
+    --breakpoint-full: 90rem;
 }
 
     @utility text-preset-1{
