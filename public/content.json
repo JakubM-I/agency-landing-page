@@ -1,0 +1,41 @@
+{
+    "servicesPage": {
+        "serviceGrid": [
+            {
+                "section": "serviceGrid",
+                "title": "Brand Identity & Strategy",
+                "description": "Transform your business with a compelling brand identity that resonates with your target audience. We dive deep into your company's values, mission, and goals to create a visual identity that truly represents who you are.",
+                "list": [
+                    "Logo design and brand guidelines",
+                    "Color palette and typography systems",
+                    "Brand strategy and positioning",
+                    "Marketing collateral design",
+                    "Brand voice and messaging"
+                ],
+                "img": "identity",
+                "link": "/services/brand-identity"
+            }
+        ],
+        "additionalServices": [
+            {
+                "title": "Web Development",
+                "description": "Custom websites and digital experiences that perform as beautifully as they look.",
+                "img": "developmentImg",
+                "price": "Starting from $2,500"
+            },
+            {
+                "title": "Creative Consulting",
+                "description": "Strategic guidance to align your creative vision with business objectives.",
+                "img": "consultingImg",
+                "price": "$150/hour"
+            },
+            {
+                "title": "Video Production",
+                "description": "Compelling video content that brings your brand story to life and engages audiences.",
+                "img": "videoImg",
+                "price": "Starting from $3,000"
+            }
+        ]
+    },
+    "homwePage": {}
+}
