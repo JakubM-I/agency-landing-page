@@ -103,3 +103,17 @@ export interface CtaSectionProps {
     txtLine: string;
     btnText: string;
 }
+
+export interface SecttionGtidItemsProps{
+    section: string;
+    title: string;
+    description: string;
+    list?: string[];
+    img?: string;
+    link?: string;
+}
+
+export interface SectionGridProps {
+    items: SecttionGtidItemsProps[];
+    images: string;
+}

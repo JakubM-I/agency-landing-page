@@ -23,7 +23,10 @@ export const routes = [
             },
             {
                 path: "services",
-                element: <ServicesPage />
+                element: <ServicesPage />,
+                loader: () => {
+                    return fetch("/sunnyside/content.json")
+                }
             },
             {
                 path: "projects",

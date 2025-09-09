@@ -5,9 +5,13 @@ import ServicesGrid from "./ServicesGrid";
 import AdditionalServices from "./AdditionalServices";
 import CreativeProcess from "./Process";
 import CtaSection from "../../components/CtaSection";
+import { useLoaderData } from "react-router";
+import {servicesImages as images} from "../../components/graphics/graphicServices.tsx";
 
 
 const ServicesPage: React.FC = () => {
+    const content = useLoaderData();
+    // const items = content.servicesPage.serviceGrid;
     const headerTitle = "Services";
     const headerSubtitle = "From brand identity to digital experiences, we offer comprehensive creative solutions that drive results";
     const heroTextColor = "text-blue-950"
@@ -28,7 +32,7 @@ const ServicesPage: React.FC = () => {
                 title={sectionIntroTitle} 
                 txtLine1={txtLine1} 
             />
-            <ServicesGrid />
+            <ServicesGrid items={content.servicesPage.serviceGrid} images={images} />
             <AdditionalServices />
             <CreativeProcess />
             <CtaSection 
