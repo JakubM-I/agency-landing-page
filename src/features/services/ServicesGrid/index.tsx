@@ -7,14 +7,11 @@ import photographyImg from "../../../assets/desktop/photography.jpg";
 import type { SectionGridProps } from "../../../components/types/interfaces";
 
 const ServicesGrid: React.FC<SectionGridProps> = ({items, images}) => {
-    console.log(items);
-    console.log(images);
-    console.log(images.serviceGrid.identity);
 
     return (
         <>
             {items.map((item, index) => (
-            <div key={index} className="flex flex-wrap-reverse md:flex-nowrap justify-center items-center">
+            <div key={index} className={`flex ${ index % 2  === 0 ? "flex-row" : "flex-row-reverse"} flex-wrap-reverse md:flex-nowrap justify-center items-center`}>
                 <GridTextCell styling="bg-white">
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
                         <h2 className="grid-title text-center text-grey-950">{item.title}</h2>
@@ -28,7 +25,6 @@ const ServicesGrid: React.FC<SectionGridProps> = ({items, images}) => {
                     </div>
                 </GridTextCell>
                 <GridPicture
-                // desktopImg={`${images}.${item.section}.${item.img}`}
                     desktopImg={item.section !== undefined && item.img !== undefined ? images[item.section][item.img] : undefined}
                     mobileImg={item.section !== undefined && item.img !== undefined ? images[item.section][item.img] : undefined}
                 />
@@ -58,7 +54,7 @@ const ServicesGrid: React.FC<SectionGridProps> = ({items, images}) => {
                 <GridPicture desktopImg={marketingImg} mobileImg={marketingImg} />
                 <GridTextCell styling="bg-white">
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
-                        <h2 className="grid-title text-center text-grey-950">Digital Marketing"</h2>
+                        <h2 className="grid-title text-center text-grey-950">Digital Marketing</h2>
                         <p className="text-preset-10 text-left text-grey-550">Stand out to the right audience with strategic digital marketing campaigns that amplify your brand message and drive meaningful engagement. We combine creative storytelling with data-driven insights to deliver results that matter.</p>
                         <ul>
                             <li className="text-preset-10 text-grey-550 before:content-['✓'] before:text-yellow-500 before:me-2">Social media strategy and content creation</li>
