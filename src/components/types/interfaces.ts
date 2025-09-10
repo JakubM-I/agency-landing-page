@@ -72,8 +72,8 @@ export interface BottomPicturesProps {
 }
 
 export interface GridPictureProps {
-    desktopImg: string;
-    mobileImg: string
+    desktopImg: string | undefined;
+    mobileImg: string | undefined;
 }
 
 export interface GridTextCellProps {
@@ -113,7 +113,13 @@ export interface SecttionGtidItemsProps{
     link?: string;
 }
 
+export interface ImagesProps {
+    [section: string]: {
+        [img: string]: string;
+    };
+};
+
 export interface SectionGridProps {
     items: SecttionGtidItemsProps[];
-    images: string;
+    images: ImagesProps
 }

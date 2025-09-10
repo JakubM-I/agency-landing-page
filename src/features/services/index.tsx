@@ -6,7 +6,8 @@ import AdditionalServices from "./AdditionalServices";
 import CreativeProcess from "./Process";
 import CtaSection from "../../components/CtaSection";
 import { useLoaderData } from "react-router";
-import {servicesImages as images} from "../../components/graphics/graphicServices.tsx";
+// import {servicesImages as images} from "../../components/graphics/graphicServices.tsx";
+import {images} from "../../components/graphics/graphics.tsx";  
 
 
 const ServicesPage: React.FC = () => {
@@ -32,7 +33,7 @@ const ServicesPage: React.FC = () => {
                 title={sectionIntroTitle} 
                 txtLine1={txtLine1} 
             />
-            <ServicesGrid items={content.servicesPage.serviceGrid} images={images} />
+            <ServicesGrid items={content.servicesPage.serviceGrid} images={images.servicesPage} />
             <AdditionalServices />
             <CreativeProcess />
             <CtaSection 
