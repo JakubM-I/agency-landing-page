@@ -2,7 +2,6 @@
     "servicesPage": {
         "serviceGrid": [
             {
-                "section": "serviceGrid",
                 "title": "Brand Identity & Strategy",
                 "description": "Transform your business with a compelling brand identity that resonates with your target audience. We dive deep into your company's values, mission, and goals to create a visual identity that truly represents who you are.",
                 "list": [
@@ -13,7 +12,50 @@
                     "Brand voice and messaging"
                 ],
                 "img": "identity",
+                 "section": "serviceGrid",
                 "link": "/services/brand-identity"
+            },
+            {
+                "title": "Digital Marketing",
+                "description": "Stand out to the right audience with strategic digital marketing campaigns that amplify your brand message and drive meaningful engagement. We combine creative storytelling with data-driven insights to deliver results that matter.",
+                "list": [
+                    "Social media strategy and content creation<",
+                    "SEO and search engine marketing",
+                    "Email marketing campaigns",
+                    "Content marketing and copywriting",
+                    "Analytics and performance tracking"
+                ],
+                "img": "marketing",
+                "section": "serviceGrid",
+                "link": "/services/brand-identity"
+            },
+            {
+                "title": "Graphic Design",
+                "description": "Bring your ideas to life with stunning visual communications that capture attention and deliver your message effectively. Our design solutions are both beautiful and functional, ensuring maximum impact across all mediums.",
+                "list": [
+                    "Print design and layout",
+                    "Digital graphics and social media",
+                    "Packaging and product design",
+                    "Infographics and data visualization",
+                    "Exhibition and trade show materials"
+                ],
+                "img": "design",
+                "section": "serviceGrid",
+                "link": "/services/graphic-design"
+            },
+            {
+                "title": "Photography & Visual Content",
+                "description": "Elevate your brand with professional photography that tells your story. From product shots to lifestyle imagery, we create visual content that engages your audience and showcases your brand in the best light.",
+                "list": [
+                    "Product and commercial photography",
+                    "Corporate and team photography",
+                    "Lifestyle and brand photography",
+                    "Photo editing and retouching",
+                    "Creative direction and styling"
+                ],
+                "img": "photography",
+                "section": "serviceGrid",
+                "link": "/services/photography"
             }
         ],
         "additionalServices": [
@@ -21,18 +63,21 @@
                 "title": "Web Development",
                 "description": "Custom websites and digital experiences that perform as beautifully as they look.",
                 "img": "developmentImg",
+                "section": "additionalServices",
                 "price": "Starting from $2,500"
             },
             {
                 "title": "Creative Consulting",
                 "description": "Strategic guidance to align your creative vision with business objectives.",
                 "img": "consultingImg",
+                "section": "additionalServices",
                 "price": "$150/hour"
             },
             {
                 "title": "Video Production",
                 "description": "Compelling video content that brings your brand story to life and engages audiences.",
                 "img": "videoImg",
+                "section": "additionalServices",
                 "price": "Starting from $3,000"
             }
         ]
