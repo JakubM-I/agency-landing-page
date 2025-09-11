@@ -105,11 +105,11 @@ export interface CtaSectionProps {
 }
 
 export interface SecttionGtidItemsProps{
-    section: string;
     title: string;
     description: string;
     list?: string[];
     img?: string;
+    section: string;
     link?: string;
 }
 
