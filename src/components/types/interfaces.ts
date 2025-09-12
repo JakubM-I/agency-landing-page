@@ -44,20 +44,41 @@ export interface NavItemsProps {
     itemClassName?: string;
 }
 
-export interface HeroSectionProps {
-    headerDesktopBg: string; 
-    headerMobileBg: string;
-    headerTitle: string; 
-    headerSubtitle?: string | undefined; 
-    headerArrow?: string | undefined;
-    heroTextColor?: string;
+export interface HeroSectionItemsProps {
+    section: string;
+    title: string; 
+    subtitle?: string | undefined; 
+    arrow?: string | undefined;
+    textColor?: string;
+    desktopImg: string; 
+    mobileImg: string;
 }
+
+// export interface HeroSectionItemsProps {
+//     headerDesktopBg: string; 
+//     headerMobileBg: string;
+//     headerTitle: string; 
+//     headerSubtitle?: string | undefined; 
+//     headerArrow?: string | undefined;
+//     heroTextColor?: string;
+// }
 
 export interface HeroProps {
     headerTitle: string; 
     headerSubtitle?: string | undefined ;
     headerArrow?: string | undefined; 
     heroTextColor?: string;
+}
+
+export interface ImagesHeroProps {
+  [section: string]: {
+    [imgType: string]: string;
+  };
+};
+
+export interface SectionHeroProps{
+    items: HeroSectionItemsProps;
+    images: ImagesHeroProps;
 }
 
 export interface SectionTitleProps {
