@@ -15,11 +15,17 @@ export const routes = [
         children: [
             {
                 path: "/",
-                element: <HomePage />
+                element: <HomePage />,
+                loader: () => {
+                    return fetch("/sunnyside/content.json")
+                }
             },
             {
                 path: "about",
-                element: <AboutPage />
+                element: <AboutPage />,
+                loader: () => {
+                    return fetch("/sunnyside/content.json")
+                }
             },
             {
                 path: "services",
