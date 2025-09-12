@@ -1,5 +1,31 @@
 {
+    "homePage": {
+        "heroSection":{
+            "section": "heroSection",
+            "title":"We are creatives",
+            "arrow": "arrow",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        }
+    },
+    "aboutPage": {
+        "heroSection":{
+            "section": "heroSection",
+            "title":"About us",
+            "subtitle": "Passionate creatives dedicated to transforming brands through innovative design and strategic thinking",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        }
+    },
     "servicesPage": {
+        "heroSection":{
+            "section": "heroSection",
+            "title": "Services",
+            "subtitle": "From brand identity to digital experiences, we offer comprehensive creative solutions that drive results",
+            "textColor": "text-blue-950",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        },
         "serviceGrid": [
             {
                 "title": "Brand Identity & Strategy",
@@ -81,6 +107,5 @@
                 "price": "Starting from $3,000"
             }
         ]
-    },
-    "homwePage": {}
+    }
 }
