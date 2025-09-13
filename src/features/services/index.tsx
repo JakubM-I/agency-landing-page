@@ -16,8 +16,8 @@ const ServicesPage: React.FC = () => {
     // const headerTitle = "Services";
     // const headerSubtitle = "From brand identity to digital experiences, we offer comprehensive creative solutions that drive results";
     // const heroTextColor = "text-blue-950"
-    const sectionIntroTitle = "What We Do Best";
-    const txtLine1 = "Our expertise spans across multiple disciplines, allowing us to provide integrated solutions that address every aspect of your brand's visual and digital presence. We don't just create beautiful designs – we craft strategic solutions that connect with your audience and achieve your business goals.";
+    // const sectionIntroTitle = "What We Do Best";
+    // const txtLine1 = "Our expertise spans across multiple disciplines, allowing us to provide integrated solutions that address every aspect of your brand's visual and digital presence. We don't just create beautiful designs – we craft strategic solutions that connect with your audience and achieve your business goals.";
 
 
     return (
@@ -33,10 +33,11 @@ const ServicesPage: React.FC = () => {
                 headerSubtitle={headerSubtitle} 
                 heroTextColor={heroTextColor} 
             /> */}
-            <SectionIntro 
+            {/* <SectionIntro 
                 title={sectionIntroTitle} 
                 txtLine1={txtLine1} 
-            />
+            /> */}
+            <SectionIntro items={content.servicesPage.introSection} />
             <ServicesGrid items={content.servicesPage.serviceGrid} images={images.servicesPage} />
             <AdditionalServices />
             <CreativeProcess />

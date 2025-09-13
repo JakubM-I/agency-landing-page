@@ -112,11 +112,16 @@ export interface ClientsProps {
     photo: string;
 }
 
-export interface SectionIntroProps {
+export interface SectionIntroItemsProps {
+    section: string;
     title: string;
     txtLine1: string;
     txtLine2?: string;
     txtLine3?: string;
+}
+
+export interface SectionIntroProps{
+    items: SectionIntroItemsProps
 }
 
 export interface CtaSectionProps {

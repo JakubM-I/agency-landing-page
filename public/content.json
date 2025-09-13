@@ -16,7 +16,7 @@
             "desktopImg": "desktop",
             "mobileImg": "mobile"
         },
-        "introSection:": {
+        "introSection": {
             "section": "introSection",
             "title": "Our Creative Journey",
             "line1": "Founded in 2018, Sunnyside emerged from a simple belief: that exceptional design has the power to transform businesses and connect people in meaningful ways.",
@@ -33,7 +33,7 @@
             "desktopImg": "desktop",
             "mobileImg": "mobile"
         },
-        "introSection:": {
+        "introSection": {
             "section": "introSection",
             "title": "What We Do Best",
             "line1": "Our expertise spans across multiple disciplines, allowing us to provide integrated solutions that address every aspect of your brand's visual and digital presence. We don't just create beautiful designs – we craft strategic solutions that connect with your audience and achieve your business goals."
