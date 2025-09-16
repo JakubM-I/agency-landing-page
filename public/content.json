@@ -118,6 +118,12 @@
                 "section": "additionalServices",
                 "price": "Starting from $3,000"
             }
-        ]
+        ],
+        "ctaSection":{
+            "section": "ctaSection",
+            "title": "Ready to Get Started?",
+            "txtLine": "Let's discuss how we can help transform your brand and achieve your creative goals. Get in touch for a free consultation.",
+            "btnText": "Start your project"
+        }
     }
 }
