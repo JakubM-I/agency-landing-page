@@ -124,10 +124,15 @@ export interface SectionIntroProps{
     items: SectionIntroItemsProps
 }
 
-export interface CtaSectionProps {
+export interface SectionCtaItemsProps {
+    section: string;
     title: string;
     txtLine: string;
     btnText: string;
+}
+
+export interface SectionCtaProps {
+    items: SectionCtaItemsProps
 }
 
 export interface SecttionGtidItemsProps{

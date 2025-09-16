@@ -22,12 +22,10 @@ const ServicesPage: React.FC = () => {
             <AdditionalServices />
             <CreativeProcess />
             <CtaSection 
-                title="Ready to Get Started?"
-                txtLine="Let's discuss how we can help transform your brand and achieve your creative goals. Get in touch for a free consultation."
-                btnText="Start your project"
+                items={content.servicesPage.ctaSection}
             />
         </>
     )
 };
 
-export default ServicesPage;
+export default ServicesPage; 
