@@ -100,21 +100,21 @@
             {
                 "title": "Web Development",
                 "description": "Custom websites and digital experiences that perform as beautifully as they look.",
-                "img": "developmentImg",
+                "img": "development",
                 "section": "additionalServices",
                 "price": "Starting from $2,500"
             },
             {
                 "title": "Creative Consulting",
                 "description": "Strategic guidance to align your creative vision with business objectives.",
-                "img": "consultingImg",
+                "img": "consulting",
                 "section": "additionalServices",
                 "price": "$150/hour"
             },
             {
                 "title": "Video Production",
                 "description": "Compelling video content that brings your brand story to life and engages audiences.",
-                "img": "videoImg",
+                "img": "video",
                 "section": "additionalServices",
                 "price": "Starting from $3,000"
             }
