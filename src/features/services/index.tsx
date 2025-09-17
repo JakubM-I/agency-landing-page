@@ -19,7 +19,7 @@ const ServicesPage: React.FC = () => {
             />
             <SectionIntro items={content.servicesPage.introSection} />
             <ServicesGrid items={content.servicesPage.serviceGrid} images={images.servicesPage} />
-            <AdditionalServices />
+            <AdditionalServices items={content.servicesPage.additionalServices} images={images.servicesPage}/>
             <CreativeProcess />
             <CtaSection 
                 items={content.servicesPage.ctaSection}

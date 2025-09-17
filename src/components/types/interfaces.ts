@@ -154,3 +154,16 @@ export interface SectionGridProps {
     items: SecttionGtidItemsProps[];
     images: ImagesProps
 }
+
+export interface SectionAdditionalServiceItemProps {
+    title: string;
+    description: string;
+    img: string;
+    section: string;
+    price: string;
+}
+
+export interface SectionAdditionalServiceProps {
+    items: SectionAdditionalServiceItemProps[];
+    images: ImagesProps;
+}
