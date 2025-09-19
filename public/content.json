@@ -119,6 +119,28 @@
                 "price": "Starting from $3,000"
             }
         ],
+        "creativeProcess": [
+            {
+                "title": "Discovery",
+                "description": "We learn about your business, goals, and challenges through in-depth research and consultation.",
+                "img": "discovery"
+            },
+            {
+                "title": "Strategy",
+                "description": "We develop a creative strategy that aligns with your objectives and resonates with your audience.",
+                "img": "strategy"
+            },
+            {
+                "title": "Design",
+                "description": "Our team brings the strategy to life through innovative design solutions and creative execution.",
+                "img": "design"
+            },
+            {
+                "title": "Delivery",
+                "description": "We deliver polished final products with ongoing support to ensure successful implementation.",
+                "img": "delivery"
+            }
+        ],
         "ctaSection":{
             "section": "ctaSection",
             "title": "Ready to Get Started?",
