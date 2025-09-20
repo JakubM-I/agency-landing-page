@@ -167,3 +167,15 @@ export interface SectionAdditionalServiceProps {
     items: SectionAdditionalServiceItemProps[];
     images: ImagesProps;
 }
+
+export interface SectionCreativeProcessItemProps {
+    section: string;
+    title: string;
+    description: string;
+    img: string;
+}
+
+export interface SectionCreativeProcessProps {
+    items: SectionCreativeProcessItemProps[];
+    images: ImagesProps;
+}
