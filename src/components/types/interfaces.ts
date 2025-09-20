@@ -115,9 +115,9 @@ export interface ClientsProps {
 export interface SectionIntroItemsProps {
     section: string;
     title: string;
-    txtLine1: string;
-    txtLine2?: string;
-    txtLine3?: string;
+    line1: string;
+    line2?: string;
+    line3?: string;
 }
 
 export interface SectionIntroProps{
