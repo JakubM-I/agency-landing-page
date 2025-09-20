@@ -6,10 +6,10 @@ import photographyImg from "../../assets/desktop/photography.jpg";
 import developmentImg from "../../assets/graphics/web-development.png";
 import consultingImg from "../../assets/graphics/consulting.png";
 import videoImg from "../../assets/graphics/video-production.png";
-import discoveryImg from "../../../assets/graphics/discovery.png";
-import strategyImg from "../../../assets/graphics/strategy.png";
-import designProcesImg from "../../../assets/graphics/design.png";
-import deliveryImg from "../../../assets/graphics/delivery.png";
+import discoveryImg from "../../assets/graphics/discovery.png";
+import strategyImg from "../../assets/graphics/strategy.png";
+import designProcesImg from "../../assets/graphics/design.png";
+import deliveryImg from "../../assets/graphics/delivery.png";
 
 export const servicesImages = {
     heroSection:{
@@ -27,7 +27,7 @@ export const servicesImages = {
         consulting: consultingImg,
         video: videoImg
     },
-    consultingcreativeProcess: {
+    creativeProcess: {
         discovery: discoveryImg,
         strategy: strategyImg,
         design: designProcesImg,
