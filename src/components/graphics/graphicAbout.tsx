@@ -9,7 +9,7 @@ export const aboutImages = {
         desktop: headerDesktopBg,
         mobile: headerMobileBg
     },
-    values: {
+    valuesSection: {
         creativity: creativity,
         innovation: innovation,
         excellence: excellence

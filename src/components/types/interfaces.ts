@@ -179,3 +179,15 @@ export interface SectionCreativeProcessProps {
     items: SectionCreativeProcessItemProps[];
     images: ImagesProps;
 }
+
+export interface SectionValuesItemProps {
+    section: string;
+    title: string;
+    description: string;
+    img: string;
+}
+
+export interface SectionValuesProps {
+    items: SectionValuesItemProps[];
+    images: ImagesProps;
+}
