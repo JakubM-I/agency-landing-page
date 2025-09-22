@@ -22,7 +22,27 @@
             "line1": "Founded in 2018, Sunnyside emerged from a simple belief: that exceptional design has the power to transform businesses and connect people in meaningful ways.",
             "line2": "What started as a small team of passionate designers has grown into a full-service creative agency, but our core mission remains unchanged - to help brands shine brighter and stand out in an increasingly crowded marketplace.",
             "line3": "We combine strategic thinking with creative excellence, ensuring every project not only looks amazing but delivers real business results for our clients."
-        }
+        },
+        "valuesSection": [
+            {
+                "section": "valuesSection",
+                "title": "Creativity First",
+                "description": "We believe in pushing boundaries and exploring new possibilities. Every project is an opportunity to create something unique and memorable that captures the essence of your brand.",
+                "img": "creativity"
+            },
+                        {
+                "section": "valuesSection",
+                "title": "Innovation",
+                "description": "Staying ahead of trends and embracing new technologies allows us to deliver cutting-edge solutions that keep our clients competitive in their markets.",
+                "img": "innovation"
+            },
+                        {
+                "section": "valuesSection",
+                "title": "Excellence",
+                "description": "We're perfectionists at heart. Every detail matters, from the first concept sketch to the final delivery. We don't settle for good when great is possible.",
+                "img": "excellence"
+            }
+        ]
     },
     "servicesPage": {
         "heroSection":{
