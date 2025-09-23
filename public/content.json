@@ -1,17 +1,17 @@
 {
     "homePage": {
-        "heroSection":{
+        "heroSection": {
             "section": "heroSection",
-            "title":"We are creatives",
+            "title": "We are creatives",
             "arrow": "arrow",
             "desktopImg": "desktop",
             "mobileImg": "mobile"
         }
     },
     "aboutPage": {
-        "heroSection":{
+        "heroSection": {
             "section": "heroSection",
-            "title":"About us",
+            "title": "About us",
             "subtitle": "Passionate creatives dedicated to transforming brands through innovative design and strategic thinking",
             "desktopImg": "desktop",
             "mobileImg": "mobile"
@@ -30,22 +30,52 @@
                 "description": "We believe in pushing boundaries and exploring new possibilities. Every project is an opportunity to create something unique and memorable that captures the essence of your brand.",
                 "img": "creativity"
             },
-                        {
+            {
                 "section": "valuesSection",
                 "title": "Innovation",
                 "description": "Staying ahead of trends and embracing new technologies allows us to deliver cutting-edge solutions that keep our clients competitive in their markets.",
                 "img": "innovation"
             },
-                        {
+            {
                 "section": "valuesSection",
                 "title": "Excellence",
                 "description": "We're perfectionists at heart. Every detail matters, from the first concept sketch to the final delivery. We don't settle for good when great is possible.",
                 "img": "excellence"
             }
+        ],
+        "teamSection": [
+            {
+                "section": "teamSection",
+                "name": "Emily Johnson",
+                "position": "Creative Director",
+                "description": "With 12 years of experience in branding and visual identity, Emily leads our creative vision and ensures every project exceeds expectations.",
+                "img": "emily"
+            },
+            {
+                "section": "teamSection",
+                "name": "Marcus Chen",
+                "position": "Senior UX Designer",
+                "description": "Marcus combines user research with innovative design thinking to create digital experiences that truly connect with audiences.",
+                "img": "marcus"
+            },
+            {
+                "section": "teamSection",
+                "name": "Sofia Rodriguez",
+                "position": "Brand Strategist",
+                "description": "Sofia helps brands find their unique voice and position in the market through strategic thinking and creative storytelling.",
+                "img": "sofia"
+            },
+            {
+                "section": "teamSection",
+                "name": "David Kim",
+                "position": "Motion Designer",
+                "description": "David brings brands to life through compelling animations and motion graphics that capture attention and tell stories.",
+                "img": "david"
+            }
         ]
     },
     "servicesPage": {
-        "heroSection":{
+        "heroSection": {
             "section": "heroSection",
             "title": "Services",
             "subtitle": "From brand identity to digital experiences, we offer comprehensive creative solutions that drive results",
@@ -70,7 +100,7 @@
                     "Brand voice and messaging"
                 ],
                 "img": "identity",
-                 "section": "serviceGrid",
+                "section": "serviceGrid",
                 "link": "/services/brand-identity"
             },
             {
@@ -165,7 +195,7 @@
                 "img": "delivery"
             }
         ],
-        "ctaSection":{
+        "ctaSection": {
             "section": "ctaSection",
             "title": "Ready to Get Started?",
             "txtLine": "Let's discuss how we can help transform your brand and achieve your creative goals. Get in touch for a free consultation.",
