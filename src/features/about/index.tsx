@@ -13,7 +13,7 @@ const AboutPage: React.FC = () => {
             <HeroSection items={content.aboutPage.heroSection} images={images.aboutPage}/>
             <SectionIntro items={content.aboutPage.introSection} />
             <Values items={content.aboutPage.valuesSection} images={images.aboutPage} />
-            <OurTeam />
+            <OurTeam items={content.aboutPage.teamSection} images={images.aboutPage} />
         </>
     )
 }

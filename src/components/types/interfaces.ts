@@ -102,9 +102,6 @@ export interface GridTextCellProps {
     styling?: string;
 }
 
-
-
-
 export interface ClientsProps {
     name: string;
     role: string;
@@ -189,5 +186,18 @@ export interface SectionValuesItemProps {
 
 export interface SectionValuesProps {
     items: SectionValuesItemProps[];
+    images: ImagesProps;
+}
+
+export interface SectionTeamItemProps {
+    section: string;
+    name: string;
+    position: string;
+    description: string;
+    img: string;
+}
+
+export interface SectionTeamProps {
+    items: SectionTeamItemProps[];
     images: ImagesProps;
 }
