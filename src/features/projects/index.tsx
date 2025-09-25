@@ -1,6 +1,18 @@
+import HeroSection from "../../components/HeroSection";
+import { useLoaderData } from "react-router";
+import {images} from "../../components/graphics/graphics.tsx";  
+
 const ProjectsPage: React.FC = () => {
+      const content = useLoaderData();
+
+
     return (
-        <h1>Project Page</h1>
+        <>
+            <HeroSection
+                items={content.projectsPage.heroSection} 
+                images={images.projectsPage} 
+            />
+        </>
     )
 };
 
