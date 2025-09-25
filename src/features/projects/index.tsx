@@ -5,7 +5,6 @@ import {images} from "../../components/graphics/graphics.tsx";
 const ProjectsPage: React.FC = () => {
       const content = useLoaderData();
 
-
     return (
         <>
             <HeroSection
