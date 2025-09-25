@@ -201,5 +201,15 @@
             "txtLine": "Let's discuss how we can help transform your brand and achieve your creative goals. Get in touch for a free consultation.",
             "btnText": "Start your project"
         }
+    },
+    "projectsPage":{
+        "heroSection": {
+            "section": "heroSection",
+            "title": "Projects",
+            "subtitle": "Explore our portfolio of successful collaborations and creative solutions that have helped brands grow and thrive",
+            "textColor": "text-blue-950",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        }
     }
 }
