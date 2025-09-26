@@ -207,7 +207,7 @@
             "section": "heroSection",
             "title": "Projects",
             "subtitle": "Explore our portfolio of successful collaborations and creative solutions that have helped brands grow and thrive",
-
+            "textColor": "text-blue-950",
             "desktopImg": "desktop",
             "mobileImg": "mobile"
         }
