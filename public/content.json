@@ -202,7 +202,7 @@
             "btnText": "Start your project"
         }
     },
-    "projectsPage":{
+    "projectsPage": {
         "heroSection": {
             "section": "heroSection",
             "title": "Projects",
@@ -210,6 +210,107 @@
             "textColor": "text-blue-950",
             "desktopImg": "desktop",
             "mobileImg": "mobile"
-        }
+        },
+        "projectsSection": [
+            {
+                "section": "projectsSection",
+                "featured": true,
+                "category": "Brand Identity",
+                "title": "TechFlow Startup",
+                "description": "Complete brand transformation for a revolutionary fintech startup. We created a modern, trustworthy identity that reflects innovation while maintaining accessibility for diverse user demographics.",
+                "img": "",
+                "link": "",
+                "tags": [
+                    "Logo Design",
+                    "Brand Guidelines",
+                    "Website Design",
+                    "Marketing Materials"
+                ]
+            },
+            {
+                "section": "projectsSection",
+                "featured": false,
+                "category": "Branding",
+                "title": "Organic Harvest Co.",
+                "description": "Fresh, natural branding for an organic food company focusing on sustainability and health-conscious consumers.",
+                "img": "",
+                "link": "",
+                "tags": [
+                    "Logo Design", 
+                    "Packaging", 
+                    "Brand Guidelines"
+                ]
+            },
+            {
+                "section": "projectsSection",
+                "featured": false,
+                "category": "App Design",
+                "title": "FitTracker Mobile App",
+                "description": "Intuitive UI/UX design for a fitness tracking application with focus on user engagement and motivation.",
+                "img": "",
+                "link": "",
+                "tags": [
+                    "UI/UX Design", 
+                    "Mobile App", 
+                    "User Research"
+                ]
+            },
+            {
+                "section": "projectsSection",
+                "featured": false,
+                "category": "Photography",
+                "title": "Urban Lifestyle Shoot",
+                "description": "Dynamic lifestyle photography campaign showcasing modern urban living and contemporary fashion trends.",
+                "img": "",
+                "link": "",
+                "tags": [
+                    "Lifestyle Photography", 
+                    "Fashion", 
+                    "Creative Direction"
+                ]
+            },
+            {
+                "section": "projectsSection",
+                "featured": false,
+                "category": "Web Development",
+                "title": "Artisan Bakery Website",
+                "description": "Custom e-commerce website with online ordering system and beautiful product showcases for local bakery.",
+                "img": "",
+                "link": "",
+                "tags": [
+                    "E-commerce", 
+                    "Web Design", 
+                    "CMS"
+                ]
+            },
+            {
+                "section": "projectsSection",
+                "featured": false,
+                "category": "Corporate",
+                "title": "Metropolitan Law Firm",
+                "description": "Professional, trustworthy brand identity for a prestigious law firm specializing in corporate litigation.",
+                "img": "",
+                "link": "",
+                "tags": [
+                    "Corporate Branding", 
+                    "Stationery", 
+                    "Legal Industry"
+                ]
+            },
+            {
+                "section": "projectsSection",
+                "featured": false,
+                "category": "Print Design",
+                "title": "Annual Report Design",
+                "description": "Comprehensive annual report design combining data visualization with compelling storytelling for NGO.",
+                "img": "",
+                "link": "",
+                "tags": [
+                    "Print Design", 
+                    "Data Visualization", 
+                    "Annual Report"
+                ]
+            }
+        ]
     }
 }
