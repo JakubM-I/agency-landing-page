@@ -311,6 +311,12 @@
                     "Annual Report"
                 ]
             }
-        ]
+        ],
+        "ctaSection": {
+            "section": "ctaSection",
+            "title": "Ready to Create Something Amazing?",
+            "txtLine": "Let's bring your vision to life. Contact us today to discuss your next project and see how we can help your brand shine.",
+            "btnText": "Start your project"
+        }
     }
 }
