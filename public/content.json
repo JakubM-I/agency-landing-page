@@ -236,8 +236,8 @@
                 "img": "",
                 "link": "",
                 "tags": [
-                    "Logo Design", 
-                    "Packaging", 
+                    "Logo Design",
+                    "Packaging",
                     "Brand Guidelines"
                 ]
             },
@@ -250,8 +250,8 @@
                 "img": "",
                 "link": "",
                 "tags": [
-                    "UI/UX Design", 
-                    "Mobile App", 
+                    "UI/UX Design",
+                    "Mobile App",
                     "User Research"
                 ]
             },
@@ -264,8 +264,8 @@
                 "img": "",
                 "link": "",
                 "tags": [
-                    "Lifestyle Photography", 
-                    "Fashion", 
+                    "Lifestyle Photography",
+                    "Fashion",
                     "Creative Direction"
                 ]
             },
@@ -278,8 +278,8 @@
                 "img": "",
                 "link": "",
                 "tags": [
-                    "E-commerce", 
-                    "Web Design", 
+                    "E-commerce",
+                    "Web Design",
                     "CMS"
                 ]
             },
@@ -292,8 +292,8 @@
                 "img": "",
                 "link": "",
                 "tags": [
-                    "Corporate Branding", 
-                    "Stationery", 
+                    "Corporate Branding",
+                    "Stationery",
                     "Legal Industry"
                 ]
             },
@@ -306,10 +306,32 @@
                 "img": "",
                 "link": "",
                 "tags": [
-                    "Print Design", 
-                    "Data Visualization", 
+                    "Print Design",
+                    "Data Visualization",
                     "Annual Report"
                 ]
+            }
+        ],
+        "statisticsSection": [
+            {
+                "section": "statisticsSection",
+                "title": "150+",
+                "description": "Projects Completed"
+            },
+            {
+                "section": "statisticsSection",
+                "title": "98%",
+                "description": "Client Satisfaction"
+            },
+            {
+                "section": "statisticsSection",
+                "title": "50+",
+                "description": "Happy Clients"
+            },
+            {
+                "section": "statisticsSection",
+                "title": "5",
+                "description": "Years Experience"
             }
         ],
         "ctaSection": {
