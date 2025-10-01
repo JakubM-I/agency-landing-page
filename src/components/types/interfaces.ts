@@ -201,3 +201,13 @@ export interface SectionTeamProps {
     items: SectionTeamItemProps[];
     images: ImagesProps;
 }
+
+export interface SectionStatisticsItemProps {
+    section: string;
+    title: string;
+    description: string;
+}
+
+export interface SectionStatisticsProps {
+    items: SectionStatisticsItemProps[];
+}
