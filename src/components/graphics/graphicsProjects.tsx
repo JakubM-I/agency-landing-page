@@ -7,7 +7,7 @@ export const projectsImages = {
         desktop: headerDesktopBg,
         mobile: headerDesktopBg
     },
-    featuredProject:{
+    projectsSection:{
         techFlow: techFlowImg,
         organicHarvest:projectPlaceholderImg,
         fitTracker: projectPlaceholderImg,

@@ -211,3 +211,18 @@ export interface SectionStatisticsItemProps {
 export interface SectionStatisticsProps {
     items: SectionStatisticsItemProps[];
 }
+
+export interface FeturedProjectItemProps {
+    section: string;
+    featured: boolean;
+    category: string;
+    title: string;
+    description: string;
+    img: string;
+    link?: string;
+    tags?: string[];
+}
+export interface FeaturedProjectProps {
+    items: FeturedProjectItemProps[];
+    images: ImagesProps;
+}
