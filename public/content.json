@@ -218,7 +218,7 @@
                 "category": "Brand Identity",
                 "title": "TechFlow Startup",
                 "description": "Complete brand transformation for a revolutionary fintech startup. We created a modern, trustworthy identity that reflects innovation while maintaining accessibility for diverse user demographics.",
-                "img": "",
+                "img": "techFlow",
                 "link": "",
                 "tags": [
                     "Logo Design",
@@ -233,7 +233,7 @@
                 "category": "Branding",
                 "title": "Organic Harvest Co.",
                 "description": "Fresh, natural branding for an organic food company focusing on sustainability and health-conscious consumers.",
-                "img": "",
+                "img": "organicHarvest",
                 "link": "",
                 "tags": [
                     "Logo Design",
@@ -247,7 +247,7 @@
                 "category": "App Design",
                 "title": "FitTracker Mobile App",
                 "description": "Intuitive UI/UX design for a fitness tracking application with focus on user engagement and motivation.",
-                "img": "",
+                "img": "fitTracker",
                 "link": "",
                 "tags": [
                     "UI/UX Design",
@@ -261,7 +261,7 @@
                 "category": "Photography",
                 "title": "Urban Lifestyle Shoot",
                 "description": "Dynamic lifestyle photography campaign showcasing modern urban living and contemporary fashion trends.",
-                "img": "",
+                "img": "urbanLifestyle",
                 "link": "",
                 "tags": [
                     "Lifestyle Photography",
@@ -275,7 +275,7 @@
                 "category": "Web Development",
                 "title": "Artisan Bakery Website",
                 "description": "Custom e-commerce website with online ordering system and beautiful product showcases for local bakery.",
-                "img": "",
+                "img": "artisanBakery",
                 "link": "",
                 "tags": [
                     "E-commerce",
@@ -289,7 +289,7 @@
                 "category": "Corporate",
                 "title": "Metropolitan Law Firm",
                 "description": "Professional, trustworthy brand identity for a prestigious law firm specializing in corporate litigation.",
-                "img": "",
+                "img": "metropolitanLaw",
                 "link": "",
                 "tags": [
                     "Corporate Branding",
@@ -303,7 +303,7 @@
                 "category": "Print Design",
                 "title": "Annual Report Design",
                 "description": "Comprehensive annual report design combining data visualization with compelling storytelling for NGO.",
-                "img": "",
+                "img": "animalReport",
                 "link": "",
                 "tags": [
                     "Print Design",
