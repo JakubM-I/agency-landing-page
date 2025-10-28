@@ -14,17 +14,16 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ items, images }) => {
                 <div className="flex-[1_1_55%] md:flex-[]0_0_50%]">
                     <img src={images[featuredItem.section][featuredItem.img]} alt={featuredItem.title} />
                 </div>
-                <div className="flex-[1_1_55%] md:flex-[]0_0_50%]">
-                    <div>{featuredItem.category}</div>
-                    <h3>{featuredItem.title}</h3>
-                    <p>{featuredItem.description}</p>
-                    <ul>
+                <div className="flex-[1_1_55%] md:flex-[]0_0_50%] flex flex-col justify-between items-start">
+                    <div className="text-preset-12 text-red-400 uppercase">{featuredItem.category}</div>
+                    <h2 className="grid-title text-center text-grey-950">{featuredItem.title}</h2>
+                    <p className="text-preset-10 text-left text-grey-550">{featuredItem.description}</p>
+                    <ul className="flex gap-2 justify-start items-center">
                         {featuredItem.tags?.map((tag, index) => (
-                            <li key={index}>{tag}</li>
+                            <li key={index} className="text-preset-12 font-light leading-none text-white bg-grey-400 p-2 rounded-xl">{tag}</li>
                         ))}
-
                     </ul>
-                    <NavLink to="" className="">
+                    <NavLink to="" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--yellow">
                         View Full Project
                     </NavLink>
                 </div>
