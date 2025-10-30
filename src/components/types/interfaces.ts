@@ -212,7 +212,7 @@ export interface SectionStatisticsProps {
     items: SectionStatisticsItemProps[];
 }
 
-export interface FeturedProjectItemProps {
+export interface ProjectItemProps {
     section: string;
     featured: boolean;
     category: string;
@@ -222,7 +222,7 @@ export interface FeturedProjectItemProps {
     link?: string;
     tags?: string[];
 }
-export interface FeaturedProjectProps {
-    items: FeturedProjectItemProps[];
+export interface ProjectProps {
+    items: ProjectItemProps[];
     images: ImagesProps;
 }

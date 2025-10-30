@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
-import type { FeaturedProjectProps } from "../../../components/types/interfaces";
+import type { ProjectProps } from "../../../components/types/interfaces";
 
-const FeaturedProject: React.FC<FeaturedProjectProps> = ({ items, images }) => {
+const FeaturedProject: React.FC<ProjectProps> = ({ items, images }) => {
     const featuredItem = items.find(item => item.featured === true);
     if (!featuredItem) {
         return null; // or some fallback UI
