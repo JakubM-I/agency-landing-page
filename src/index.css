@@ -237,6 +237,9 @@
         background-color: #ffffff;
     }
     
-
+    .project-tags{
+        @apply text-preset-12;
+        font-weight: 400;
+    }
     
 }

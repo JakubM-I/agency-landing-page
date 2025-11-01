@@ -10,7 +10,7 @@ const FeaturedProject: React.FC<ProjectProps> = ({ items, images }) => {
     return (
         <div className="py-16 sx:py-[67px] px-6 md:px-2 full:px-0">
 
-            <div className="flex flex-wrap md:flex-nowrap p-4 w-[min(1200px,100%)] mx-auto gap-10">
+            <div className="flex flex-wrap md:flex-nowrap p-4 w-[min(1200px,100%)] mx-auto gap-10 shadow-md">
                 <div className="flex-[1_1_55%] md:flex-[]0_0_50%]">
                     <img className="w-full" src={images[featuredItem.section][featuredItem.img]} alt={featuredItem.title} />
                 </div>
