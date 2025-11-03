@@ -5,6 +5,7 @@ import CtaSection from "../../components/CtaSection/index.tsx";
 import StatisticsSection from "./Statistics/index.tsx";
 import FeaturedProject from "./FeaturedProject/index.tsx";
 import Projects from "./Projects/index.tsx";
+import ProjectsMenu from "./ProjectsMenu/index.tsx";
 
 const ProjectsPage: React.FC = () => {
       const content = useLoaderData();
@@ -15,6 +16,7 @@ const ProjectsPage: React.FC = () => {
                 items={content.projectsPage.heroSection} 
                 images={images.projectsPage} 
             />
+            <ProjectsMenu />
             <FeaturedProject 
                 items={content.projectsPage.projectsSection} 
                 images={images.projectsPage} 
