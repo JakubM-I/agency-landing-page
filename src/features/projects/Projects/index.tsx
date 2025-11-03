@@ -6,7 +6,7 @@ const Projects: React.FC<ProjectProps> = ({ items, images }) => {
         return null; // or some fallback UI
     }
     return (
-        <div className="py-16 sx:py-[67px] px-6 md:px-2 full:px-0">
+        <div className="py-16 sx:py-[67px] px-5 md:px-2 full:px-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 p-4 w-[min(1200px,100%)] mx-auto gap-10">
                 {projectsItem.map((item, index) => (
                     <div key={index} className="overflow-hidden rounded-xl shadow-md">
