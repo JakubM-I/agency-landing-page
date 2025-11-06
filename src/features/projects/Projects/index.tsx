@@ -1,14 +1,31 @@
-import type { ProjectProps } from "../../../components/types/interfaces";
+import { useSearchParams } from "react-router";
+import type { ProjectItemProps, ProjectProps } from "../../../components/types/interfaces";
+import { useEffect, useState } from "react";
 
 const Projects: React.FC<ProjectProps> = ({ items, images }) => {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const [displayItems, setDisplayItems] = useState<ProjectItemProps[]>([])
     const projectsItem = items.filter(item => item.featured !== true);
     if (!projectsItem) {
         return null; // or some fallback UI
     }
+
+    const filterQuerry = searchParams.get("f");
+    // let displayItems = null;
+
+    useEffect(() => {
+        // let displayItems;
+        if(!filterQuerry){
+            setDisplayItems(projectsItem);
+        } else {
+            setDisplayItems(projectsItem.filter(item => item.searchCategory === filterQuerry));
+        }    
+    },[filterQuerry])
+
     return (
         <div className="py-16 sx:py-[67px] px-5 md:px-2 full:px-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 p-4 w-[min(1200px,100%)] mx-auto gap-10">
-                {projectsItem.map((item, index) => (
+                {displayItems.map((item, index) => (
                     <div key={index} className="overflow-hidden rounded-xl shadow-md">
                         <img className="w-full" src={images[item.section][item.img]} alt={item.title} />
                         <div className="px-7 pt-7 pb-9 flex flex-col justify-start items-start gap-4">

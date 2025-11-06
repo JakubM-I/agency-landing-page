@@ -6,8 +6,6 @@ const ProjectsMenu: React.FC = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [query, setQuery] = useState<string | null>(searchParams.get("f"));
 
-    const menuButtons = document.querySelectorAll("button");
-
     // const fQuery = document.querySelector<HTMLButtonElement>("button[data-filter]")?.getAttribute("data-filter");
 
     // const filterOnClick = () => {
@@ -24,7 +22,9 @@ const ProjectsMenu: React.FC = () => {
 
     const filterOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const f = e.currentTarget.dataset.filter;
-        if(f){
+        if(!f) return;
+        if(f !== "all")    
+            {
             setSearchParams({f});
             setQuery(f);
         } else {
