@@ -1,26 +1,35 @@
 import { useSearchParams } from "react-router";
 import type { ProjectItemProps, ProjectProps } from "../../../components/types/interfaces";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const Projects: React.FC<ProjectProps> = ({ items, images }) => {
-    const [searchParams, setSearchParams] = useSearchParams();
-    const [displayItems, setDisplayItems] = useState<ProjectItemProps[]>([])
-    const projectsItem = items.filter(item => item.featured !== true);
-    if (!projectsItem) {
-        return null; // or some fallback UI
-    }
+    const [searchParams] = useSearchParams();
+    // const [displayItems, setDisplayItems] = useState<ProjectItemProps[]>([])
+    // const projectsItem = items.filter(item => item.featured !== true);
+    // if (!projectsItem) {
+    //     return null;
+    // }
 
     const filterQuerry = searchParams.get("f");
-    // let displayItems = null;
 
-    useEffect(() => {
-        // let displayItems;
-        if(!filterQuerry){
-            setDisplayItems(projectsItem);
-        } else {
-            setDisplayItems(projectsItem.filter(item => item.searchCategory === filterQuerry));
-        }    
-    },[filterQuerry])
+    // useEffect(() => {
+    //     if(!filterQuerry){
+    //         setDisplayItems(projectsItem);
+    //     } else {
+    //         setDisplayItems(projectsItem.filter(item => item.searchCategory === filterQuerry));
+    //     }    
+    // },[filterQuerry])
+
+
+    const displayItems = useMemo(() => {
+           const projectsItem = items.filter(item => item.featured !== true);
+
+           if(!filterQuerry) {
+            return projectsItem;
+           }
+
+           return projectsItem.filter(item => item.searchCategory === filterQuerry);
+    }, [items, filterQuerry])
 
     return (
         <div className="py-16 sx:py-[67px] px-5 md:px-2 full:px-0">
