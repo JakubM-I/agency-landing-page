@@ -216,6 +216,7 @@ export interface ProjectItemProps {
     section: string;
     featured: boolean;
     category: string;
+    searchCategory: string;
     title: string;
     description: string;
     img: string;
