@@ -57,12 +57,12 @@ const ProjectsMenu: React.FC<ProjectProps> = ({ items }) => {
     const query = searchParams.get("f") || "all";
 
     return (
-        <div className="py-16 sx:py-[67px] px-5 md:px-2 full:px-0">
-            <ul className="w-fit mx-auto text-grey-950 bg-grey-100 px-3.5 py-2 rounded-3xl flex items-center justify-center gap-2">
+        <div className="pt-12 md:pt-16 px-5 md:px-2 full:px-0">
+            <ul className="w-fit mx-auto text-grey-950 bg-grey-100 px-3.5 py-2 rounded-3xl flex flex-wrap md:flex-nowrap items-center justify-center gap-2">
                 {categories.map((category, index) => (
                     <li key={index} >
                         <button
-                            className={`pr-menu-item capitalize ${query === category ? "bg-yellow-500" : ""}`}
+                            className={`pr-menu-item ${query === category ? "bg-yellow-500" : ""}`}
                             data-filter={category}
                             onClick={filterOnClick}>
                             {category}
