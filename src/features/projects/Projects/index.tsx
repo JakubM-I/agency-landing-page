@@ -22,13 +22,13 @@ const Projects: React.FC<ProjectProps> = ({ items, images }) => {
 
 
     const displayItems = useMemo(() => {
-           const projectsItem = items.filter(item => item.featured !== true);
+           const projectsItems = items.filter(item => item.featured !== true);
 
            if(!filterQuerry) {
-            return projectsItem;
+            return projectsItems;
            }
 
-           return projectsItem.filter(item => item.searchCategory === filterQuerry);
+           return projectsItems.filter(item => item.searchCategory === filterQuerry);
     }, [items, filterQuerry])
 
     return (
@@ -36,7 +36,7 @@ const Projects: React.FC<ProjectProps> = ({ items, images }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 p-4 w-[min(1200px,100%)] mx-auto gap-10">
                 {displayItems.map((item, index) => (
                     <div key={index} className="overflow-hidden rounded-xl shadow-md">
-                        <img className="w-full" src={images[item.section][item.img]} alt={item.title} />
+                        {images ? <img className="w-full" src={images[item.section][item.img]} alt={item.title} /> : null}
                         <div className="px-7 pt-7 pb-9 flex flex-col justify-start items-start gap-4">
                             <div className="text-preset-12 text-red-400 uppercase">{item.category}</div>
                             <h3 className="text-preset-5 text-grey-950">{item.title}</h3>

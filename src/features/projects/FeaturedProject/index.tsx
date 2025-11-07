@@ -12,7 +12,7 @@ const FeaturedProject: React.FC<ProjectProps> = ({ items, images }) => {
 
             <div className="flex flex-wrap md:flex-nowrap p-4 w-[min(1200px,100%)] mx-auto gap-10 shadow-md">
                 <div className="flex-[1_1_55%] md:flex-[]0_0_50%]">
-                    <img className="w-full" src={images[featuredItem.section][featuredItem.img]} alt={featuredItem.title} />
+                    {images ? (<img className="w-full" src={images[featuredItem.section][featuredItem.img]} alt={featuredItem.title} />) : null}
                 </div>
                 <div className="flex-[1_1_55%] md:flex-[]0_0_50%] h-full flex flex-col justify-start items-start gap-6">
                     <div className="text-preset-12 text-red-400 uppercase">{featuredItem.category}</div>
