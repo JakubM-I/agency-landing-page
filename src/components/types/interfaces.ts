@@ -216,14 +216,15 @@ export interface ProjectItemProps {
     section: string;
     featured: boolean;
     category: string;
-    searchCategory: string;
+    searchCategory?: string;
     title: string;
     description: string;
     img: string;
     link?: string;
     tags?: string[];
 }
+
 export interface ProjectProps {
     items: ProjectItemProps[];
-    images: ImagesProps;
+    images?: ImagesProps;
 }
