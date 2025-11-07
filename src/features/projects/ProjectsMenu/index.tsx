@@ -1,8 +1,10 @@
 // import { useState } from "react";
 import { useSearchParams } from "react-router";
+import type { ProjectProps } from "../../../components/types/interfaces";
+import { useMemo } from "react";
 
 
-const ProjectsMenu: React.FC = () => {
+const ProjectsMenu: React.FC<ProjectProps> = ({ items }) => {
     const [searchParams, setSearchParams] = useSearchParams();
     // const [query, setQuery] = useState<string | null>(searchParams.get("f"));
 
@@ -37,6 +39,11 @@ const ProjectsMenu: React.FC = () => {
     //     setQuery(null);
     // }
 
+    const categories = useMemo(() => {
+        return ["all", ...new Set(items.map(item => item.searchCategory).filter(Boolean))];
+    }, [items]);
+
+
     const filterOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const filter = e.currentTarget.dataset.filter;
         if (!filter) return;
@@ -47,35 +54,21 @@ const ProjectsMenu: React.FC = () => {
         }
     }
 
-    let active = true;
+    const query = searchParams.get("f") || "all";
+
     return (
         <div className="py-16 sx:py-[67px] px-5 md:px-2 full:px-0">
             <ul className="w-fit mx-auto text-grey-950 bg-grey-100 px-3.5 py-2 rounded-3xl flex items-center justify-center gap-2">
-                <li className={`pr-menu-item ${active ? "bg-yellow-500" : ""}`}>
-                    <button data-filter="all" onClick={filterOnClick}>
-                        All
-                    </button>
-                </li>
-                <li className="pr-menu-item">
-                    <button data-filter="branding" onClick={filterOnClick}>
-                        Branding
-                    </button>
-                </li>
-                <li className="pr-menu-item">
-                    <button data-filter="design" onClick={filterOnClick}>
-                        Design
-                    </button>
-                </li>
-                <li className="pr-menu-item">
-                    <button data-filter="photography" onClick={filterOnClick}>
-                        Photography
-                    </button>
-                </li>
-                <li className="pr-menu-item">
-                    <button data-filter="web" onClick={filterOnClick}>
-                        Web
-                    </button>
-                </li>
+                {categories.map((category, index) => (
+                    <li key={index} className={`pr-menu-item ${query === category ? "bg-yellow-500" : ""}`}>
+                        <button
+                            className="capitalize"
+                            data-filter={category}
+                            onClick={filterOnClick}>
+                            {category}
+                        </button>
+                    </li>
+                ))}
             </ul>
         </div>
     );
