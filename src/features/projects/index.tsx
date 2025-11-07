@@ -16,7 +16,9 @@ const ProjectsPage: React.FC = () => {
                 items={content.projectsPage.heroSection} 
                 images={images.projectsPage} 
             />
-            <ProjectsMenu />
+            <ProjectsMenu 
+                items={content.projectsPage.projectsSection} 
+            />
             <FeaturedProject 
                 items={content.projectsPage.projectsSection} 
                 images={images.projectsPage} 
