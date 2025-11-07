@@ -60,9 +60,9 @@ const ProjectsMenu: React.FC<ProjectProps> = ({ items }) => {
         <div className="py-16 sx:py-[67px] px-5 md:px-2 full:px-0">
             <ul className="w-fit mx-auto text-grey-950 bg-grey-100 px-3.5 py-2 rounded-3xl flex items-center justify-center gap-2">
                 {categories.map((category, index) => (
-                    <li key={index} className={`pr-menu-item ${query === category ? "bg-yellow-500" : ""}`}>
+                    <li key={index} >
                         <button
-                            className="capitalize"
+                            className={`pr-menu-item capitalize ${query === category ? "bg-yellow-500" : ""}`}
                             data-filter={category}
                             onClick={filterOnClick}>
                             {category}
