@@ -29,7 +29,10 @@ const ProjectsPage: React.FC = () => {
                 images={images.projectsPage} 
             />
             <StatisticsSection items={content.projectsPage.statisticsSection} />
-            <Testimonials />
+            <Testimonials 
+                items={content.projectsPage.testimonialsSection} 
+                images={images.projectsPage}
+            />
             <CtaSection items={content.projectsPage.ctaSection} />
         </>
     )
