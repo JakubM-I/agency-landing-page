@@ -9,7 +9,7 @@ const Testimonials: React.FC<TestimonialProps> = ({items, images}) => {
                     <div className="text-preset-11 sm:text-preset-9 text-grey-600 text-pretty mb-5">{`"${item.testimonial}"`}</div>
                     <div className="flex justify-center items-center gap-3.5">
                         <div>
-                             {images ? (<img className="w-full" src={images[item.section][item.img]} alt={item.name} />) : null}
+                             {images ? (<img className="w-16 sm:w-20 h-auto rounded-full" src={images[item.section][item.img]} alt={item.name} />) : null}
                         </div>
                         <div className="text-center">
                              <h4 className="text-preset-8 sm:text-preset-9">{item.name}</h4>
