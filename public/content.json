@@ -342,21 +342,21 @@
         ],
         "testimonialsSection": [
             {
-                "section": "testimonialsSections",
+                "section": "testimonialsSection",
                 "testimonial": "Sunnyside transformed our brand completely. Their creative vision and attention to detail exceeded our expectations. The new identity has significantly improved our market presence and customer engagement.",
                 "name": "Michael Chen",
                 "info": "CEO, TechFlow Startup",
                 "img": "michael"
             },
                         {
-                "section": "testimonialsSections",
+                "section": "testimonialsSection",
                 "testimonial": "Working with Sunnyside was a game-changer for our e-commerce business. Their digital marketing strategies increased our online sales by 300% in just six months. The team's creativity and data-driven approach delivered results beyond our expectations.",
                 "name": "Sarah Martinez",
                 "info": "Founder, Bloom Fashion",
                 "img": "sarah"
             },
                         {
-                "section": "testimonialsSections",
+                "section": "testimonialsSection",
                 "testimonial": "The photography and visual content created by Sunnyside elevated our restaurant's brand to a whole new level. Our social media engagement tripled, and reservations increased by 85%. Their attention to detail and artistic vision truly captured our culinary story.",
                 "name": "James Thompson",
                 "info": "Owner, Coastal Kitchen",
