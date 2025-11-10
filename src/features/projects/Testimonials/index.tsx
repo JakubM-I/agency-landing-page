@@ -3,6 +3,8 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { FcPrevious } from "react-icons/fc";
+import { FcNext } from "react-icons/fc";
 
 import type { TestimonialProps } from "../../../components/types/interfaces";
 
@@ -13,12 +15,19 @@ const Testimonials: React.FC<TestimonialProps> = ({ items, images }) => {
                 <Swiper 
                     modules={[Navigation, Pagination]}
                     slidesPerView={1}
-                    navigation
-                    pagination={{ clickable: true }}
+                    navigation={{
+                        nextEl: ".nav-nextEl",
+                        prevEl: ".nav-prevEl",
+                    }}
+                    pagination={{ 
+                        el: ".nav-pagination",
+                        type: "bullets",
+                        clickable: true 
+                    }}
                 >
                     {items.map((item, index) => (
                         <SwiperSlide key={index} >
-                            <div className="w-[min(800px,100%)] text-center">
+                            <div className="w-[min(800px,100%)] text-center mx-auto">
                                 <div className="text-preset-11 sm:text-preset-9 text-grey-600 text-pretty mb-5">{`"${item.testimonial}"`}</div>
                                 <div className="flex justify-center items-center gap-3.5">
                                     <div>
@@ -32,6 +41,14 @@ const Testimonials: React.FC<TestimonialProps> = ({ items, images }) => {
                             </div>
                         </SwiperSlide>
                     ))}
+
+                    <div>
+                        <div>
+                            <button className="nav-prevEl"><FcPrevious /></button>
+                            <button className="nav-nextEl"><FcNext /></button>
+                        </div>
+                        <div className="nav-pagination"></div>
+                    </div>
                 </Swiper>
 
 
