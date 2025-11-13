@@ -228,3 +228,16 @@ export interface ProjectProps {
     items: ProjectItemProps[];
     images?: ImagesProps;
 }
+
+export interface TestimonialItemProps {
+    section: string,
+    testimonial: string,
+    name: string,
+    info: string,
+    img: string
+}
+
+export interface TestimonialProps {
+    items: TestimonialItemProps[];
+    images?: ImagesProps;
+}
