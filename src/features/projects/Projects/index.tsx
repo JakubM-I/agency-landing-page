@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router";
-import type { ProjectItemProps, ProjectProps } from "../../../components/types/interfaces";
-import { useEffect, useMemo, useState } from "react";
+import type { ProjectProps } from "../../../components/types/interfaces";
+import { useMemo } from "react";
 
 const Projects: React.FC<ProjectProps> = ({ items, images }) => {
     const [searchParams] = useSearchParams();
