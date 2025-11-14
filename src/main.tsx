@@ -6,7 +6,7 @@ import { routes } from './features/routes/routes.tsx'
 import { RouterProvider } from 'react-router/dom'
 
 const router = createBrowserRouter(routes, {
-  basename: "/sunnyside/",
+  basename: "/",
 });
 
 createRoot(document.getElementById('root')!).render(

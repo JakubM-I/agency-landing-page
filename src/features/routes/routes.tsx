@@ -10,35 +10,35 @@ export const routes = [
         path: "/",
         element: <RootElement />,
         loader: () => {
-            return fetch("/sunnyside/navItems.json")
+            return fetch("/navItems.json")
         },
         children: [
             {
                 path: "/",
                 element: <HomePage />,
                 loader: () => {
-                    return fetch("/sunnyside/content.json")
+                    return fetch("/content.json")
                 }
             },
             {
                 path: "about",
                 element: <AboutPage />,
                 loader: () => {
-                    return fetch("/sunnyside/content.json")
+                    return fetch("/content.json")
                 }
             },
             {
                 path: "services",
                 element: <ServicesPage />,
                 loader: () => {
-                    return fetch("/sunnyside/content.json")
+                    return fetch("/content.json")
                 }
             },
             {
                 path: "projects",
                 element: <ProjectsPage />,
                 loader: () => {
-                    return fetch("/sunnyside/content.json")
+                    return fetch("/content.json")
                 }
             }
         ]
