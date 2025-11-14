@@ -1,6 +1,6 @@
 
 import AboutPage from "../about";
-import HomePage from "../homepage";
+import HomePage from "../homepage/index";
 import ProjectsPage from "../projects";
 import RootElement from "../Root/root";
 import ServicesPage from "../services";
