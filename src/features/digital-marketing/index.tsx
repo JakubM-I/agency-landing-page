@@ -1,10 +1,17 @@
 import { useLoaderData } from "react-router"
+import HeroSection from "../../components/HeroSection";
+import {images} from "../../components/graphics/graphics.tsx";
 
-const DigitalMarketing = () => {
+const DigitalMarketing: React.FC = () => {
     const content = useLoaderData();
 
     return (
-        <p>Digital marketing</p>
+        <>
+            <HeroSection
+                items={content.dmarketingPage.heroSection}
+                images={images.dmarketingPage}
+            />
+        </>
     )
 
 }

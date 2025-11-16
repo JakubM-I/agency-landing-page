@@ -20,6 +20,10 @@ const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
         "/projects": {
             relative: "bg-[#ff6b6b]",
             sticky: "bg-[#ff6b6b83]"
+        },
+        "/digital-marketing": {
+            relative: "bg-[#ff6b6b]",
+            sticky: "bg-[#ff6b6b83]"
         }
     }
 

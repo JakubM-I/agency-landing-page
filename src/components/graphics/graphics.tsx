@@ -3,10 +3,12 @@ import {servicesImages} from "./graphicServices.tsx"
 import { aboutImages } from "./graphicAbout.tsx"
 import { homeImages } from "./graphicsHome.tsx"
 import { projectsImages } from "./graphicsProjects.tsx"
+import { dmarketingImages } from "./graphicsDmarketing.tsx"
 
 export const images = {
     homePage: homeImages,
     aboutPage: aboutImages,
     servicesPage: servicesImages,
-    projectsPage: projectsImages
+    projectsPage: projectsImages,
+    dmarketingPage: dmarketingImages
 }
