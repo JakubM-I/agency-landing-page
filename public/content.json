@@ -369,5 +369,15 @@
             "txtLine": "Let's bring your vision to life. Contact us today to discuss your next project and see how we can help your brand shine.",
             "btnText": "Start your project"
         }
+    },
+    "dmarketingPage": {
+        "heroSection": {
+            "section": "heroSection",
+            "title": "Stand out",
+            "subtitle": "Using a collaborative formula of designers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.",
+            "textColor": "text-blue-950",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        }
     }
 }

@@ -8,6 +8,7 @@ import photographyImg from "../../assets/desktop/image-photography.jpg"
 import photographyImgMobile from "../../assets/mobile/image-photography.jpg"
 import GridPicture from "../GridPicture"
 import GridTextCell from "../GridTextCell"
+import { NavLink } from "react-router"
 
 const GridSection: React.FC = () => {
     return (
@@ -45,7 +46,7 @@ const GridSection: React.FC = () => {
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
                         <h2 className="grid-title text-center text-grey-950">Stand out to the right audience</h2>
                         <p className="text-preset-10 text-left text-grey-550">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
-                        <a href="#" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--red">Learn more</a>
+                        <NavLink to="/digital-marketing" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--red">Learn more</NavLink>
                     </div>
                 </GridTextCell>
 

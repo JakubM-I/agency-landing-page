@@ -1,5 +1,6 @@
 
 import AboutPage from "../about";
+import DigitalMarketing from "../digital-marketing";
 import HomePage from "../homepage/index";
 import ProjectsPage from "../projects";
 import RootElement from "../Root/root";
@@ -37,6 +38,13 @@ export const routes = [
             {
                 path: "projects",
                 element: <ProjectsPage />,
+                loader: () => {
+                    return fetch("/content.json")
+                }
+            },
+            {
+                path: "digital-marketing",
+                element: <DigitalMarketing />,
                 loader: () => {
                     return fetch("/content.json")
                 }
