@@ -4,6 +4,7 @@ import {images} from "../../components/graphics/graphics.tsx";
 
 const DigitalMarketing: React.FC = () => {
     const content = useLoaderData();
+    console.log(content);
 
     return (
         <>
@@ -16,4 +17,4 @@ const DigitalMarketing: React.FC = () => {
 
 }
 
-export default DigitalMarketing
+export default DigitalMarketing;
