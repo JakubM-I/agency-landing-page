@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
             sticky: "bg-[#ff6b6b83]"
         },
         "/digital-marketing": {
-            relative: "bg-[#ffa62b]",
+            relative: "bg-gradient-to-r from-[#ffa62b] from-64% to-[#ffae49] to-96%",
             sticky: "bg-[#ffa72b81]"
         }
     }
