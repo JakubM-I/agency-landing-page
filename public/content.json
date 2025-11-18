@@ -348,14 +348,14 @@
                 "info": "CEO, TechFlow Startup",
                 "img": "michael"
             },
-                        {
+            {
                 "section": "testimonialsSection",
                 "testimonial": "Working with Sunnyside was a game-changer for our e-commerce business. Their digital marketing strategies increased our online sales by 300% in just six months. The team's creativity and data-driven approach delivered results beyond our expectations.",
                 "name": "Sarah Martinez",
                 "info": "Founder, Bloom Fashion",
                 "img": "sarah"
             },
-                        {
+            {
                 "section": "testimonialsSection",
                 "testimonial": "The photography and visual content created by Sunnyside elevated our restaurant's brand to a whole new level. Our social media engagement tripled, and reservations increased by 85%. Their attention to detail and artistic vision truly captured our culinary story.",
                 "name": "James Thompson",
@@ -378,6 +378,11 @@
             "textColor": "text-blue-950",
             "desktopImg": "desktop",
             "mobileImg": "mobile"
+        },
+        "introSection": {
+            "section": "introSection",
+            "title": "Digital Marketing That Delivers",
+            "line1": "In today's digital landscape, reaching the right audience requires more than just great content – it demands strategic thinking, data-driven insights, and creative execution. We combine all these elements to create digital marketing campaigns that not only capture attention but drive meaningful engagement and measurable results for your business."
         }
     }
 }
