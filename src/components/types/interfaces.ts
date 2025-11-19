@@ -241,3 +241,18 @@ export interface TestimonialProps {
     items: TestimonialItemProps[];
     images?: ImagesProps;
 }
+
+export interface OurAproachItemProps {
+    section: string;
+    title: string;
+    line1: string;
+    line2?: string;
+    list?: string[];
+    link?: string;
+    img: string;
+}
+
+export interface OurAproachProps {
+    items: OurAproachItemProps;
+    images: ImagesProps;
+}

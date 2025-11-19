@@ -383,6 +383,26 @@
             "section": "introSection",
             "title": "Digital Marketing That Delivers",
             "line1": "In today's digital landscape, reaching the right audience requires more than just great content – it demands strategic thinking, data-driven insights, and creative execution. We combine all these elements to create digital marketing campaigns that not only capture attention but drive meaningful engagement and measurable results for your business."
+        },
+         "ctaSection": {
+            "section": "ctaSection",
+            "title": "Ready to Amplify Your Digital Presence?",
+            "txtLine": "Let's create a digital marketing strategy that connects you with the right audience and drives real business results. Schedule your free consultation today.",
+            "btnText": "Shedule free consultation"
+        },
+        "ourApproachSection": {
+            "section": "ourApproachSection",
+            "title": "Our Strategic Approach",
+            "line1":"We don't believe in one-size-fits-all solutions. Every business is unique, and so should be their digital marketing strategy. Our approach is built on understanding your specific goals, audience, and market dynamics.",
+            "line2":"We start by analyzing your current digital presence, identifying opportunities, and developing a comprehensive strategy that aligns with your business objectives. Then we execute with precision, continuously monitor performance, and optimize for better results.",
+            "list": [
+                "Data-driven audience targeting and segmentation",
+                "Multi-channel campaign coordination",
+                "Continuous optimization and A/B testing",
+                "ROI-focused performance measurement"
+            ],
+            "link": "#",
+            "img": "approach"
         }
     }
 }
