@@ -7,7 +7,6 @@ export const dmarketingImages = {
         mobile: headerDesktopBg
     },
     ourApproachSection:{
-        deskto: ourApproachImg,
-        mobile: ourApproachImg
+        approach: ourApproachImg
     }
 };

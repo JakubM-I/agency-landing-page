@@ -249,9 +249,10 @@ export interface OurAproachItemProps {
     line2?: string;
     list?: string[];
     link?: string;
+    img: string;
 }
 
 export interface OurAproachProps {
-    items: OurAproachItemProps[];
-    images?: ImagesProps;
+    items: OurAproachItemProps;
+    images: ImagesProps;
 }
