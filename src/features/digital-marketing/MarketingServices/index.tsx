@@ -17,7 +17,7 @@ const MarketingServices: React.FC<MarketingServicesProps> = ({items, images}) =>
                                 {item.list.map((item, index) => (
                                     <li 
                                         key={index} 
-                                        className="text-preset-10 text-grey-550 before:content-['✓'] before:text-yellow-500 before:me-2"
+                                        className="text-preset-10 text-grey-550 before:content-['✓'] before:text-[#ffa62b] before:me-2"
                                     >
                                         {item}
                                     </li>
