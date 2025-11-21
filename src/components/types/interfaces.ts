@@ -256,3 +256,16 @@ export interface OurAproachProps {
     items: OurAproachItemProps;
     images: ImagesProps;
 }
+
+export interface MarketingServiceItemProps {
+    section: string;
+    title: string;
+    description: string;
+    list: string[];
+    img: string;
+}
+
+export interface MarketingServicesProps {
+    items: MarketingServiceItemProps[];
+    images: ImagesProps;
+}

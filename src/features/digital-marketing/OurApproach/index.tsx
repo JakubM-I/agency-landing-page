@@ -10,7 +10,7 @@ const OurApproach: React.FC<OurAproachProps> = ({ items, images }) => {
         <>
             <div className="flex flex-col-reverse md:flex-row">
                 <GridTextCell>
-                    <div className="flex flex-col flex-nowrap justify-center items-start w-[min(445px,100%)]" >
+                    <div className="flex flex-col flex-nowrap justify-center items-start w-[min(460px,100%)]" >
                         <SectionTitle title={items.title} styling="mb-8" />
                         <p className="text-preset-10 text-left text-pretty text-grey-550 mb-3">{items.line1}</p>
                         <p className="text-preset-10 text-left text-pretty text-grey-550">{items.line2}</p>
