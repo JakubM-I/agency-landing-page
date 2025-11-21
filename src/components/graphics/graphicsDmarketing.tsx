@@ -8,7 +8,7 @@ import analyticsImg from "../../assets/graphics/analytics.png";
 import adsImg from "../../assets/graphics/ads.png";
 
 export const dmarketingImages = {
-        heroSection:{
+    heroSection:{
         desktop: headerDesktopBg,
         mobile: headerDesktopBg
     },
