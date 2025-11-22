@@ -483,6 +483,28 @@
                 ],
                 "img": "ads"
             }
+        ],
+        "statisticsSection": [
+            {
+                "section": "statisticsSection",
+                "title": "250+",
+                "description": "Average Roi"
+            },
+            {
+                "section": "statisticsSection",
+                "title": "85%",
+                "description": "Lead generation increase"
+            },
+            {
+                "section": "statisticsSection",
+                "title": "40+",
+                "description": "Happy Clients"
+            },
+            {
+                "section": "statisticsSection",
+                "title": "2M+",
+                "description": "Impressions generated"
+            }
         ]
     }
 }
