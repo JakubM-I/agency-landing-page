@@ -5,6 +5,7 @@ import SectionIntro from "../../components/TextSection/index.tsx";
 import CtaSection from "../../components/CtaSection/index.tsx";
 import OurApproach from "./OurApproach/index.tsx";
 import MarketingServices from "./MarketingServices/index.tsx";
+import MarketingStatistics from "./Statistics/index.tsx";
 
 const DigitalMarketing: React.FC = () => {
     const content = useLoaderData();
@@ -24,6 +25,7 @@ const DigitalMarketing: React.FC = () => {
             <OurApproach
                 items={content.dmarketingPage.ourApproachSection}
                 images={images.dmarketingPage} />
+            <MarketingStatistics items={content.dmarketingPage.statisticsSection} />
             <CtaSection items={content.dmarketingPage.ctaSection} />
         </>
     )
