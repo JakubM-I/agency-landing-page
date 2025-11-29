@@ -8,18 +8,18 @@ const OurApproach: React.FC<OurAproachProps> = ({ items, images }) => {
 
     return (
         <>
-            <div className="flex flex-col-reverse md:flex-row">
+            <div className="flex flex-col md:flex-row">
                 <GridTextCell>
-                    <div className="flex flex-col flex-nowrap justify-center items-start w-[min(460px,100%)]" >
+                    <div className="flex flex-col flex-nowrap justify-center items-start w-[min(490px,100%)]" >
                         <SectionTitle title={items.title} styling="mb-8" />
                         <p className="text-preset-10 text-left text-pretty text-grey-550 mb-3">{items.line1}</p>
-                        <p className="text-preset-10 text-left text-pretty text-grey-550">{items.line2}</p>
-                        <ul>
+                        <p className="text-preset-10 text-left text-pretty text-grey-550 mb-3">{items.line2}</p>
+                        <ul className="mb-3"> 
                             {items.list?.map((listItem, i) => (
                                 <li key={i} className="text-preset-10 text-grey-550 before:content-['🎯'] before:me-2">{listItem}</li>
                             ))}
                         </ul>
-                        <NavLink to={items.link ? items.link : ""} className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--red">Learn about our process</NavLink>
+                        <NavLink to={items.link ? items.link : ""} className="mt-auto mb-0 relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--red">Learn about our process</NavLink>
                     </div>
                 </GridTextCell>
                 <GridPicture
