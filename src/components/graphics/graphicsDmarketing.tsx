@@ -6,6 +6,10 @@ import emailImg from "../../assets/graphics/email.png";
 import contentImg from "../../assets/graphics/content.png";
 import analyticsImg from "../../assets/graphics/analytics.png";
 import adsImg from "../../assets/graphics/ads.png";
+import fashionImg from "../../assets/desktop/fashion.jpg";
+import medicalImg from "../../assets/desktop/medical.jpg";
+import saasImg from "../../assets/desktop/saas.jpg";
+
 
 export const dmarketingImages = {
     heroSection:{
@@ -22,5 +26,10 @@ export const dmarketingImages = {
         content: contentImg,
         analytics: analyticsImg,
         ads: adsImg
+    },
+    successSection:{
+        fashion: fashionImg,
+        medical: medicalImg,
+        saas: saasImg
     }
 };
