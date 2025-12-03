@@ -84,6 +84,7 @@ export interface SectionHeroProps{
 export interface SectionTitleProps {
     title: string;
     styling?: string;
+    id?: string;
 }
 
 export interface BottomPicturesProps {
