@@ -8,16 +8,16 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({items, images}) => {
               <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap justify-center items-stretch gap-10 sm:gap-8 px-6">
                 {items.map((item, index) => (
                     <article key={index} className="flex flex-col justify-start items-center gap-2 flex-[0_1_45%] lg:flex-[0_1_30%] bg-white h-auto rounded-2xl shadow-xl overflow-hidden" aria-label={`${item.category}: ${item.title}`}>
-                        <img src={images[item.section][item.img]} alt={item.title} />
-                        <div className="p-5 flex flex-col justify-start items-start gap-4">
-                            <span>{item.category}</span>
-                            <h3>{item.title}</h3>
-                            <p>{item.description}</p>
-                            <dl className="flex flex-nowrap justify-between items-start gap-3 w-full">
+                        <img src={images[item.section][item.img]} alt={item.title}  className="w-full"/>
+                        <div className="p-7 flex flex-col justify-start items-start gap-4 w-full h-full">
+                            <span className="text-preset-12 text-red-400 uppercase">{item.category}</span>
+                            <h3 className="text-preset-5 text-grey-950">{item.title}</h3>
+                            <p className="text-preset-11 text-left text-grey-550">{item.description}</p>
+                            <dl className="flex flex-nowrap justify-between items-start gap-5 w-full max-w-[362px] mx-auto h-[80px] my-[auto_0]">
                                 {item.effects.map((effect, index) => (
-                                    <div key={index} className="flex flex-col flex-nowrap justify-start items-center gap-2">
-                                        <dd>{effect.value}</dd>
-                                        <dt className="text-center">{effect.title}</dt>
+                                    <div key={index} className="flex flex-col flex-nowrap justify-start items-center gap-1 flex-[1_1_100px]">
+                                        <dd className="text-preset-9 text-red-400">{effect.value}</dd>
+                                        <dt className="text-preset-12 text-grey-550 text-center">{effect.title}</dt>
                                     </div>
                                 ))}
                             </dl>
