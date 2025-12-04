@@ -7,7 +7,7 @@ const ServicesGrid: React.FC<SectionGridProps> = ({items, images}) => {
     return (
         <>
             {items.map((item, index) => (
-            <div key={index} className={`flex ${ index % 2 === 0 ? "flex-row" : "flex-row-reverse"} flex-wrap-reverse md:flex-nowrap justify-center items-center`}>
+            <div key={index} className={`flex ${ index % 2 === 0 ? "flex-row" : "flex-row-reverse"} flex-wrap-reverse md:flex-nowrap justify-center min-h-[652px]`}>
                 <GridTextCell styling="bg-white">
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
                         <h2 className="grid-title text-center text-grey-950">{item.title}</h2>

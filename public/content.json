@@ -505,6 +505,127 @@
                 "title": "2M+",
                 "description": "Impressions generated"
             }
-        ]
+        ],
+        "successSection": [
+            {
+                "section": "successSection",
+                "category": "E-commerce",
+                "title": "Fashion Retail Brand",
+                "description": "Comprehensive digital marketing strategy that increased online sales and brand awareness for a growing fashion retailer.",
+                "effects": [
+                    {
+                        "value": "180%",
+                        "title": "Sales Growth"
+                    },
+                    {
+                        "value": "65%",
+                        "title": "More Traffic"
+                    },
+                    {
+                        "value": "3.2x",
+                        "title": "ROAS"
+                    }
+                ],
+                "img": "fashion"
+            },
+            {
+                "section": "successSection",
+                "category": "Healthcare",
+                "title": "Medical Practice",
+                "description": "Local SEO and content marketing campaign that helped a medical practice attract more patients and build trust.",
+                "effects": [
+                    {
+                        "value": "400%",
+                        "title": "Lead Increase"
+                    },
+                    {
+                        "value": "#1",
+                        "title": "Local Ranking"
+                    },
+                    {
+                        "value": "90%",
+                        "title": "Appointment Rate"
+                    }
+                ],
+                "img": "medical"
+            },
+            {
+                "section": "successSection",
+                "category": "B2B Technology",
+                "title": "SaaS Startup",
+                "description": "Multi-channel digital marketing approach that accelerated user acquisition and revenue growth for a B2B SaaS platform.",
+                "effects": [
+                    {
+                        "value": "500%",
+                        "title": "User Growth"
+                    },
+                    {
+                        "value": "35%",
+                        "title": "Lower CAC"
+                    },
+                    {
+                        "value": "$1.2M",
+                        "title": "ARR Growth"
+                    }
+                ],
+                "img": "saas"
+            }
+        ],
+        "packagesSection": {
+            "section": "packagesSection",
+            "title": "Digital Marketing Packages",
+            "description": "Choose the digital marketing package that aligns with your business goals and growth stage. All packages include strategy development and monthly performance reporting.",
+            "packages": [
+                {
+                    "type": "Starter",
+                    "title": "Essential Digital",
+                    "price": "$1,500",
+                    "time": "per month",
+                    "list": [
+                        "Social media management (2 platforms)",
+                        "Basic SEO optimization",
+                        "Monthly content creation (8 posts)",
+                        "Google Analytics setup",
+                        "Monthly performance report"
+                    ],
+                    "link": "#",
+                    "button": "Get Started"
+                },
+                {
+                    "type": "Most Popular",
+                    "title": "Growth Accelerator",
+                    "price": "$3,500",
+                    "time": "per month",
+                    "list": [
+                        "Multi-platform social media (4 platforms)",
+                        "Advanced SEO and content marketing",
+                        "Email marketing campaigns",
+                        "Google Ads management ($1000 ad spend)",
+                        "Custom analytics dashboard",
+                        "Bi-weekly strategy calls",
+                        "A/B testing and optimization"
+                    ],
+                    "link": "#",
+                    "button": "Get Started"
+                },
+                {
+                    "type": "Enterprise",
+                    "title": "Full-Scale Digital",
+                    "price": "$6,500",
+                    "time": "per month",
+                    "list": [
+                        "Everything in Growth Accelerator",
+                        "Multi-channel advertising campaigns",
+                        "Advanced marketing automation",
+                        "Conversion rate optimization",
+                        "Dedicated account manager",
+                        "Weekly strategy sessions",
+                        "Custom integrations and tools"
+                    ],
+                    "link": "#",
+                    "button": "Get Started"
+                }
+            ]
+        }
     }
 }

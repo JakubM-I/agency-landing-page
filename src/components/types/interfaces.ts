@@ -84,6 +84,7 @@ export interface SectionHeroProps{
 export interface SectionTitleProps {
     title: string;
     styling?: string;
+    id?: string;
 }
 
 export interface BottomPicturesProps {
@@ -268,4 +269,39 @@ export interface MarketingServiceItemProps {
 export interface MarketingServicesProps {
     items: MarketingServiceItemProps[];
     images: ImagesProps;
+}
+
+export interface SuccessStoriesItemProps {
+    section: string;
+    category: string;
+    title: string;
+    description: string;
+    effects: {value: string, title: string}[];
+    img: string;
+}
+
+export interface SuccessStoriesProps {
+    items: SuccessStoriesItemProps[];
+    images: ImagesProps;
+}
+
+export interface PackageProps {
+    type: string;
+    title: string;
+    price: string;
+    time: string;
+    list: string[];
+    link: string;
+    button: string;
+}
+
+export interface PackagesItemProps {
+    section: string;
+    title: string;
+    description: string;
+    packeges: PackageProps[];
+}
+
+export interface PackagesProps {
+    items: PackagesItemProps[];
 }
