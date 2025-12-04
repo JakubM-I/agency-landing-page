@@ -7,17 +7,17 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({items, images}) => {
              <SectionTitle title="Success Stories" styling="mb-8" id="successSection" />
               <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap justify-center items-stretch gap-10 sm:gap-8 px-6">
                 {items.map((item, index) => (
-                    <article key={index} className="flex flex-col justify-start items-center" aria-label={`${item.category}: ${item.title}`}>
+                    <article key={index} className="flex flex-col justify-start items-center gap-2 flex-[0_1_45%] lg:flex-[0_1_30%] bg-white h-auto rounded-2xl shadow-xl overflow-hidden" aria-label={`${item.category}: ${item.title}`}>
                         <img src={images[item.section][item.img]} alt={item.title} />
-                        <div className="p-3 flex flex-col justify-start items-start gap-4">
+                        <div className="p-5 flex flex-col justify-start items-start gap-4">
                             <span>{item.category}</span>
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
-                            <dl>
+                            <dl className="flex flex-nowrap justify-between items-start gap-3 w-full">
                                 {item.effects.map((effect, index) => (
-                                    <div key={index}>
+                                    <div key={index} className="flex flex-col flex-nowrap justify-start items-center gap-2">
                                         <dd>{effect.value}</dd>
-                                        <dt>{effect.title}</dt>
+                                        <dt className="text-center">{effect.title}</dt>
                                     </div>
                                 ))}
                             </dl>
