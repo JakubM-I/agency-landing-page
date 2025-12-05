@@ -285,7 +285,7 @@ export interface SuccessStoriesProps {
     images: ImagesProps;
 }
 
-export interface PackageProps {
+export interface PackagesItemProps {
     type: string;
     title: string;
     price: string;
@@ -295,13 +295,13 @@ export interface PackageProps {
     button: string;
 }
 
-export interface PackagesItemProps {
+export interface PackageProps {
     section: string;
     title: string;
     description: string;
-    packeges: PackageProps[];
+    packeges: PackagesItemProps[];
 }
 
 export interface PackagesProps {
-    items: PackagesItemProps[];
+    items: PackageProps;
 }
