@@ -299,7 +299,7 @@ export interface PackageProps {
     section: string;
     title: string;
     description: string;
-    packeges: PackagesItemProps[];
+    packages: PackagesItemProps[];
 }
 
 export interface PackagesProps {
