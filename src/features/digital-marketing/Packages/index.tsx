@@ -3,7 +3,7 @@ import type { PackagesProps } from "../../../components/types/interfaces";
 
 const Packages: React.FC<PackagesProps> = ({ items }) => {
     return (
-        <section className="py-16 sx:py-[67px] bg-[#F5EDE0]" aria-labelledby="packagesSection" >
+        <section className="mt-16 sx:mt-[67px] py-16 sx:py-[67px] bg-[#F5EDE0]" aria-labelledby="packagesSection" >
             <SectionTitle title={items.title} styling="mb-8" id="packagesSection" />
             <div className="w-[min(1000px,100%)] px-6 mx-auto">
                 <p className="text-preset-10 text-center text-grey-550 text-pretty mb-9">{items.description}</p>
@@ -21,7 +21,7 @@ const Packages: React.FC<PackagesProps> = ({ items }) => {
                                 <li key={index} className="text-preset-10 text-grey-550 before:content-['✓'] before:text-[#ffa62b] before:me-2">{item}</li>
                             ))}
                         </ul>
-                        <button className="my-[auto_0] bg-red-400 py-2.5 px-3.5 rounded-2xl shadow-lg text-white uppercase text-preset-8 font-bold text-center transition duration-450 easy-in-out hover:-translate-y-1">{packageItem.button}</button>
+                        <button className="my-[auto_0] bg-red-400 py-2.5 px-3.5 rounded-2xl shadow-lg text-white uppercase text-preset-8 font-bold text-center transition duration-450 easy-in-out hover:-translate-y-1 cursor-pointer">{packageItem.button}</button>
                     </article>
                 ))}
             </div>

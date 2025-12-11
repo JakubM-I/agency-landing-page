@@ -7,8 +7,7 @@ import type { OurAproachProps } from "../../../components/types/interfaces";
 const OurApproach: React.FC<OurAproachProps> = ({ items, images }) => {
 
     return (
-        <>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row pt-16 sx:pt-[67px]">
                 <GridTextCell>
                     <div className="flex flex-col flex-nowrap justify-center items-start w-[min(490px,100%)] h-full" >
                         <SectionTitle title={items.title} styling="mb-8" />
@@ -26,9 +25,6 @@ const OurApproach: React.FC<OurAproachProps> = ({ items, images }) => {
                     desktopImg={images[items.section][items.img]}
                     mobileImg={images[items.section][items.img]} />
             </div>
-        </>
-
-
     )
 };
 
