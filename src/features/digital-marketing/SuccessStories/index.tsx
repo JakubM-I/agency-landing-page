@@ -3,7 +3,7 @@ import type { SuccessStoriesProps } from "../../../components/types/interfaces";
 
 const SuccessStories: React.FC<SuccessStoriesProps> = ({items, images}) => {
     return (
-        <section className="py-16 sx:py-[67px] bg-[#F7F7F7]" aria-labelledby="successSection" >
+        <section className="mt-16 sx:mt-[67px] py-16 sx:py-[67px] bg-[#F7F7F7]" aria-labelledby="successSection" >
              <SectionTitle title="Success Stories" styling="mb-8" id="successSection" />
               <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap justify-center items-stretch gap-10 sm:gap-8 px-6">
                 {items.map((item, index) => (

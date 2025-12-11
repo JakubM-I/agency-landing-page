@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 const Footer: React.FC = () => {
 return (
         <div className="w-full h-[350px] bg-green-300 flex items-center justify-center">
@@ -7,9 +9,9 @@ return (
                 </div>
                 <div className="mb-20">
                     <ul className="flex gap-14 text-green-500">
-                        <li className="footer-link"><a href="#" className="text-preset-10">About</a></li>
-                        <li className="footer-link"><a href="#" className="text-preset-10">Services</a></li>
-                        <li className="footer-link"><a href="#" className="text-preset-10">Projects</a></li>
+                        <li className="footer-link"><NavLink to="/about" className="text-preset-10">About</NavLink></li>
+                        <li className="footer-link"><NavLink to="/services" className="text-preset-10">Services</NavLink></li>
+                        <li className="footer-link"><NavLink to="/project" className="text-preset-10">Projects</NavLink></li>
                     </ul>
                 </div>
                 <div>
