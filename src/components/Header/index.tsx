@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
     return (
         <>
         {isSticky ? (
-            <header className={`sticky top-1 z-5 ${headerBg} backdrop-blur-md`}> 
+            <header className={`sticky top-0 z-5 ${headerBg} backdrop-blur-md`}> 
                 <MenuBar isSticky={isSticky}  /> 
             </header>
         ) : (
