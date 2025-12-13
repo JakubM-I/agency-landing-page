@@ -9,7 +9,7 @@ const OurTeam: React.FC<SectionTeamProps> = ({items, images}) => {
 
     return (
         <>
-            <div className="flex flex-col-reverse md:flex-row">
+            <div className="mt-16 sx:mt-[67px] flex flex-col-reverse md:flex-row">
                 <GridTextCell>
                     <div className="flex flex-col flex-nowrap justify-center items-start w-[min(445px,100%)]" >
                         <SectionTitle title="Our Team" styling="mb-8" />
