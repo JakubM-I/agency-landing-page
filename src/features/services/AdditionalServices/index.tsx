@@ -4,7 +4,7 @@ import type { SectionAdditionalServiceProps } from "../../../components/types/in
 const AdditionalServices: React.FC<SectionAdditionalServiceProps> = ({items, images}) => {
     return (
         <>
-            <div className="py-16 sx:py-[67px] bg-[#F5EDE0]">
+            <div className="mt-16 sx:mt-[67px] py-16 sx:py-[67px] bg-[#F5EDE0]">
                 <SectionTitle title="Additional Services" styling="mb-8" />
                 <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap md:flex-nowrap justify-center items-stretch gap-10 sm:gap-8 px-6">
                     {items.map((item, index) => (

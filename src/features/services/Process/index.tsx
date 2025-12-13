@@ -3,7 +3,7 @@ import type { SectionCreativeProcessProps } from "../../../components/types/inte
 
 const CreativeProcess: React.FC<SectionCreativeProcessProps> = ({items, images}) => {
     return (
-        <div className="py-16 sx:py-[67px] bg-[#F7F7F7]">
+        <div className="mt-16 sx:mt-[67px] py-16 sx:py-[67px] bg-[#F7F7F7]">
             <SectionTitle title="Our Creative Process" styling="mb-8" />
             <div className="flex flex-col sm:flex-row gap-9 md:gap-0 flex-nowrap sm:flex-wrap justify-center md:justify-evenly items-stretch px-6 md:px-0">
                 {items.map((item, index) => (
