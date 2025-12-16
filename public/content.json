@@ -627,5 +627,207 @@
                 }
             ]
         }
+    },
+    "transformBrandPage": {
+        "heroSection": {
+            "section": "heroSection",
+            "title": "Transform Your Brand",
+            "subtitle": "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
+            "textColor": "text-blue-950",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        },
+        "introSection": {
+            "section": "introSection",
+            "title": "Brand Identity & Strategy",
+            "line1": "Your brand is more than just a logo – it's the complete experience your customers have with your business. We create comprehensive brand identities that tell your story, connect with your audience, and differentiate you from the competition. From initial strategy through final implementation, we ensure every touchpoint reflects your brand's unique personality and values."
+        },
+        "whatsIncludedSection": {
+            "section": "whatsIncludedSection",
+            "title": "What's Included",
+            "services": [
+                {
+                    "title": "Logo Design",
+                    "description": "Custom logo design that captures your brand essence and works across all applications.",
+                    "list": [
+                        "Multiple concept exploration",
+                        "Vector and raster formats",
+                        "Scalability testing",
+                        "Color and monochrome versions"
+                    ],
+                    "img": "logo"
+                },
+                {
+                    "title": "Brand Guidelines",
+                    "description": "Comprehensive style guide ensuring consistent brand application across all channels.",
+                    "list": [
+                        "Logo usage rules",
+                        "Color palette specifications",
+                        "Typography system",
+                        "Visual style examples"
+                    ],
+                    "img": "guidelines"
+                },
+                {
+                    "title": "Brand Strategy",
+                    "description": "Strategic foundation that defines your brand's position, personality, and promise.",
+                    "list": [
+                        "Brand positioning workshop",
+                        "Target audience analysis",
+                        "Competitive landscape review",
+                        "Value proposition development"
+                    ],
+                    "img": "strategy"
+                },
+                {
+                    "title": "Marketing Collateral",
+                    "description": "Essential marketing materials designed to support your brand launch and growth.",
+                    "list": [
+                        "Business card design",
+                        "Letterhead and stationery",
+                        "Brochure templates",
+                        "Digital asset library"
+                    ],
+                    "img": "collateral"
+                },
+                {
+                    "title": "Brand Voice & Messaging",
+                    "description": "Consistent tone and messaging framework that resonates with your audience.",
+                    "list": [
+                        "Voice and tone guidelines",
+                        "Key messaging framework",
+                        "Tagline development",
+                        "Content style guide"
+                    ],
+                    "img": "voice"
+                },
+                {
+                    "title": "Market Research",
+                    "description": "In-depth analysis of your market, competitors, and target audience insights.",
+                    "list": [
+                        "Industry trend analysis",
+                        "Competitor brand audit",
+                        "Customer persona development",
+                        "Market opportunity assessment"
+                    ],
+                    "img": "research"
+                }
+            ]
+        },
+        "processSection": {
+            "section": "processSection",
+            "title": "Our Brand Development Process",
+            "steps": [
+                {
+                    "number": "1",
+                    "title": "Discovery & Research",
+                    "description": "We dive deep into your business, industry, and target audience to understand what makes your brand unique and how to position it effectively in the market."
+                },
+                {
+                    "number": "2",
+                    "title": "Strategy Development",
+                    "description": "Based on our research, we develop your brand strategy including positioning, personality, voice, and key messaging that will guide all creative decisions."
+                },
+                {
+                    "number": "3",
+                    "title": "Visual Identity Creation",
+                    "description": "We design your logo, select your color palette, choose typography, and create all visual elements that will represent your brand across touchpoints."
+                },
+                {
+                    "number": "4",
+                    "title": "Guidelines & Implementation",
+                    "description": "We create comprehensive brand guidelines and help implement your new identity across all materials, ensuring consistency and maximum impact."
+                }
+            ]
+        },
+        "caseStudySection": {
+            "section": "caseStudySection",
+            "category": "Success Story",
+            "title": "TechFlow Startup Transformation",
+            "description": "A complete brand transformation that helped this fintech startup secure $2M in Series A funding and increase user sign-ups by 300% within six months of launch.",
+            "results": [
+                {
+                    "value": "300%",
+                    "title": "User Growth"
+                },
+                {
+                    "value": "$2M",
+                    "title": "Funding Raised"
+                },
+                {
+                    "value": "85%",
+                    "title": "Brand Recognition"
+                },
+                {
+                    "value": "6wk",
+                    "title": "Project Timeline"
+                }
+            ],
+            "link": "#",
+            "linkText": "View Full Case Study",
+            "img": "techflow"
+        },
+        "packagesSection": {
+            "section": "packagesSection",
+            "title": "Brand Identity Packages",
+            "description": "Choose the package that best fits your needs and budget. All packages include our comprehensive brand development process and ongoing support.",
+            "packages": [
+                {
+                    "type": "Starter",
+                    "title": "Essential Brand",
+                    "price": "$2,500",
+                    "time": "One-time investment",
+                    "list": [
+                        "Logo design (3 concepts)",
+                        "Basic brand guidelines",
+                        "Business card design",
+                        "Basic color palette",
+                        "2 rounds of revisions"
+                    ],
+                    "link": "#",
+                    "button": "Get Started"
+                },
+                {
+                    "type": "Most Popular",
+                    "title": "Complete Brand",
+                    "price": "$5,500",
+                    "time": "One-time investment",
+                    "list": [
+                        "Full brand strategy workshop",
+                        "Logo design (5 concepts)",
+                        "Comprehensive brand guidelines",
+                        "Complete stationery suite",
+                        "Brand voice & messaging",
+                        "Marketing collateral templates",
+                        "Unlimited revisions"
+                    ],
+                    "link": "#",
+                    "button": "Get Started"
+                },
+                {
+                    "type": "Premium",
+                    "title": "Brand Ecosystem",
+                    "price": "$8,500",
+                    "time": "One-time investment",
+                    "list": [
+                        "Everything in Complete Brand",
+                        "Market research & analysis",
+                        "Website design concept",
+                        "Social media templates",
+                        "Brand photography direction",
+                        "Implementation support",
+                        "3 months post-launch support"
+                    ],
+                    "link": "#",
+                    "button": "Get Started"
+                }
+            ]
+        },
+        "ctaSection": {
+            "section": "ctaSection",
+            "title": "Ready to Transform Your Brand?",
+            "txtLine": "Let's schedule a free consultation to discuss your brand goals and how we can help you create a powerful identity that drives results.",
+            "btnText": "Schedule Free Consultation"
+        }
     }
 }
