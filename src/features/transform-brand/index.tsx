@@ -1,7 +1,12 @@
-const TransformBrand = () => {
+import { useLoaderData } from "react-router";
+
+const TransformBrand: React.FC = () => {
+  const content = useLoaderData();
+  
   return (
-  <div>Transform Brand Feature</div>
-    );
+    <>
+    </>
+  );
 };
 
 export default TransformBrand;
