@@ -4,10 +4,10 @@ import { images } from "../../components/graphics/graphics.tsx";
 import SectionIntro from "../../components/TextSection/index.tsx";
 import CtaSection from "../../components/CtaSection/index.tsx";
 import OurApproach from "./OurApproach/index.tsx";
-import MarketingServices from "./MarketingServices/index.tsx";
 import MarketingStatistics from "./Statistics/index.tsx";
 import SuccessStories from "./SuccessStories/index.tsx";
 import Packages from "../../components/PackagesSection/index.tsx";
+import Services from "../../components/ServicesSection/index.tsx";
 
 
 const DigitalMarketing: React.FC = () => {
@@ -21,7 +21,7 @@ const DigitalMarketing: React.FC = () => {
                 images={images.dmarketingPage}
             />
             <SectionIntro items={content.dmarketingPage.introSection} />
-            <MarketingServices
+            <Services
                 items={content.dmarketingPage.marketingServicesSection}
                 images={images.dmarketingPage}
             />
