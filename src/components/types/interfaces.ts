@@ -290,9 +290,11 @@ export interface PackagesItemProps {
     title: string;
     price: string;
     time: string;
+    listIconColor?: string;
     list: string[];
     link: string;
     button: string;
+    buttonColor?: string;
 }
 
 export interface PackageProps {

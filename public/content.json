@@ -581,6 +581,7 @@
                     "title": "Essential Digital",
                     "price": "$1,500",
                     "time": "per month",
+                    "listIconColor": "#ffa62b",
                     "list": [
                         "Social media management (2 platforms)",
                         "Basic SEO optimization",
@@ -589,13 +590,15 @@
                         "Monthly performance report"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                     "buttonColor": "bg-red-400"
                 },
                 {
                     "type": "Most Popular",
                     "title": "Growth Accelerator",
                     "price": "$3,500",
                     "time": "per month",
+                    "listIconColor": "#ffa62b",
                     "list": [
                         "Multi-platform social media (4 platforms)",
                         "Advanced SEO and content marketing",
@@ -606,13 +609,15 @@
                         "A/B testing and optimization"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                     "buttonColor": "bg-red-400"
                 },
                 {
                     "type": "Enterprise",
                     "title": "Full-Scale Digital",
                     "price": "$6,500",
                     "time": "per month",
+                    "listIconColor": "#ffa62b",
                     "list": [
                         "Everything in Growth Accelerator",
                         "Multi-channel advertising campaigns",
@@ -623,7 +628,8 @@
                         "Custom integrations and tools"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                     "buttonColor": "bg-red-400"
                 }
             ]
         }
@@ -771,6 +777,7 @@
             "section": "packagesSection",
             "title": "Brand Identity Packages",
             "description": "Choose the package that best fits your needs and budget. All packages include our comprehensive brand development process and ongoing support.",
+            "listIconColor": "",
             "packages": [
                 {
                     "type": "Starter",
@@ -785,7 +792,8 @@
                         "2 rounds of revisions"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                    "buttonColor": ""
                 },
                 {
                     "type": "Most Popular",
@@ -802,7 +810,8 @@
                         "Unlimited revisions"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                     "buttonColor": ""
                 },
                 {
                     "type": "Premium",
@@ -819,7 +828,8 @@
                         "3 months post-launch support"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                     "buttonColor": ""
                 }
             ]
         },
