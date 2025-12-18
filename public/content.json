@@ -777,13 +777,13 @@
             "section": "packagesSection",
             "title": "Brand Identity Packages",
             "description": "Choose the package that best fits your needs and budget. All packages include our comprehensive brand development process and ongoing support.",
-            "listIconColor": "",
             "packages": [
                 {
                     "type": "Starter",
                     "title": "Essential Brand",
                     "price": "$2,500",
                     "time": "One-time investment",
+                    "listIconColor": "yellow-500",
                     "list": [
                         "Logo design (3 concepts)",
                         "Basic brand guidelines",
@@ -793,13 +793,14 @@
                     ],
                     "link": "#",
                     "button": "Get Started",
-                    "buttonColor": ""
+                    "buttonColor": "bg-yellow-500"
                 },
                 {
                     "type": "Most Popular",
                     "title": "Complete Brand",
                     "price": "$5,500",
                     "time": "One-time investment",
+                    "listIconColor": "yellow-500",
                     "list": [
                         "Full brand strategy workshop",
                         "Logo design (5 concepts)",
@@ -811,13 +812,14 @@
                     ],
                     "link": "#",
                     "button": "Get Started",
-                     "buttonColor": ""
+                     "buttonColor": "bg-yellow-500"
                 },
                 {
                     "type": "Premium",
                     "title": "Brand Ecosystem",
                     "price": "$8,500",
                     "time": "One-time investment",
+                    "listIconColor": "yellow-500",
                     "list": [
                         "Everything in Complete Brand",
                         "Market research & analysis",
@@ -829,7 +831,7 @@
                     ],
                     "link": "#",
                     "button": "Get Started",
-                     "buttonColor": ""
+                     "buttonColor": "bg-yellow-500"
                 }
             ]
         },
