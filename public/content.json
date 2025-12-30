@@ -780,6 +780,7 @@
             "packages": [
                 {
                     "type": "Starter",
+                    "popular" : false,
                     "title": "Essential Brand",
                     "price": "$2,500",
                     "time": "One-time investment",
@@ -797,6 +798,8 @@
                 },
                 {
                     "type": "Most Popular",
+                    "popular": true,
+                    "borderColor": "border-yellow-500",
                     "title": "Complete Brand",
                     "price": "$5,500",
                     "time": "One-time investment",
@@ -816,6 +819,7 @@
                 },
                 {
                     "type": "Premium",
+                    "popular" : false,
                     "title": "Brand Ecosystem",
                     "price": "$8,500",
                     "time": "One-time investment",

@@ -287,6 +287,8 @@ export interface SuccessStoriesProps {
 
 export interface PackagesItemProps {
     type: string;
+    popular?: boolean;
+    borderColor?: string;
     title: string;
     price: string;
     time: string;
