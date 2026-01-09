@@ -11,7 +11,7 @@ return (
                     <ul className="flex gap-14 text-green-500">
                         <li className="footer-link"><NavLink to="/about" className="text-preset-10">About</NavLink></li>
                         <li className="footer-link"><NavLink to="/services" className="text-preset-10">Services</NavLink></li>
-                        <li className="footer-link"><NavLink to="/project" className="text-preset-10">Projects</NavLink></li>
+                        <li className="footer-link"><NavLink to="/projects" className="text-preset-10">Projects</NavLink></li>
                     </ul>
                 </div>
                 <div>
