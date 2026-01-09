@@ -258,16 +258,21 @@ export interface OurAproachProps {
     images: ImagesProps;
 }
 
-export interface MarketingServiceItemProps {
-    section: string;
+export interface ServicesItemProps {
     title: string;
     description: string;
     list: string[];
     img: string;
 }
 
-export interface MarketingServicesProps {
-    items: MarketingServiceItemProps[];
+export interface ServiceProps {
+    section: string;
+    title: string;
+    services: ServicesItemProps[];
+}
+
+export interface ServicesProps {
+    items: ServiceProps;
     images: ImagesProps;
 }
 
