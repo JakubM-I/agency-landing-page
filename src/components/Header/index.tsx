@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({isSticky=false}) => {
             sticky: "bg-[#ffa72b81]"
         },
         "/brand-transform": {
-            relative: "bg-[#4FBFA3]",
+            relative: "bg-gradient-to-r from-[#4fbfa3] from-50% to-[#5ac9ae] to-80%", 
             sticky: "bg-[#4fbfa38f]"
         }
     }
