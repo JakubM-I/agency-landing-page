@@ -314,3 +314,19 @@ export interface PackageProps {
 export interface PackagesProps {
     items: PackageProps;
 }
+
+export interface CaseStudyItemProps {
+    section: string;
+    category: string;
+    title: string;
+    description: string;
+    results: {value: string, title: string}[];
+    link: string;
+    linkText: string;
+    img: string;
+}
+
+export interface CaseStudyProps {
+    items: CaseStudyItemProps;
+    images: ImagesProps;
+}
