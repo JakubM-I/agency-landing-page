@@ -5,6 +5,7 @@ import CtaSection from "../../components/CtaSection";
 import Packages from "../../components/PackagesSection";
 import HeroSection from "../../components/HeroSection/index.tsx";
 import Services from "../../components/ServicesSection/index.tsx";
+import CaseStudy from "./CaseStudy/index.tsx";
 
 const TransformBrand: React.FC = () => {
   const content = useLoaderData();
@@ -20,6 +21,7 @@ const TransformBrand: React.FC = () => {
         items={content.transformBrandPage.whatsIncludedSection}
         images={images.transformBrandPage}
       />
+      <CaseStudy items={content.transformBrandPage.caseStudy} images={images.transformBrandPage} />
       <Packages items={content.transformBrandPage.packagesSection} />
       <CtaSection items={content.transformBrandPage.ctaSection} />
     </>

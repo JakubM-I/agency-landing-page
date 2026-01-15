@@ -15,7 +15,10 @@ const CaseStudy: React.FC<CaseStudyProps> = ({items, images}) => {
                     <p className="text-preset-10 text-left text-grey-550">{items.description}</p>
                     <ul className="flex flex-wrap gap-2 justify-start items-center">
                         {items.results.map((item, index) => (
-                            <li key={index} className="flex-[0_0_auto] text-preset-12 font-light leading-none text-white bg-grey-400 p-2 rounded-xl">{tag}</li>
+                            <li key={index} className="">
+                                {item.value}
+                                {item.title}
+                            </li>
                         ))}
                     </ul>
                     <NavLink to="" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--yellow mt-auto mb-0">
@@ -23,7 +26,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({items, images}) => {
                     </NavLink>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 
