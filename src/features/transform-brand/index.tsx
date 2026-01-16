@@ -21,7 +21,7 @@ const TransformBrand: React.FC = () => {
         items={content.transformBrandPage.whatsIncludedSection}
         images={images.transformBrandPage}
       />
-      <CaseStudy items={content.transformBrandPage.caseStudy} images={images.transformBrandPage} />
+      <CaseStudy items={content.transformBrandPage.caseStudySection} images={images.transformBrandPage} />
       <Packages items={content.transformBrandPage.packagesSection} />
       <CtaSection items={content.transformBrandPage.ctaSection} />
     </>
