@@ -7,7 +7,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({items, images}) => {
 
             <div className="flex flex-wrap md:flex-nowrap p-4 w-[min(1200px,100%)] mx-auto gap-10 shadow-md">
                 <div className="flex-[1_1_55%] md:flex-[]0_0_50%]">
-                    {images ? (<img className="w-full" src={images[items.section][items.img]} alt={items.title} />) : null}
+                    {images ? (<img className="w-full h-full object-cover" src={images[items.section][items.img]} alt={items.title} />) : null}
                 </div>
                 <div className="flex-[1_1_55%] md:flex-[]0_0_50%] h-full flex flex-col justify-start items-start gap-6">
                     <span className="text-preset-12 text-red-400 uppercase">{items.category}</span>
