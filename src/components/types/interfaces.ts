@@ -1,3 +1,5 @@
+import { TiThLarge } from "react-icons/ti";
+
 export interface HeaderProps{
     isSticky?: boolean;
 }
@@ -329,4 +331,14 @@ export interface CaseStudyItemProps {
 export interface CaseStudyProps {
     items: CaseStudyItemProps;
     images: ImagesProps;
+}
+
+export interface DevelopmentProcessItemProps {
+    section: string;
+    title: string;
+    steps: {step: string, title: string, description: string}[];
+}
+
+export interface DevelopmentProcessProps {
+    items: DevelopmentProcessItemProps;
 }
