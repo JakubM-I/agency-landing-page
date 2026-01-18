@@ -263,12 +263,13 @@
 
     .process-step-left::before,
     .process-step-right::after {
-        @apply w-8 h-8 rounded-full bg-[#f59e0b];
+        @apply w-10 h-10 rounded-full bg-[#f59e0b] text-preset-9 text-white;
         content: counter(step);
         display: flex;
         align-items: center;
         justify-content: center;
         left: 0;
+        flex: 0 0 40px
     }
 
      .process-step-left::before {

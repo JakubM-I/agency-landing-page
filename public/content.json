@@ -723,22 +723,22 @@
             "title": "Our Brand Development Process",
             "steps": [
                 {
-                    "number": "1",
+                    "step": "1",
                     "title": "Discovery & Research",
                     "description": "We dive deep into your business, industry, and target audience to understand what makes your brand unique and how to position it effectively in the market."
                 },
                 {
-                    "number": "2",
+                    "step": "2",
                     "title": "Strategy Development",
                     "description": "Based on our research, we develop your brand strategy including positioning, personality, voice, and key messaging that will guide all creative decisions."
                 },
                 {
-                    "number": "3",
+                    "step": "3",
                     "title": "Visual Identity Creation",
                     "description": "We design your logo, select your color palette, choose typography, and create all visual elements that will represent your brand across touchpoints."
                 },
                 {
-                    "number": "4",
+                    "step": "4",
                     "title": "Guidelines & Implementation",
                     "description": "We create comprehensive brand guidelines and help implement your new identity across all materials, ensuring consistency and maximum impact."
                 }
