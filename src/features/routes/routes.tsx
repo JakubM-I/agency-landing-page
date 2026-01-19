@@ -5,6 +5,7 @@ import HomePage from "../homepage/index";
 import ProjectsPage from "../projects";
 import RootElement from "../Root/root";
 import ServicesPage from "../services";
+import TransformBrand from "../transform-brand";
 
 export const routes = [
     {
@@ -45,6 +46,13 @@ export const routes = [
             {
                 path: "digital-marketing",
                 element: <DigitalMarketing />,
+                loader: () => {
+                    return fetch("/content.json")
+                }
+            },
+                        {
+                path: "brand-transform",
+                element: <TransformBrand />,
                 loader: () => {
                     return fetch("/content.json")
                 }

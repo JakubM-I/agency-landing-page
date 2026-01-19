@@ -1,3 +1,5 @@
+// import { TiThLarge } from "react-icons/ti";
+
 export interface HeaderProps{
     isSticky?: boolean;
 }
@@ -258,16 +260,21 @@ export interface OurAproachProps {
     images: ImagesProps;
 }
 
-export interface MarketingServiceItemProps {
-    section: string;
+export interface ServicesItemProps {
     title: string;
     description: string;
     list: string[];
     img: string;
 }
 
-export interface MarketingServicesProps {
-    items: MarketingServiceItemProps[];
+export interface ServiceProps {
+    section: string;
+    title: string;
+    services: ServicesItemProps[];
+}
+
+export interface ServicesProps {
+    items: ServiceProps;
     images: ImagesProps;
 }
 
@@ -287,12 +294,16 @@ export interface SuccessStoriesProps {
 
 export interface PackagesItemProps {
     type: string;
+    popular?: boolean;
+    borderColor?: string;
     title: string;
     price: string;
     time: string;
+    listIconColor?: string;
     list: string[];
     link: string;
     button: string;
+    buttonColor?: string;
 }
 
 export interface PackageProps {
@@ -304,4 +315,30 @@ export interface PackageProps {
 
 export interface PackagesProps {
     items: PackageProps;
+}
+
+export interface CaseStudyItemProps {
+    section: string;
+    category: string;
+    title: string;
+    description: string;
+    results: {value: string, title: string}[];
+    link: string;
+    linkText: string;
+    img: string;
+}
+
+export interface CaseStudyProps {
+    items: CaseStudyItemProps;
+    images: ImagesProps;
+}
+
+export interface DevelopmentProcessItemProps {
+    section: string;
+    title: string;
+    steps: {step: string, title: string, description: string}[];
+}
+
+export interface DevelopmentProcessProps {
+    items: DevelopmentProcessItemProps;
 }

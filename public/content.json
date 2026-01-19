@@ -404,86 +404,84 @@
             "link": "#",
             "img": "approach"
         },
-        "marketingServicesSection": [
-            {
-                "section": "marketingServicesSection",
-                "title": "Social Media Marketing",
-                "description": "Build meaningful connections with your audience through strategic social media campaigns.",
-                "list": [
-                    "Content strategy and planning",
-                    "Platform optimization",
-                    "Community management",
-                    "Influencer partnerships",
-                    "Social advertising campaigns"
-                ],
-                "img": "socialmedia"
-            },
-            {
-                "section": "marketingServicesSection",
-                "title": "SEO & Search Marketing",
-                "description": "Increase your online visibility and drive qualified traffic to your website.",
-                "list": [
-                    "Keyword research and strategy",
-                    "On-page optimization",
-                    "Technical SEO audits",
-                    "Link building campaigns",
-                    "Google Ads management"
-                ],
-                "img": "seo"
-            },
-            {
-                "section": "marketingServicesSection",
-                "title": "Email Marketing",
-                "description": "Nurture leads and retain customers with personalized email campaigns.",
-                "list": [
-                    "Email automation setup",
-                    "Newsletter design and content",
-                    "Segmentation strategies",
-                    "A/B testing optimization",
-                    "Performance analytics"
-                ],
-                "img": "email"
-            },
-            {
-                "section": "marketingServicesSection",
-                "title": "Content Marketing",
-                "description": "Create valuable content that educates, engages, and converts your target audience.",
-                "list": [
-                    "Content strategy development",
-                    "Blog writing and management",
-                    "Video content creation",
-                    "Infographic design",
-                    "Content distribution"
-                ],
-                "img": "content"
-            },
-            {
-                "section": "marketingServicesSection",
-                "title": "Analytics & Reporting",
-                "description": "Track, measure, and optimize your digital marketing performance with data-driven insights.",
-                "list": [
-                    "Google Analytics setup",
-                    "Custom dashboard creation",
-                    "Monthly performance reports",
-                    "ROI analysis and optimization",
-                    "Conversion tracking"
-                ],
-                "img": "analytics"
-            },
-            {
-                "section": "marketingServicesSection",
-                "title": "Paid Advertising",
-                "description": "Maximize your reach and conversions with strategic paid advertising campaigns.",
-                "list": [
-                    "Google Ads campaigns",
-                    "Facebook and Instagram ads",
-                    "LinkedIn advertising",
-                    "Retargeting campaigns",
-                    "Ad creative development"
-                ],
-                "img": "ads"
-            }
-        ],
+        "marketingServicesSection": {
+            "section": "marketingServicesSection",
+            "title": "Our Digital Marketing Services",
+            "services": [
+                {
+                    "title": "Social Media Marketing",
+                    "description": "Build meaningful connections with your audience through strategic social media campaigns.",
+                    "list": [
+                        "Content strategy and planning",
+                        "Platform optimization",
+                        "Community management",
+                        "Influencer partnerships",
+                        "Social advertising campaigns"
+                    ],
+                    "img": "socialmedia"
+                },
+                {
+                    "title": "SEO & Search Marketing",
+                    "description": "Increase your online visibility and drive qualified traffic to your website.",
+                    "list": [
+                        "Keyword research and strategy",
+                        "On-page optimization",
+                        "Technical SEO audits",
+                        "Link building campaigns",
+                        "Google Ads management"
+                    ],
+                    "img": "seo"
+                },
+                {
+                    "title": "Email Marketing",
+                    "description": "Nurture leads and retain customers with personalized email campaigns.",
+                    "list": [
+                        "Email automation setup",
+                        "Newsletter design and content",
+                        "Segmentation strategies",
+                        "A/B testing optimization",
+                        "Performance analytics"
+                    ],
+                    "img": "email"
+                },
+                {
+                    "title": "Content Marketing",
+                    "description": "Create valuable content that educates, engages, and converts your target audience.",
+                    "list": [
+                        "Content strategy development",
+                        "Blog writing and management",
+                        "Video content creation",
+                        "Infographic design",
+                        "Content distribution"
+                    ],
+                    "img": "content"
+                },
+                {
+                    "title": "Analytics & Reporting",
+                    "description": "Track, measure, and optimize your digital marketing performance with data-driven insights.",
+                    "list": [
+                        "Google Analytics setup",
+                        "Custom dashboard creation",
+                        "Monthly performance reports",
+                        "ROI analysis and optimization",
+                        "Conversion tracking"
+                    ],
+                    "img": "analytics"
+                },
+                {
+                    "title": "Paid Advertising",
+                    "description": "Maximize your reach and conversions with strategic paid advertising campaigns.",
+                    "list": [
+                        "Google Ads campaigns",
+                        "Facebook and Instagram ads",
+                        "LinkedIn advertising",
+                        "Retargeting campaigns",
+                        "Ad creative development"
+                    ],
+                    "img": "ads"
+                }
+            ]
+        },
         "statisticsSection": [
             {
                 "section": "statisticsSection",
@@ -581,6 +579,7 @@
                     "title": "Essential Digital",
                     "price": "$1,500",
                     "time": "per month",
+                    "listIconColor": "#ffa62b",
                     "list": [
                         "Social media management (2 platforms)",
                         "Basic SEO optimization",
@@ -589,13 +588,15 @@
                         "Monthly performance report"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                    "buttonColor": "bg-red-400"
                 },
                 {
                     "type": "Most Popular",
                     "title": "Growth Accelerator",
                     "price": "$3,500",
                     "time": "per month",
+                    "listIconColor": "#ffa62b",
                     "list": [
                         "Multi-platform social media (4 platforms)",
                         "Advanced SEO and content marketing",
@@ -606,13 +607,15 @@
                         "A/B testing and optimization"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                    "buttonColor": "bg-red-400"
                 },
                 {
                     "type": "Enterprise",
                     "title": "Full-Scale Digital",
                     "price": "$6,500",
                     "time": "per month",
+                    "listIconColor": "#ffa62b",
                     "list": [
                         "Everything in Growth Accelerator",
                         "Multi-channel advertising campaigns",
@@ -623,7 +626,8 @@
                         "Custom integrations and tools"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                    "buttonColor": "bg-red-400"
                 }
             ]
         }
@@ -719,22 +723,22 @@
             "title": "Our Brand Development Process",
             "steps": [
                 {
-                    "number": "1",
+                    "step": "1",
                     "title": "Discovery & Research",
                     "description": "We dive deep into your business, industry, and target audience to understand what makes your brand unique and how to position it effectively in the market."
                 },
                 {
-                    "number": "2",
+                    "step": "2",
                     "title": "Strategy Development",
                     "description": "Based on our research, we develop your brand strategy including positioning, personality, voice, and key messaging that will guide all creative decisions."
                 },
                 {
-                    "number": "3",
+                    "step": "3",
                     "title": "Visual Identity Creation",
                     "description": "We design your logo, select your color palette, choose typography, and create all visual elements that will represent your brand across touchpoints."
                 },
                 {
-                    "number": "4",
+                    "step": "4",
                     "title": "Guidelines & Implementation",
                     "description": "We create comprehensive brand guidelines and help implement your new identity across all materials, ensuring consistency and maximum impact."
                 }
@@ -774,9 +778,11 @@
             "packages": [
                 {
                     "type": "Starter",
+                    "popular": false,
                     "title": "Essential Brand",
                     "price": "$2,500",
                     "time": "One-time investment",
+                    "listIconColor": "yellow-500",
                     "list": [
                         "Logo design (3 concepts)",
                         "Basic brand guidelines",
@@ -785,13 +791,17 @@
                         "2 rounds of revisions"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                    "buttonColor": "bg-yellow-500"
                 },
                 {
                     "type": "Most Popular",
+                    "popular": true,
+                    "borderColor": "border-yellow-500",
                     "title": "Complete Brand",
                     "price": "$5,500",
                     "time": "One-time investment",
+                    "listIconColor": "yellow-500",
                     "list": [
                         "Full brand strategy workshop",
                         "Logo design (5 concepts)",
@@ -802,13 +812,16 @@
                         "Unlimited revisions"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                    "buttonColor": "bg-yellow-500"
                 },
                 {
                     "type": "Premium",
+                    "popular": false,
                     "title": "Brand Ecosystem",
                     "price": "$8,500",
                     "time": "One-time investment",
+                    "listIconColor": "yellow-500",
                     "list": [
                         "Everything in Complete Brand",
                         "Market research & analysis",
@@ -819,7 +832,8 @@
                         "3 months post-launch support"
                     ],
                     "link": "#",
-                    "button": "Get Started"
+                    "button": "Get Started",
+                    "buttonColor": "bg-yellow-500"
                 }
             ]
         },

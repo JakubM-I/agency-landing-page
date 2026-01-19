@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
     --color-white: #ffffff;
     --color-black: #000000;
     --color-green-800: #24554A;
@@ -19,103 +19,107 @@
     --color-blues-800: #19536C;
     --color-red-400: #FE7766;
     --color-yellow-500: #FAD400;
+    --color-orange-500: #f59e0b;
 
     --color-gradient-blue-start: #1db3ee;
     --color-gradient-blue-end: #01a5e9;
 
     --breakpoint-sx: 23.5rem;
+    --breakpoint-sl: 26.5625rem;
     --breakpoint-full: 90rem;
+
+    --unset: unset;
 }
 
-    @utility text-preset-1{
-        font-family: "Fraunces", serif;
-        font-size: 56px;
-        line-height: 125%;
-        letter-spacing: 9px;
-    }
+@utility text-preset-1 {
+    font-family: "Fraunces", serif;
+    font-size: 56px;
+    line-height: 125%;
+    letter-spacing: 9px;
+}
 
-    @utility text-preset-2{
-        font-family: "Fraunces", serif;
-        font-size: 42px;
-        line-height: 125%;
-        letter-spacing: 6px;
-    }
+@utility text-preset-2 {
+    font-family: "Fraunces", serif;
+    font-size: 42px;
+    line-height: 125%;
+    letter-spacing: 6px;
+}
 
-    @utility text-preset-3{
-        font-family: "Fraunces", serif;
-        font-size: 40px;
-        line-height: 125%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-3 {
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0px;
+}
 
-    @utility text-preset-4{
-        font-family: "Fraunces", serif;
-        font-size: 32px;
-        line-height: 125%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-4 {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0px;
+}
 
-    @utility text-preset-5{
-        font-family: "Fraunces", serif;
-        font-size: 28px;
-        line-height: 125%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-5 {
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    line-height: 125%;
+    letter-spacing: 0px;
+}
 
-    @utility text-preset-6{
-        font-family: "Fraunces", serif;
-        font-size: 20px;
-        line-height: 125%;
-        letter-spacing: 4px;
-    }
+@utility text-preset-6 {
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    line-height: 125%;
+    letter-spacing: 4px;
+}
 
-    @utility text-preset-7{
-        font-family: "Fraunces", serif;
-        font-size: 18px;
-        line-height: 125%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-7 {
+    font-family: "Fraunces", serif;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 0px;
+}
 
-    @utility text-preset-8{
-        font-family: "Fraunces", serif;
-        font-size: 15px;
-        line-height: 165%;
-        letter-spacing: 1px;
-    }
+@utility text-preset-8 {
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+    line-height: 165%;
+    letter-spacing: 1px;
+}
 
-    @utility text-preset-9{
-        font-family: "Barlow", sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 125%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-9 {
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0px;
+}
 
-   @utility text-preset-10{
-        font-family: "Barlow", sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 165%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-10 {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 165%;
+    letter-spacing: 0px;
+}
 
-  @utility text-preset-11{
-        font-family: "Barlow", sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 170%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-11 {
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 170%;
+    letter-spacing: 0px;
+}
 
-   @utility text-preset-12{
-        font-family: "Barlow", sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 180%;
-        letter-spacing: 0px;
-    }
+@utility text-preset-12 {
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 180%;
+    letter-spacing: 0px;
+}
 
-@layer utilities{
+@layer utilities {
     .text-hero-responsive {
         @apply text-preset-2;
         width: 100%;
@@ -128,35 +132,35 @@
         }
     }
 
-    @media (375px < width < 490px){
+    @media (375px < width < 490px) {
         .text-hero-responsive {
             font-size: clamp(2.625rem, -0.2283rem + 12.1739vw, 3.5rem);
         }
     }
 
-    @media (768px < width){
-        .text-hero-responsive{
+    @media (768px < width) {
+        .text-hero-responsive {
             width: 100%;
         }
     }
 
-    .hero-top-position{
+    .hero-top-position {
         top: 79px;
     }
 
     @media (375px < width) {
-        .hero-top-position{
+        .hero-top-position {
             top: 97px;
         }
     }
 
-    @media (768px < width){
-        .hero-top-position{
+    @media (768px < width) {
+        .hero-top-position {
             top: 110px;
         }
     }
 
-    .footer-link{
+    .footer-link {
         @apply hover:text-white transition ease-in-out duration-400;
     }
 
@@ -166,51 +170,52 @@
         width: 100%;
     }
 
-    @media (425px < width){
-        .text-subTitle-responsive{
+    @media (425px < width) {
+        .text-subTitle-responsive {
             width: calc(100% - 30px);
         }
     }
 
-    @media (768px < width){
-        .text-subTitle-responsive{
+    @media (768px < width) {
+        .text-subTitle-responsive {
             @apply w-4/6
         }
     }
 
-    .pr-menu-item{
+    .pr-menu-item {
         @apply text-preset-12 md:text-preset-11 font-light px-5 py-2 rounded-2xl transition duration-500 ease-in-out hover:bg-yellow-500 cursor-pointer uppercase;
     }
 }
 
-@layer components{
-    .page-width{
+@layer components {
+    .page-width {
         width: min(1440px, 100%);
         margin-inline: auto;
     }
 
-    .transitions-menu{
+    .transitions-menu {
         transition: all 599ms ease-in-out;
     }
 
-    .testimonials-width{
+    .testimonials-width {
         width: min(1114px, 100%);
         margin-inline: auto;
     }
 
     .grid-title,
-    .section-title{
+    .section-title {
         @apply text-preset-4
     }
 
-    @media (375px < width){
+    @media (375px < width) {
+
         .grid-title,
-        .section-title{
+        .section-title {
             @apply text-preset-3;
         }
     }
 
-    .grid-link::after{
+    .grid-link::after {
         content: "";
         display: block;
         position: absolute;
@@ -226,26 +231,75 @@
         transition: opacity 450ms ease-in-out;
     }
 
-    .grid-link:hover::after{
+    .grid-link:hover::after {
         opacity: 100%;
     }
 
-    .grid-link--yellow::after{
-        background: var( --color-yellow-500);
+    .grid-link--yellow::after {
+        background: var(--color-yellow-500);
     }
 
-    .grid-link--red::after{
-        background: var( --color-red-400);
+    .grid-link--red::after {
+        background: var(--color-red-400);
     }
 
-    .mobile-menu-path{
+    .mobile-menu-path {
         clip-path: polygon(50% 50%, 100% 0%, 100% 100%, 0% 100%);
         background-color: #ffffff;
     }
-    
-    .project-tags{
+
+    .project-tags {
         @apply text-preset-12;
         font-weight: 400;
     }
-    
+
+    .process-steps-counter {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #f59e0b;
+    }
+
+    .process-step {
+        counter-increment: step;
+    }
+
+    .process-step-left::before,
+    .process-step-right::after {
+        @apply w-10 h-10 rounded-full bg-orange-500 text-preset-9 text-white;
+        content: counter(step);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        flex: 0 0 40px;
+    }
+
+     .process-step-left::before {
+        left: 0;
+     }
+
+     .process-step-right::after {
+        @apply left-0 md:right-0;
+        /* right: 0; */
+     }
+
+     .process-list-line::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        background: var(--color-orange-500);
+        z-index: -1;
+
+        @media (width < 768px) {
+            left: 18px;
+            top: 35px;
+            transform: translateX(0);
+            height: calc(((100% / 4) * 3) + 4px);
+        }
+     }
 }

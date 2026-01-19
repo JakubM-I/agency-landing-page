@@ -12,7 +12,6 @@ const HomePage: React.FC = () => {
         <>
             {/* <HeroSection headerDesktopBg={headerDesktopBg} headerMobileBg={headerMobileBg} headerTitle={headerTitle} headerArrow={headerArrow}  /> */}
             <HeroSection items={content.homePage.heroSection} images={images.homePage} />
-
             <GridSection />
             <Testimonials />
             <BottomGrid />
