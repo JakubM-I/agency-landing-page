@@ -19,6 +19,7 @@
     --color-blues-800: #19536C;
     --color-red-400: #FE7766;
     --color-yellow-500: #FAD400;
+    --color-orange-500: #f59e0b;
 
     --color-gradient-blue-start: #1db3ee;
     --color-gradient-blue-end: #01a5e9;
@@ -265,7 +266,7 @@
 
     .process-step-left::before,
     .process-step-right::after {
-        @apply w-10 h-10 rounded-full bg-[#f59e0b] text-preset-9 text-white;
+        @apply w-10 h-10 rounded-full bg-orange-500 text-preset-9 text-white;
         content: counter(step);
         display: flex;
         align-items: center;
@@ -281,5 +282,24 @@
      .process-step-right::after {
         @apply left-0 md:right-0;
         /* right: 0; */
+     }
+
+     .process-list-line::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        background: var(--color-orange-500);
+        z-index: -1;
+
+        @media (width < 768px) {
+            left: 18px;
+            top: 35px;
+            transform: translateX(0);
+            height: calc(((100% / 4) * 3) + 4px);
+        }
      }
 }
