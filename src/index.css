@@ -26,6 +26,8 @@
     --breakpoint-sx: 23.5rem;
     --breakpoint-sl: 26.5625rem;
     --breakpoint-full: 90rem;
+
+    --unset: unset;
 }
 
 @utility text-preset-1 {
@@ -269,7 +271,7 @@
         align-items: center;
         justify-content: center;
         left: 0;
-        flex: 0 0 40px
+        flex: 0 0 40px;
     }
 
      .process-step-left::before {
@@ -277,6 +279,7 @@
      }
 
      .process-step-right::after {
-        right: 0;
+        @apply left-0 md:right-0;
+        /* right: 0; */
      }
 }
