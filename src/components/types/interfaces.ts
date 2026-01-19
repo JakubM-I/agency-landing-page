@@ -1,4 +1,4 @@
-import { TiThLarge } from "react-icons/ti";
+// import { TiThLarge } from "react-icons/ti";
 
 export interface HeaderProps{
     isSticky?: boolean;
