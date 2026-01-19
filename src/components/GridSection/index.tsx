@@ -19,7 +19,7 @@ const GridSection: React.FC = () => {
                     <div className="flex flex-col justify-center items-start gap-6 sx:gap-8 w-fit max-w-[445px]">
                         <h2 className="grid-title text-center text-grey-950">Transform your brand</h2>
                         <p className="text-preset-10 text-left text-grey-550">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                        <a href="#" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--yellow">Learn more</a>
+                        <NavLink to="/brand-transform" className="relative text-preset-8 uppercase text-grey-950 text-left z-[2] inline-block grid-link grid-link--yellow">Learn more</NavLink>
                     </div>
                 </GridTextCell>
                 {/* </div> */}
