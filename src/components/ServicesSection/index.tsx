@@ -4,8 +4,8 @@ import type { ServicesProps } from "../types/interfaces";
 const Services: React.FC<ServicesProps> = ({ items, images }) => {
 
     return (
-        <section className="py-16 sx:py-[67px] bg-[#F7F7F7]">
-            <SectionTitle title={items.title} styling="mb-8" />
+        <section className="py-16 sx:py-[67px] bg-[#F7F7F7]" aria-labelledby="services">
+            <SectionTitle title={items.title} styling="mb-8" id="services" />
             <div className="flex flex-col sm:flex-row flex-nowrap sm:flex-wrap justify-center items-stretch gap-10 sm:gap-8 px-6">
                 {items.services.map((item, index) => (
                     <article key={index} className="flex flex-col flex-nowrap justify-start items-center gap-5 flex-[0_1_45%] lg:flex-[0_1_30%] p-6 bg-white h-auto rounded-2xl shadow-xl">
