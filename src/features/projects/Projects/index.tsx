@@ -32,25 +32,25 @@ const Projects: React.FC<ProjectProps> = ({ items, images }) => {
     }, [items, filterQuerry])
 
     return (
-        <div className="pt-16 sx:pt-[67px] px-5 md:px-2 full:px-0">
-            <div className="grid grid-cols-1 sm:grid-cols-2 p-4 w-[min(1200px,100%)] mx-auto gap-10">
+        <section className="pt-16 sx:pt-[67px] px-5 md:px-2 full:px-0" aria-label="Projects" aria-live="polite">
+            <div className="grid grid-cols-1 sm:grid-cols-2 p-4 w-[min(1200px,100%)] mx-auto gap-10" id="projectsGrid">
                 {displayItems.map((item, index) => (
-                    <div key={index} className="overflow-hidden rounded-xl shadow-md">
+                    <article key={index} className="overflow-hidden rounded-xl shadow-md" aria-labelledby={`project-title-${index}`}>
                         {images ? <img className="w-full" src={images[item.section][item.img]} alt={item.title} /> : null}
                         <div className="px-7 pt-7 pb-9 flex flex-col justify-start items-start gap-4">
-                            <div className="text-preset-12 text-red-400 uppercase">{item.category}</div>
-                            <h3 className="text-preset-5 text-grey-950">{item.title}</h3>
+                            <span className="text-preset-12 text-red-400 uppercase">{item.category}</span>
+                            <h3 className="text-preset-5 text-grey-950" id={`project-title-${index}`}>{item.title}</h3>
                             <p className="text-preset-11 text-left text-grey-550">{item.description}</p>
-                            <ul className="flex flex-wrap gap-2 justify-start items-center">
+                            <ul className="flex flex-wrap gap-2 justify-start items-center" aria-label={`${item.title} tags`}>
                                 {item.tags?.map((tag, index) => (
                                     <li key={index} className="flex-[0_0_auto] text-preset-12 font-light leading-none text-white bg-grey-400 px-4 py-2 rounded-xl">{tag}</li>
                                 ))}
                             </ul>
                         </div>
-                    </div>
+                    </article>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

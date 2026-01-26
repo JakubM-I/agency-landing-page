@@ -57,20 +57,24 @@ const ProjectsMenu: React.FC<ProjectProps> = ({ items }) => {
     const query = searchParams.get("f") || "all";
 
     return (
-        <div className="pt-12 md:pt-16 px-5 md:px-2 full:px-0">
-            <ul className="w-fit mx-auto text-grey-950 bg-grey-100 px-3.5 py-2 rounded-3xl flex flex-wrap md:flex-nowrap items-center justify-center gap-2">
+        <section className="pt-12 md:pt-16 px-5 md:px-2 full:px-0" aria-label="Projects menu">
+            <ul className="w-fit mx-auto text-grey-950 bg-grey-100 px-3.5 py-2 rounded-3xl flex flex-wrap md:flex-nowrap items-center justify-center gap-2"
+                role="tablist">
                 {categories.map((category, index) => (
-                    <li key={index} >
+                    <li key={index} role="presentation">
                         <button
                             className={`pr-menu-item ${query === category ? "bg-yellow-500" : ""}`}
                             data-filter={category}
-                            onClick={filterOnClick}>
+                            onClick={filterOnClick}
+                            role="tab"
+                            aria-selected={query === category}
+                            aria-controls="projectsGrid">
                             {category}
                         </button>
                     </li>
                 ))}
             </ul>
-        </div>
+        </section>
     );
 };
 
