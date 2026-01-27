@@ -6,6 +6,7 @@ import ProjectsPage from "../projects";
 import RootElement from "../Root/root";
 import ServicesPage from "../services";
 import TransformBrand from "../transform-brand";
+import ContactPage from "../contact";
 
 export const routes = [
     {
@@ -50,9 +51,16 @@ export const routes = [
                     return fetch("/content.json")
                 }
             },
-                        {
+            {
                 path: "brand-transform",
                 element: <TransformBrand />,
+                loader: () => {
+                    return fetch("/content.json")
+                }
+            },
+            {
+                path: "contact",
+                element: <ContactPage />,
                 loader: () => {
                     return fetch("/content.json")
                 }
