@@ -843,5 +843,15 @@
             "txtLine": "Let's schedule a free consultation to discuss your brand goals and how we can help you create a powerful identity that drives results.",
             "btnText": "Schedule Free Consultation"
         }
+    },
+    "contactPage": {
+        "heroSection": {
+            "section": "heroSection",
+            "title": "Contact Us",
+            "subtitle": "We'd love to hear from you. Get in touch and let's start creating something amazing together.",
+            "textColor": "text-white",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        }
     }
 }
