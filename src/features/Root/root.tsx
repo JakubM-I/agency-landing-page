@@ -24,11 +24,11 @@ const RootElement: React.FC = () => {
 
     
 return (
-    <div className="page-width">
+    <main className="page-width">
       <Header isSticky={isSticky} />
       <Outlet />
       <Footer />
-    </div>
+    </main>
   );
 }
 
