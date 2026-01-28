@@ -874,10 +874,10 @@
                 "section": "contactSection",
                 "title": "Visit Us",
                 "description": "Monday - Friday, 9AM - 6PM EST",
-                "contactType": "adress",
+                "contactType": "address",
                 "contactInfo": "123 Creative Street",
                 "contactInfo2": "New York, NY 10001",
-                "img": "adress"
+                "img": "address"
             }
         ]
     }

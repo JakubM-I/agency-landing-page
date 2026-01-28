@@ -16,8 +16,6 @@ const ContactPage: React.FC = () => {
                 items={content.contactPage.contactsSection}
                 images={images.contactPage}
             />
-
-
         </>
 
     )
