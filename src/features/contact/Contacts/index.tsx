@@ -4,15 +4,15 @@ const ContactsSection: React.FC<ContactsProps> = ({ items, images }) => {
 
     return (
         <section aria-label="Contact section">
-            <address>
-                {items.map(contact => (
-                    <dl>
-                        <dt>
+            <ul>
+                {items.map((contact, index) => (
+                    <li key={index}>
+                        <div>
                             <img src={images[contact.section][contact.img]} alt={contact.title} />
                             {contact.title}
-                        </dt>
-                        <dd>{contact.description}</dd>
-                        <dd>
+                        </div>
+                        <div>{contact.description}</div>
+                        <div>
                             {contact.contactType === "address" && (
                                 <span>{contact.contactInfo}</span>
                             )}
@@ -22,13 +22,11 @@ const ContactsSection: React.FC<ContactsProps> = ({ items, images }) => {
                             {contact.contactType === "email" && (
                                 <a href={`mailto:${contact.contactInfo}`}>{contact.contactInfo}</a>
                             )}
-                        </dd>
-                        <dd>
                             {contact.contactInfo2 ? (<span>{contact.contactInfo2}</span>) : null}
-                        </dd>
-                    </dl>
+                        </div>
+                    </li>
                 ))}
-            </address>
+            </ul>
         </section>
     )
 }
