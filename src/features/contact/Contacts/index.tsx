@@ -6,12 +6,12 @@ const ContactsSection: React.FC<ContactsProps> = ({ items, images }) => {
         <section aria-label="Contact section">
             <ul>
                 {items.map((contact, index) => (
-                    <li key={index}>
+                    <li key={index} aria-labelledby={`contact-heading-${contact.contactType}`}>
                         <div>
-                            <img src={images[contact.section][contact.img]} alt={contact.title} />
-                            {contact.title}
+                            <img src={images[contact.section][contact.img]} alt="" aria-hidden="true"/>
+                            <h3 id={`contact-heading-${contact.contactType}`}>{contact.title}</h3>
                         </div>
-                        <div>{contact.description}</div>
+                        <p>{contact.description}</p>
                         <div>
                             {contact.contactType === "address" && (
                                 <span>{contact.contactInfo}</span>
