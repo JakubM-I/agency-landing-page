@@ -852,6 +852,33 @@
             "textColor": "text-white",
             "desktopImg": "desktop",
             "mobileImg": "mobile"
-        }
+        },
+        "contactSection": [
+            {
+                "section": "contactSection",
+                "title": "Email Us",
+                "description": "For general inquiries and project discussionsrations",
+                "contactType": "email",
+                "contactInfo": "hello@sunnyside.com",
+                "img": "email"
+            },
+            {
+                "section": "contactSection",
+                "title": "Call Us",
+                "description": "Monday - Friday, 9AM - 6PM EST",
+                "contactType": "phone",
+                "contactInfo": "+1 (555) 123-4567",
+                "img": "phone"
+            },
+            {
+                "section": "contactSection",
+                "title": "Visit Us",
+                "description": "Monday - Friday, 9AM - 6PM EST",
+                "contactType": "adress",
+                "contactInfo": "123 Creative Street",
+                "contactInfo2": "New York, NY 10001",
+                "img": "adress"
+            }
+        ]
     }
 }
