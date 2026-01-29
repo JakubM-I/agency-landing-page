@@ -13,7 +13,7 @@ const ContactPage: React.FC = () => {
                 images={images.contactPage} 
             />
             <ContactsSection 
-                items={content.contactPage.contactsSection}
+                items={content.contactPage.contactSection}
                 images={images.contactPage}
             />
         </>

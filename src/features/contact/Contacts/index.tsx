@@ -4,11 +4,14 @@ const ContactsSection: React.FC<ContactsProps> = ({ items, images }) => {
 
     return (
         <section aria-label="Contact section">
-            <ul>
+            <ul className="w-full flex justify-center items-center gap-5">
                 {items.map((contact, index) => (
-                    <li key={index} aria-labelledby={`contact-heading-${contact.contactType}`}>
+                    <li key={index} 
+                        className="flex-[0_1_30%] flex flex-col items-center justify-start gap-4 p-6 bg-white h-auto rounded-2xl shadow-xl"
+                        aria-labelledby={`contact-heading-${contact.contactType}`}
+                        >
                         <div>
-                            <img src={images[contact.section][contact.img]} alt="" aria-hidden="true"/>
+                           {images ? ( <img src={images[contact.section][contact.img]} alt="" aria-hidden="true"/>) : null}
                             <h3 id={`contact-heading-${contact.contactType}`}>{contact.title}</h3>
                         </div>
                         <p>{contact.description}</p>

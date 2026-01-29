@@ -4,5 +4,10 @@ export const contactImages = {
     heroSection: {
         desktop: contactHeaderDeskto,
         mobile: contactHeaderDeskto
+    },
+    contactSection: {
+        email: "",
+        phone: "",
+        address: ""
     }
 };
