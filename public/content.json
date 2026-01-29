@@ -857,7 +857,7 @@
             {
                 "section": "contactSection",
                 "title": "Email Us",
-                "description": "For general inquiries and project discussionsrations",
+                "description": "For general inquiries and project discussions",
                 "contactType": "email",
                 "contactInfo": "hello@sunnyside.com",
                 "img": "email"
@@ -873,7 +873,6 @@
             {
                 "section": "contactSection",
                 "title": "Visit Us",
-                "description": "Monday - Friday, 9AM - 6PM EST",
                 "contactType": "address",
                 "contactInfo": "123 Creative Street",
                 "contactInfo2": "New York, NY 10001",

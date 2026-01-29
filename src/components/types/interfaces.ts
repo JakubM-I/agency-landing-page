@@ -346,7 +346,7 @@ export interface DevelopmentProcessProps {
 export interface ContactsItemsProps {
     section: string;
     title: string;
-    description: string;
+    description?: string;
     contactType: string;
     contactInfo: string;
     contactInfo2?: string;
