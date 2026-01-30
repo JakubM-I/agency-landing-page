@@ -1,4 +1,7 @@
-import contactHeaderDeskto from "../../assets/desktop/contact-header.jpg"
+import contactHeaderDeskto from "../../assets/desktop/contact-header.jpg";
+import contactEmail from "../../assets/desktop/contact-email.png";
+import contactPhone from "../../assets/desktop/contact-phone.png";
+import contactAddress from "../../assets/desktop/contact-address.png";
 
 export const contactImages = {
     heroSection: {
@@ -6,8 +9,8 @@ export const contactImages = {
         mobile: contactHeaderDeskto
     },
     contactSection: {
-        email: "",
-        phone: "",
-        address: ""
+        email: contactEmail,
+        phone: contactPhone,
+        address: contactAddress
     }
 };
