@@ -357,3 +357,15 @@ export interface ContactsProps {
     items: ContactsItemsProps[];
     images: ImagesProps;
 }
+
+export interface SocialLinksItemsProps {
+    section: string;
+    title: string;
+    description?: string;
+    profiles: {platform: string, link: string, img: string;}[]
+}
+
+export interface SocialLinksProps {
+    items: SocialLinksItemsProps;
+    images?: ImagesProps;
+}
