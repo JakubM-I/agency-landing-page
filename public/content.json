@@ -878,6 +878,38 @@
                 "contactInfo2": "New York, NY 10001",
                 "img": "address"
             }
-        ]
+        ],
+        "socialSection": {
+            "section": "socialSection",
+            "title": "Organic Harvest Co.",
+            "description": "",
+            "profiles": [
+                {
+                    "platform": "Facebook",
+                    "link": "#",
+                    "img": "facebook"
+                },
+                {
+                    "platform": "X",
+                    "link": "#",
+                    "img": "x"
+                },
+                {
+                    "platform": "Instagram",
+                    "link": "#",
+                    "img": "instagram"
+                },
+                {
+                    "platform": "LinkedIng",
+                    "link": "#",
+                    "img": "linkedin"
+                },
+                {
+                    "platform": "Pinterest",
+                    "link": "#",
+                    "img": "pinterest"
+                }
+            ]
+        }
     }
 }
