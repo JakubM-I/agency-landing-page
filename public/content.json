@@ -885,26 +885,31 @@
             "description": "Stay connected and see our latest work on social media",
             "profiles": [
                 {
+                    "section": "socialSection",
                     "platform": "Facebook",
                     "link": "#",
                     "img": "facebook"
                 },
                 {
+                    "section": "socialSection",
                     "platform": "X",
                     "link": "#",
                     "img": "x"
                 },
                 {
+                    "section": "socialSection",
                     "platform": "Instagram",
                     "link": "#",
                     "img": "instagram"
                 },
                 {
+                    "section": "socialSection",
                     "platform": "LinkedIng",
                     "link": "#",
                     "img": "linkedin"
                 },
                 {
+                    "section": "socialSection",
                     "platform": "Pinterest",
                     "link": "#",
                     "img": "pinterest"
