@@ -915,6 +915,12 @@
                     "img": "pinterest"
                 }
             ]
+        },
+        "ctaSection": {
+            "section": "ctaSection",
+            "title": "Let's Start a Conversation",
+            "txtLine": "Whether you have a question, want to discuss a project, or explore partnership opportunities, we're here to help.",
+            "btnText": "Get in Touch"
         }
     }
 }

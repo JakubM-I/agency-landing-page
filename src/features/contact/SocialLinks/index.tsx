@@ -3,7 +3,7 @@ import type { SocialLinksProps } from "../../../components/types/interfaces";
 
 const SocialLinks: React.FC<SocialLinksProps> = ({ items, images }) => {
     return (
-        <section className="py-16 sx:py-[67px]"  aria-labelledby="socialLinks">
+        <section className="pb-16 sx:pb-[67px]"  aria-labelledby="socialLinks">
             <SectionTitle title={items.title} styling="mb-8" id="socialLinks" />
             {items.description && (
                 <div className="text-center mb-8 text-preset-10 text-grey-550 text-pretty">{items.description}</div>
