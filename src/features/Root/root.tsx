@@ -2,9 +2,12 @@ import { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Outlet } from "react-router";
+import { useStore } from "../../store";
+import Modal from "../../components/Modal";
 
 const RootElement: React.FC = () => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
+  const isModalOpen = useStore((state) => state.modalOpen);
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -27,7 +30,8 @@ return (
     <main className="page-width">
       <Header isSticky={isSticky} />
       <Outlet />
-      <Footer />
+      <Footer /> 
+      {isModalOpen && (<Modal />)}
     </main>
   );
 }
