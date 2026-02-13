@@ -2,12 +2,16 @@ import { create } from "zustand";
 
 interface Store {
     modalOpen: boolean;
-    toggleModalOpen: () => void;
+    openModal: () => void;
+    closeModal: () => void;
 };
 
 export const useStore = create<Store>((set) => ({
     modalOpen: false,
-    toggleModalOpen: () => {
-        set((state) => ({ modalOpen: !state.modalOpen }))
+    openModal: () => {
+        set(() => ({ modalOpen: true }));
+    },
+    closeModal: () => {
+        set(() => ({ modalOpen: false }));
     },
 })); 

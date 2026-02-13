@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitle";
 import type { SectionCtaProps } from "../types/interfaces";
 
 const CtaSection: React.FC<SectionCtaProps> = ({items}) => {
-    const openModal = useStore((state) => state.toggleModalOpen);
+    const openModal = useStore((state) => state.openModal);
     return (
         <div className="py-16 sx:py-[67px] px-6 md:px-2 full:px-0">
             <div className="p-10 flex flex-col items-center justify-center gap-6 bg-red-400 rounded-2xl">
