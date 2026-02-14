@@ -1,6 +1,9 @@
 import { useStore } from "../../store";
+import ContactForm from "../Forms/contactForms";
+import DmarketingForms from "../Forms/dmarketingForms";
 import ProjectsForm from "../Forms/projectsForms";
 import ServicesForm from "../Forms/servicesForms";
+import TransformBrandForm from "../Forms/transformBrandFroms";
 
 const Modal = () => {
     const closeModal = useStore((state) => state.closeModal);
@@ -17,12 +20,12 @@ const Modal = () => {
                 return <ProjectsForm />;
             case "services":
                 return <ServicesForm />;
-            // case "contact":
-            //     return "Contact Form";
-            // case "dmarketing":
-            //     return "Digital Marketing Form";
-            // case "transformBrand":
-            //     return "Transform Brand Form";
+            case "contact":
+                return <ContactForm />;
+            case "dmarketing":
+                return <DmarketingForms />;
+            case "transformBrand":
+                return <TransformBrandForm />;
             default:
                 return null;
         }
