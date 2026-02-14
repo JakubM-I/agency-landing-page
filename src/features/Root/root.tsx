@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { Outlet } from "react-router";
 import { useStore } from "../../store";
-// import Modal from "../../components/Modal";
+import Modal from "../../components/Modal";
 
 const RootElement: React.FC = () => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
@@ -31,7 +31,7 @@ return (
       <Header isSticky={isSticky} />
       <Outlet />
       <Footer /> 
-      {/* {isModalOpen && (<Modal />)} */}
+      {isModalOpen && (<Modal />)}
     </main>
   );
 }

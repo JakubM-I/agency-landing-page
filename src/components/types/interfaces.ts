@@ -129,6 +129,7 @@ export interface SectionCtaItemsProps {
     title: string;
     txtLine: string;
     btnText: string;
+    formType: "projects" | "services" | "contact" | "dmarketing" | "transformBrand";
 }
 
 export interface SectionCtaProps {

@@ -1,17 +1,21 @@
 import { create } from "zustand";
 
+type ModalType = "projects" | "services" | "contact" | "dmarketing" | "transformBrand" | null;
+
 interface Store {
     modalOpen: boolean;
-    openModal: () => void;
+    modalType: ModalType;
+    openModal: (type: ModalType) => void;
     closeModal: () => void;
 };
 
 export const useStore = create<Store>((set) => ({
     modalOpen: false,
-    openModal: () => {
-        set(() => ({ modalOpen: true }));
+    modalType: null,
+    openModal: (type) => {
+        set(() => ({ modalOpen: true , modalType: type }));
     },
     closeModal: () => {
-        set(() => ({ modalOpen: false }));
+        set(() => ({ modalOpen: false, modalType: null }));
     },
 })); 

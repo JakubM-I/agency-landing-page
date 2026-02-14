@@ -10,7 +10,7 @@ const CtaSection: React.FC<SectionCtaProps> = ({items}) => {
                 <SectionTitle title={items.title} styling="text-white" />
                 <p className="text-preset-10 text-center text-white text-pretty mb-2 w-[min(55ch,100%)]">{items.txtLine}</p>
                 <button 
-                    onClick={() => openModal()}
+                    onClick={() => openModal(items.formType)}
                     className="bg-white py-2.5 px-3.5 rounded-2xl shadow-lg text-red-400 uppercase text-preset-8 font-bold text-center transition duration-450 easy-in-out md:cursor-pointer md:hover:-translate-y-1">
                     {items.btnText}
                 </button>

@@ -6,15 +6,9 @@ import CreativeProcess from "./Process";
 import CtaSection from "../../components/CtaSection";
 import { useLoaderData } from "react-router";
 import {images} from "../../components/graphics/graphics.tsx";  
-import { useStore } from "../../store.ts";
-import Modal from "../../components/Modal";
-import ServicesForm from "../../components/Forms/servicesForms.tsx";
-
-
 
 const ServicesPage: React.FC = () => {
     const content = useLoaderData();
-    const isModalOpen = useStore((state) => state.modalOpen);
 
     return (
         <>
@@ -29,11 +23,6 @@ const ServicesPage: React.FC = () => {
             <CtaSection 
                 items={content.servicesPage.ctaSection}
             />
-            {isModalOpen && 
-                (<Modal>
-                    <ServicesForm />
-                </Modal>
-                )}
         </>
     )
 };

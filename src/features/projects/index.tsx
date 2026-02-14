@@ -7,13 +7,9 @@ import FeaturedProject from "./FeaturedProject/index.tsx";
 import Projects from "./Projects/index.tsx";
 import ProjectsMenu from "./ProjectsMenu/index.tsx";
 import Testimonials from "./Testimonials/index.tsx";
-import { useStore } from "../../store.ts";
-import Modal from "../../components/Modal";
-import ProjectsForm from "../../components/Forms/projectsForms.tsx";
 
 const ProjectsPage: React.FC = () => {
     const content = useLoaderData();
-    const isModalOpen = useStore((state) => state.modalOpen);
 
     return (
         <>
@@ -38,11 +34,6 @@ const ProjectsPage: React.FC = () => {
                 images={images.projectsPage}
             />
             <CtaSection items={content.projectsPage.ctaSection} />
-            {isModalOpen &&
-                (<Modal>
-                    <ProjectsForm />
-                </Modal>
-                )}
         </>
     )
 };
