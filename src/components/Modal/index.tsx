@@ -4,6 +4,7 @@ import DmarketingForms from "../Forms/dmarketingForms";
 import ProjectsForm from "../Forms/projectsForms";
 import ServicesForm from "../Forms/servicesForms";
 import TransformBrandForm from "../Forms/transformBrandFroms";
+import { MdClose } from "react-icons/md";
 
 const Modal = () => {
     const closeModal = useStore((state) => state.closeModal);
@@ -35,7 +36,8 @@ const Modal = () => {
         <div
             onClick={onClickCloseModal}
             className={`fixed z-[5] top-0 left-0 w-full h-full flex items-center justify-center ${modalOpen ? "animation-fade-in" : "animation-fade-out"} ${!modalOpen ? "pointer-events-none" : ""}`}>
-            <div onClick={(e) => e.stopPropagation()} className="p-5 bg-white">
+            <div onClick={(e) => e.stopPropagation()} className="p-5 bg-white relative">
+                <div className="w-100"><button onClick={onClickCloseModal} className="block ml-auto mr-0 cursor-pointer"><MdClose /></button></div>
                 {formContent()}
             </div>
         </div>
