@@ -7,7 +7,7 @@ import TransformBrandForm from "../Forms/transformBrandFroms";
 
 const Modal = () => {
     const closeModal = useStore((state) => state.closeModal);
-    const { modalType } = useStore((state) => state);
+    const { modalType, modalOpen } = useStore((state) => state);
 
     const onClickCloseModal = (e: React.SyntheticEvent) => {
         e.stopPropagation();
@@ -15,7 +15,7 @@ const Modal = () => {
     }
 
     const formContent = () => {
-        switch(modalType) {
+        switch (modalType) {
             case "projects":
                 return <ProjectsForm />;
             case "services":
@@ -32,14 +32,14 @@ const Modal = () => {
     }
 
     return (
-    <div 
-        onClick={onClickCloseModal}
-        className="fixed z-[5] top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center">
-        <div onClick={(e) => e.stopPropagation()} className="p-5 bg-white">
-           {formContent()}
+        <div
+            onClick={onClickCloseModal}
+            className={`fixed z-[5] top-0 left-0 w-full h-full flex items-center justify-center ${modalOpen ? "animation-fade-in" : "animation-fade-out"} ${!modalOpen ? "pointer-events-none" : ""}`}>
+            <div onClick={(e) => e.stopPropagation()} className="p-5 bg-white">
+                {formContent()}
+            </div>
         </div>
-    </div>
-)
+    )
 };
 
 export default Modal;

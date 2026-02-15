@@ -185,6 +185,39 @@
     .pr-menu-item {
         @apply text-preset-12 md:text-preset-11 font-light px-5 py-2 rounded-2xl transition duration-500 ease-in-out hover:bg-yellow-500 cursor-pointer uppercase;
     }
+
+
+    .animation-fade-in {
+        animation: fadeIn 450ms linear forwards;
+        animation-play-state: running;
+    }
+
+    .animation-fade-out {
+        animation: fadeOut 450ms linear forwards;
+        animation-play-state: running;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            background: transparent;
+        }
+        to {
+            opacity: 1;
+            background: #00000078;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+            background: #00000078;
+        }
+        to {
+            opacity: 0;
+            background: transparent;
+        }
+    }
 }
 
 @layer components {
