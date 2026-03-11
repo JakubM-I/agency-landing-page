@@ -36,7 +36,7 @@ const Modal = () => {
         <div
             onClick={onClickCloseModal}
             className={`fixed z-[5] top-0 left-0 w-full h-full flex items-center justify-center ${modalOpen ? "animation-fade-in" : "animation-fade-out"} ${!modalOpen ? "pointer-events-none" : ""}`}>
-            <div onClick={(e) => e.stopPropagation()} className="p-5 bg-white relative">
+            <div onClick={(e) => e.stopPropagation()} className="p-5 bg-white rounded-xl relative">
                 <div className="w-100"><button onClick={onClickCloseModal} className="block ml-auto mr-0 cursor-pointer"><MdClose /></button></div>
                 {formContent()}
             </div>
