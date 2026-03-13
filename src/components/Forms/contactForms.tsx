@@ -1,8 +1,13 @@
 const ContactForm: React.FC = () => {
 
     return (
-        <div>
-            <form action="">
+        <div className="">
+            <div className="bg-red-400 text-center py-7">
+                <p className="text-white text-preset-7 mb-2.5">sunnyside</p>
+                <p className="text-white text-preset-9 mb-2.5">Get in Touch</p>
+                <p className="text-white text-preset-11">We'll get back to you within 24 hours.</p>
+            </div>
+            <form action="" className="p-5">
                 <div className="flex flex-col mb-2 gap-1">
                     <label htmlFor="name" className="text-preset-10">Name</label>
                     <input type="text" id="name" placeholder="Your full name" className="p-2 border border-grey-550 rounded-xl"/>
