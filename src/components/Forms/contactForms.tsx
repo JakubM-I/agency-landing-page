@@ -21,7 +21,11 @@ const ContactForm: React.FC = () => {
                     <select name="subject" id="subject" className="p-2 border border-grey-550 rounded-xl">
                         <option value="">Subject an option</option>
                         <option value="general">General Inquiry</option>
-                        <option value="support">Support Request</option>
+                        <option value="projects">Project discussion</option>
+                        <option value="careers">Career opportunities</option>
+                        <option value="partnership">Partnership/Collaboration</option>
+                        <option value="press">Press/Media</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
                 <div className="flex flex-col mb-2 gap-1">
