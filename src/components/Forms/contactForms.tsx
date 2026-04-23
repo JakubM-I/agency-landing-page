@@ -2,7 +2,7 @@ const ContactForm: React.FC = () => {
 
     return (
         <div className="">
-            <div className="bg-red-400 text-center py-7">
+            <div className="bg-gradient-to-r from-[#b197fc] from-69% to-[#c3b3fd] to-109% text-center py-7">
                 <p className="text-white text-preset-7 mb-2.5">sunnyside</p>
                 <p className="text-white text-preset-5 mb-2.5">Get in Touch</p>
                 <p className="text-white text-preset-11">We'll get back to you within 24 hours.</p>
