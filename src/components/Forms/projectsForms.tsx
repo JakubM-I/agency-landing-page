@@ -54,9 +54,13 @@ const ProjectsForm: React.FC = () => {
                     <label htmlFor="inspiration" className="text-preset-10">Inspired by any of our projects? (optional)</label>
                     <input type="text" id="inspiration" placeholder="[e.g., TechFlow, Organic Harvest...]" className="p-2 border border-grey-550 rounded-xl" />
                 </div>
-                <div className="flex flex-col mb-5 gap-1">
+                <div className="flex flex-col mb-2 gap-1">
                     <label htmlFor="vision" className="text-preset-10">Project vision *</label>
                     <textarea id="vision" required placeholder="What are you looking to create? What makes this project special?" className="p-2 border border-grey-550 rounded-xl"></textarea>
+                </div>
+                <div className="flex flex-col mb-5 gap-1">
+                        <label htmlFor="deadline" className="text-preset-10">Deadline (optional) </label>
+                        <input type="date" id="deadline" placeholder="Deadline" className="p-2 border border-grey-550 rounded-xl" />
                 </div>
                 <button type="submit"
                     className="mx-[auto_0] w-full bg-red-400 py-2.5 px-3.5 rounded-2xl shadow-lg text-white uppercase text-preset-8 font-bold text-center transition duration-450 easy-in-out hover:-translate-y-1 cursor-pointer"
