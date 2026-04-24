@@ -129,6 +129,7 @@ export interface SectionCtaItemsProps {
     title: string;
     txtLine: string;
     btnText: string;
+    formType: "projects" | "services" | "contact" | "dmarketing" | "transformBrand";
 }
 
 export interface SectionCtaProps {
@@ -341,4 +342,31 @@ export interface DevelopmentProcessItemProps {
 
 export interface DevelopmentProcessProps {
     items: DevelopmentProcessItemProps;
+}
+
+export interface ContactsItemsProps {
+    section: string;
+    title: string;
+    description?: string;
+    contactType: string;
+    contactInfo: string;
+    contactInfo2?: string;
+    img: string;
+}
+
+export interface ContactsProps {
+    items: ContactsItemsProps[];
+    images: ImagesProps;
+}
+
+export interface SocialLinksItemsProps {
+    section: string;
+    title: string;
+    description?: string;
+    profiles: {section: string, platform: string, link: string, img: string;}[]
+}
+
+export interface SocialLinksProps {
+    items: SocialLinksItemsProps;
+    images?: ImagesProps;
 }

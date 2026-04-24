@@ -7,7 +7,6 @@ import CtaSection from "../../components/CtaSection";
 import { useLoaderData } from "react-router";
 import {images} from "../../components/graphics/graphics.tsx";  
 
-
 const ServicesPage: React.FC = () => {
     const content = useLoaderData();
 

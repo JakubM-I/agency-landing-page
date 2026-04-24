@@ -199,7 +199,8 @@
             "section": "ctaSection",
             "title": "Ready to Get Started?",
             "txtLine": "Let's discuss how we can help transform your brand and achieve your creative goals. Get in touch for a free consultation.",
-            "btnText": "Start your project"
+            "btnText": "Start your project",
+            "formType": "services"
         }
     },
     "projectsPage": {
@@ -367,7 +368,8 @@
             "section": "ctaSection",
             "title": "Ready to Create Something Amazing?",
             "txtLine": "Let's bring your vision to life. Contact us today to discuss your next project and see how we can help your brand shine.",
-            "btnText": "Start your project"
+            "btnText": "Start your project",
+            "formType": "projects"
         }
     },
     "dmarketingPage": {
@@ -388,7 +390,8 @@
             "section": "ctaSection",
             "title": "Ready to Amplify Your Digital Presence?",
             "txtLine": "Let's create a digital marketing strategy that connects you with the right audience and drives real business results. Schedule your free consultation today.",
-            "btnText": "Shedule free consultation"
+            "btnText": "Shedule free consultation",
+            "formType": "dmarketing"
         },
         "ourApproachSection": {
             "section": "ourApproachSection",
@@ -841,7 +844,88 @@
             "section": "ctaSection",
             "title": "Ready to Transform Your Brand?",
             "txtLine": "Let's schedule a free consultation to discuss your brand goals and how we can help you create a powerful identity that drives results.",
-            "btnText": "Schedule Free Consultation"
+            "btnText": "Schedule Free Consultation",
+            "formType": "transformBrand"
+        }
+    },
+    "contactPage": {
+        "heroSection": {
+            "section": "heroSection",
+            "title": "Contact Us",
+            "subtitle": "We'd love to hear from you. Get in touch and let's start creating something amazing together.",
+            "textColor": "text-white",
+            "desktopImg": "desktop",
+            "mobileImg": "mobile"
+        },
+        "contactSection": [
+            {
+                "section": "contactSection",
+                "title": "Email Us",
+                "description": "For general inquiries and project discussions",
+                "contactType": "email",
+                "contactInfo": "hello@sunnyside.com",
+                "img": "email"
+            },
+            {
+                "section": "contactSection",
+                "title": "Call Us",
+                "description": "Monday - Friday, 9AM - 6PM EST",
+                "contactType": "phone",
+                "contactInfo": "+1 (555) 123-4567",
+                "img": "phone"
+            },
+            {
+                "section": "contactSection",
+                "title": "Visit Us",
+                "contactType": "address",
+                "contactInfo": "123 Creative Street",
+                "contactInfo2": "New York, NY 10001",
+                "img": "address"
+            }
+        ],
+        "socialSection": {
+            "section": "socialSection",
+            "title": "Follow Our Journey",
+            "description": "Stay connected and see our latest work on social media",
+            "profiles": [
+                {
+                    "section": "socialSection",
+                    "platform": "Facebook",
+                    "link": "#",
+                    "img": "facebook"
+                },
+                {
+                    "section": "socialSection",
+                    "platform": "X",
+                    "link": "#",
+                    "img": "x"
+                },
+                {
+                    "section": "socialSection",
+                    "platform": "Instagram",
+                    "link": "#",
+                    "img": "instagram"
+                },
+                {
+                    "section": "socialSection",
+                    "platform": "LinkedIng",
+                    "link": "#",
+                    "img": "linkedin"
+                },
+                {
+                    "section": "socialSection",
+                    "platform": "Pinterest",
+                    "link": "#",
+                    "img": "pinterest"
+                }
+            ]
+        },
+        "ctaSection": {
+            "section": "ctaSection",
+            "title": "Let's Start a Conversation",
+            "txtLine": "Whether you have a question, want to discuss a project, or explore partnership opportunities, we're here to help.",
+            "btnText": "Get in Touch",
+            "formType": "contact"
         }
     }
 }
