@@ -1,4 +1,17 @@
+import { useState } from "react";
+
 const ServicesForm: React.FC = () => {
+    const [selectedServices, setSelectedServices] = useState<string[]>([]);
+
+    const handleServiceChange = (service: string) => {
+        setSelectedServices((currentServices) => {
+            if (currentServices.includes(service)) {
+                return currentServices.filter((currentService) => currentService !== service);
+            }
+
+            return [...currentServices, service];
+        });
+    };
 
     return (
         <div className="">
@@ -26,27 +39,75 @@ const ServicesForm: React.FC = () => {
                 <div className="text-preset-11 font-normal mb-1">Which services are you interested in? * (select all that apply)</div>
                 <div className="flex flex-col mb-2 gap-1">
                     <div className="flex items-center justify-start gap-2">
-                        <input type="checkbox" name="services" id="brand-identity" value="brand-identity" />
+                        <input
+                            type="checkbox"
+                            name="services"
+                            id="brand-identity"
+                            value="brand-identity"
+                            checked={selectedServices.includes("brand-identity")}
+                            required={selectedServices.length === 0}
+                            onChange={() => handleServiceChange("brand-identity")}
+                        />
                         <label htmlFor="brand-identity">Brand Identity & Strategy</label>
                     </div>
                     <div className="flex items-center justify-start gap-2">
-                        <input type="checkbox" name="services" id="digital-marketing" value="digital-marketing" />
+                        <input
+                            type="checkbox"
+                            name="services"
+                            id="digital-marketing"
+                            value="digital-marketing"
+                            checked={selectedServices.includes("digital-marketing")}
+                            required={selectedServices.length === 0}
+                            onChange={() => handleServiceChange("digital-marketing")}
+                        />
                         <label htmlFor="digital-marketing">Digital Marketing</label>
                     </div>
                     <div className="flex items-center justify-start gap-2">
-                        <input type="checkbox" name="services" id="graphic-design" value="graphic-design" />
+                        <input
+                            type="checkbox"
+                            name="services"
+                            id="graphic-design"
+                            value="graphic-design"
+                            checked={selectedServices.includes("graphic-design")}
+                            required={selectedServices.length === 0}
+                            onChange={() => handleServiceChange("graphic-design")}
+                        />
                         <label htmlFor="graphic-design">Graphic Design</label>
                     </div>
                     <div className="flex items-center justify-start gap-2">
-                        <input type="checkbox" name="services" id="photography-visual-content" value="photography-visual-content" />
+                        <input
+                            type="checkbox"
+                            name="services"
+                            id="photography-visual-content"
+                            value="photography-visual-content"
+                            checked={selectedServices.includes("photography-visual-content")}
+                            required={selectedServices.length === 0}
+                            onChange={() => handleServiceChange("photography-visual-content")}
+                        />
                         <label htmlFor="photography-visual-content">Photography & Visual Content</label>
                     </div>
                     <div className="flex items-center justify-start gap-2">
-                        <input type="checkbox" name="services" id="web-development" value="web-development" />
+                        <input
+                            type="checkbox"
+                            name="services"
+                            id="web-development"
+                            value="web-development"
+                            checked={selectedServices.includes("web-development")}
+                            required={selectedServices.length === 0}
+                            onChange={() => handleServiceChange("web-development")}
+                        />
                         <label htmlFor="web-development">Web Development</label>
                     </div>
                     <div className="flex items-center justify-start gap-2">
-                        <input type="checkbox" name="services" id="other-service" value="other" />
+                        <input
+                            type="checkbox"
+                            name="services"
+                            id="other-service"
+                            value="other"
+                            checked={selectedServices.includes("other")}
+                            required={selectedServices.length === 0}
+                            onChange={() => handleServiceChange("other")}
+                        />
                         <label htmlFor="other-service">Other</label>
                     </div>
                 </div>
