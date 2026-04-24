@@ -37,7 +37,7 @@ const ContactForm: React.FC = () => {
                     <textarea id="message" required placeholder="Tell us more about what you're looking for..." className="p-2 border border-grey-550 rounded-xl"></textarea>
                 </div>
                 <button type="submit"
-                    className="mx-[auto_0] w-full bg-red-400 py-2.5 px-3.5 rounded-2xl shadow-lg text-white uppercase text-preset-8 font-bold text-center transition duration-450 easy-in-out hover:-translate-y-1 cursor-pointer"
+                    className="mx-[auto_0] w-full bg-[#b197fc] py-2.5 px-3.5 rounded-2xl shadow-lg text-white uppercase text-preset-8 font-bold text-center transition duration-450 easy-in-out hover:-translate-y-1 cursor-pointer"
                 >
                     Send</button>
             </form>
