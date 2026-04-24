@@ -26,7 +26,7 @@ const ProjectsForm: React.FC = () => {
                 <div className="text-preset-11 font-normal mb-1">What type of project do you have in mind?</div>
                 <div className="flex flex-col mb-2 gap-1">
                     <div className="flex items-center justify-start gap-2">
-                        <input type="radio" name="project_type" id="identity" value="identity" />
+                        <input type="radio" name="project_type" id="identity" value="identity" required />
                         <label htmlFor="identity">Brand Identity</label>
                     </div>
                     <div className="flex items-center justify-start gap-2">
