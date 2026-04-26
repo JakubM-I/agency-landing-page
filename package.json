@@ -12,6 +12,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@netlify/functions": "^5.2.0",
+    "@supabase/supabase-js": "^2.104.1",
     "@tailwindcss/vite": "^4.1.7",
     "flat-color-icons": "^1.1.0",
     "react": "^19.1.0",
