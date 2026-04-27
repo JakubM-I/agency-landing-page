@@ -5,6 +5,12 @@
 [build.environment]
   NODE_VERSION = "22.14.0"
 
+[dev]
+  command = "npm run dev"
+  port = 8888
+  targetPort = 5173
+  framework = "#custom"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
